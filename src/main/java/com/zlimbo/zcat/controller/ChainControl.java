@@ -109,7 +109,7 @@ public class ChainControl {
             this.setGenesisTS(genesisTS);
 
             AppBlock appBlock = service.appGetBlockByNumber(DefaultBlockParameter.valueOf(blockNumber), true).send();
-            this.setBlockId( String.valueOf(appBlock.getId()));
+            this.setBlockId(String.valueOf(appBlock.getId()));
             this.setBlockJsonrpc(appBlock.getJsonrpc());
 
             AppBlock.Block block = appBlock.getBlock();

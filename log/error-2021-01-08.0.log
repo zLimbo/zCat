@@ -1,0 +1,21 @@
+2021-01-08 11:50:06 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-01-08 11:50:06 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-08 11:50:30 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Access denied for user 'root'@'localhost' (using password: YES)
+2021-01-08 11:50:30 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-08 18:00:10 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Access denied for user 'root'@'localhost' (using password: YES)
+2021-01-08 18:00:10 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-08 18:01:21 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-01-08 18:01:21 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-08 18:27:31 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.controller.SqlController |Table 'ouyeel.invoice' doesn't exist
+2021-01-08 18:27:52 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.controller.SqlController |contract and table have existed!
+2021-01-08 18:34:07 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.controller.SqlController |contract and table have existed!
+2021-01-08 19:27:03 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |SQL syntax error,please input correct SQL stmt.Delete newline operation and try again
+2021-01-08 19:30:08 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |SQL syntax error,please input correct SQL stmt.Delete newline operation and try again
+2021-01-08 19:35:06 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |fields is not complete
+2021-01-08 20:22:18 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.controller.SqlController |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by TIMESTAMPS' at line 1
+2021-01-08 22:08:59 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |fields is not complete
+2021-01-08 22:27:39 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.controller.SqlController |Can not issue data manipulation statements with executeQuery().

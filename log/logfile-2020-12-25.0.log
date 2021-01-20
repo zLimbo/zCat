@@ -1,0 +1,4 @@
+2020-12-25 17:07:22 |DEBUG |JavaFX Application Thread |Main.java:26 |com.zlimbo.zcat.Main |[start] start
+2020-12-25 17:07:22 |DEBUG |JavaFX Application Thread |MainWindowController.java:82 |com.zlimbo.zcat.controller.MainWindowController |[initialize] start
+2020-12-25 17:07:22 |DEBUG |JavaFX Application Thread |MainWindowController.java:109 |com.zlimbo.zcat.controller.MainWindowController |[initialize] end
+2020-12-25 17:07:23 |DEBUG |JavaFX Application Thread |Main.java:35 |com.zlimbo.zcat.Main |[start] end

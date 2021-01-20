@@ -26,6 +26,7 @@ public class Main extends Application {
         logger.debug("[start] start");
         // 加载微软雅黑字体
         //Font.loadFont(Main.class.getResource("/font/msyh.ttc").toExternalForm(), 1024 * 1024 * 50);
+        Application.setUserAgentStylesheet(STYLESHEET_MODENA);
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/MainWindow.fxml"));
         primaryStage.setTitle("zCat");
         primaryStage.setScene(new Scene(root));

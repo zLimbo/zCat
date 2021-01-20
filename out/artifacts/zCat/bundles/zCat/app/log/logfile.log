@@ -1,0 +1,19 @@
+2020-12-09 21:52:18 |DEBUG |JavaFX Application Thread |Main.java:26 |com.zlimbo.zcat.Main |[start] start
+2020-12-09 21:52:18 |DEBUG |JavaFX Application Thread |MainWindowController.java:82 |com.zlimbo.zcat.controller.MainWindowController |[initialize] start
+2020-12-09 21:52:18 |DEBUG |JavaFX Application Thread |SqlController.java:131 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2020-12-09 21:52:18 |DEBUG |JavaFX Application Thread |SqlController.java:144 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://192.168.6.108:3100/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2020-12-09 21:52:21 |ERROR |JavaFX Application Thread |SqlController.java:150 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2020-12-09 21:52:21 |DEBUG |JavaFX Application Thread |SqlController.java:156 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2020-12-09 21:52:21 |DEBUG |JavaFX Application Thread |MainWindowController.java:493 |com.zlimbo.zcat.controller.MainWindowController |[showDatabase] start
+2020-12-09 21:52:21 |DEBUG |JavaFX Application Thread |SqlController.java:165 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2020-12-09 21:52:21 |ERROR |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |null
+2020-12-09 21:52:21 |DEBUG |JavaFX Application Thread |SqlController.java:191 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2020-12-09 21:52:21 |DEBUG |JavaFX Application Thread |MainWindowController.java:530 |com.zlimbo.zcat.controller.MainWindowController |[showDatabase] end
+2020-12-09 21:52:21 |DEBUG |JavaFX Application Thread |MainWindowController.java:109 |com.zlimbo.zcat.controller.MainWindowController |[initialize] end
+2020-12-09 21:52:21 |DEBUG |JavaFX Application Thread |Main.java:35 |com.zlimbo.zcat.Main |[start] end
+2020-12-09 22:02:33 |DEBUG |JavaFX Application Thread |Main.java:26 |com.zlimbo.zcat.Main |[start] start
+2020-12-09 22:02:33 |DEBUG |JavaFX Application Thread |MainWindowController.java:82 |com.zlimbo.zcat.controller.MainWindowController |[initialize] start
+2020-12-09 22:02:33 |DEBUG |JavaFX Application Thread |MainWindowController.java:109 |com.zlimbo.zcat.controller.MainWindowController |[initialize] end
+2020-12-09 22:02:34 |DEBUG |JavaFX Application Thread |Main.java:35 |com.zlimbo.zcat.Main |[start] end

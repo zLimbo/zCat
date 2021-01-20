@@ -6,7 +6,9 @@
         <option name="appClass" value="com.zlimbo.zcat.Main" />
         <option name="description" value="" />
         <option name="htmlPlaceholderId" value="" />
-        <option name="title" value="" />
+        <option name="msgOutputLevel" value="Quiet" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="zCat" />
         <option name="vendor" value="" />
         <option name="version" value="" />
       </options>

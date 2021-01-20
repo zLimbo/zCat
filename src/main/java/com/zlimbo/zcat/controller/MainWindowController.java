@@ -40,13 +40,20 @@ public class MainWindowController implements Initializable {
     /**
      * fxml 文件中相应标签（id="xxx"）的映射的对象
      */
-    public @FXML Button newQueryButton;
-    public @FXML Tab objectsTab;
-    public @FXML TabPane showTabPane;
-    public @FXML TreeView dbTreeView;
-    public @FXML Button newConnectionButton;
-    public @FXML Button citaButton;
-    public @FXML VBox mainVBox;
+    public @FXML
+    Button newQueryButton;
+    public @FXML
+    Tab objectsTab;
+    public @FXML
+    TabPane showTabPane;
+    public @FXML
+    TreeView dbTreeView;
+    public @FXML
+    Button newConnectionButton;
+    public @FXML
+    Button citaButton;
+    public @FXML
+    VBox mainVBox;
 
 
     /**
@@ -75,6 +82,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 界面初始化的相应配置
+     *
      * @param location
      * @param resources
      */
@@ -100,9 +108,9 @@ public class MainWindowController implements Initializable {
 
         // 测试
 //        sqlController = new SqlController("ouyeel",
-//                "10.11.6.119", "3100", "root", "123456");
+//                "192.168.6.114", "3100", "root", "admin");
         sqlController = new SqlController("ouyeel",
-                "localhost", "3306", "root", "123456");
+                "localhost", "3306", "root", "admin");
         newQueryButton.setDisable(false);
         showDatabase();
 
@@ -112,6 +120,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 显示一个数据库表
+     *
      * @param tableName
      */
     public void showTable(String tableName) {
@@ -121,7 +130,7 @@ public class MainWindowController implements Initializable {
         SplitPane tableSplitPane;
         if (tabMap.containsKey(tableName)) {
             tableTab = tabMap.get(tableName);
-            tableSplitPane = (SplitPane)((BorderPane)tableTab.getContent()).getCenter();
+            tableSplitPane = (SplitPane) ((BorderPane) tableTab.getContent()).getCenter();
         } else {
             tableTab = new Tab(tableName);
             tableTab.setGraphic(
@@ -142,8 +151,19 @@ public class MainWindowController implements Initializable {
             borderPane.setCenter(tableSplitPane);
             tableTab.setContent(borderPane);
 
+//            int numRecordPerPage = 1000;
+//            int currentPageNo = 1;
+//
 //            ToolBar bottomToolBar = new ToolBar();
-//            //bottomToolBar.setOrientation();
+//            Button leftmostButton = new Button("<<");
+//            Button leftButton = new Button("<");
+//            Button rightmostButton = new Button(">>");
+//            Button rightButton = new Button(">");
+//            TextField pageNumTextField = new TextField();
+//            pageNumTextField.setPrefColumnCount(1);
+//            pageNumTextField.setText(String.valueOf(currentPageNo));
+//            bottomToolBar.getItems().addAll(leftmostButton, leftButton, pageNumTextField, rightButton, rightmostButton);
+//
 //            borderPane.setBottom(bottomToolBar);
 
             closeButton.setOnAction(event -> {
@@ -152,6 +172,7 @@ public class MainWindowController implements Initializable {
             addButton.setOnAction(event -> addRecord(tableName));
         }
 
+//        String sql = "SELECT * FROM " + tableName + " LIMIT ";
         String sql = "SELECT * FROM " + tableName;
         executeSqlAndShowTableView(sql, tableSplitPane, null);
 
@@ -163,6 +184,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 执行sql语句并将其显示在相应的 TableView 中，同时显示结果信息
+     *
      * @param sql
      * @param tableSplitPane
      * @param messageTextArea
@@ -174,13 +196,14 @@ public class MainWindowController implements Initializable {
         int returnFlag = 0;
         tableSplitPane.getItems().clear();
         SqlController.SqlQueryResult sqlQueryResult = null;
+        String oneLineSql = sql.replace("\n", " ");
         String sqlUpCase = sql.toUpperCase().trim();
         if (sqlUpCase.isEmpty()) {
             sqlQueryResult = new SqlController.SqlQueryResult();
             sqlQueryResult.setErrorMessage("SQL语句不能为空！");
         } else if (sqlUpCase.startsWith("CREATE")) {
             logger.debug("CREATE TABLE!");
-            sqlQueryResult = sqlController.sqlCreateTable(sql);
+            sqlQueryResult = sqlController.sqlCreateTable(oneLineSql);
             long spendTime = sqlQueryResult.getSpendTime();
             returnFlag = 1;
             if (sqlQueryResult.getErrorMessage() == null) {
@@ -193,13 +216,13 @@ public class MainWindowController implements Initializable {
                     returnFlag = 3;
                 }
             }
-        } else if (sqlUpCase.startsWith("INSERT")) {
+        } else if (sqlUpCase.startsWith("INSERT") || sqlUpCase.startsWith("ALTER")) {
             logger.debug("INSERT!");
-            sqlQueryResult = sqlController.sqlInsert(sql);
+            sqlQueryResult = sqlController.sqlInsert(oneLineSql);
             returnFlag = 2;
         } else { // Query
             logger.debug("Query!");
-            sqlQueryResult = sqlController.sqlQuery(sql);
+            sqlQueryResult = sqlController.sqlQuery(oneLineSql);
             returnFlag = 3;
         }
         String errorMessage = sqlQueryResult.getErrorMessage();
@@ -252,6 +275,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 分页显示单个数据的详细情况
+     *
      * @param tableView
      * @param pagination
      * @param columns
@@ -302,6 +326,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 增加一条数据项
+     *
      * @param tableName
      */
     private void addRecord(String tableName) {
@@ -334,7 +359,7 @@ public class MainWindowController implements Initializable {
             textFields.add(textField);
         }
         // 监听，输入不得为空，否则提交按钮为灰色
-        for (TextField textField: textFields) {
+        for (TextField textField : textFields) {
             textField.textProperty().addListener((observable) -> {
                 for (TextField textField1 : textFields) {
                     if (textField1.getText().trim().isEmpty()) {
@@ -374,6 +399,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 连接新的数据库
+     *
      * @param actionEvent
      */
     public void newConnection(ActionEvent actionEvent) {
@@ -427,7 +453,7 @@ public class MainWindowController implements Initializable {
         gridPane.add(passwordField, 1, 4);
         textFields.add(passwordField);
 
-        for (TextField textField: textFields) {
+        for (TextField textField : textFields) {
             textField.textProperty().addListener((observable) -> {
                 for (TextField textField1 : textFields) {
                     if (textField1.getText().trim().isEmpty()) {
@@ -487,7 +513,7 @@ public class MainWindowController implements Initializable {
         List<String> tables = sqlController.sqlShowTables();
         TreeItem<String> databaseItem = new TreeItem<>(sqlController.getDatabaseName(),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/database.png"))));
-        for (String table: tables) {
+        for (String table : tables) {
             TreeItem<String> tableItem = new TreeItem<>(table,
                     new ImageView(new Image(getClass().getResourceAsStream("/image/table.png"))));
             databaseItem.getChildren().add(tableItem);
@@ -521,6 +547,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 创建新的查询Tab
+     *
      * @param actionEvent
      */
     public void newQuery(ActionEvent actionEvent) {
@@ -582,6 +609,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 为Tab添加右键菜单
+     *
      * @param tabName
      * @param tab
      */
@@ -598,6 +626,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 添加一个 Tab 的相应操作
+     *
      * @param tabName
      * @param tab
      */
@@ -612,6 +641,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 删除一个 Tab 的相应操作
+     *
      * @param tabName
      * @param tab
      */
@@ -625,6 +655,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * 连接 cita
+     *
      * @param actionEvent
      */
     public void connectionCita(ActionEvent actionEvent) {
@@ -689,6 +720,7 @@ public class MainWindowController implements Initializable {
 
     /**
      * cita Tab 显示
+     *
      * @param citaUrl
      */
     public void showCita(String citaUrl) {
@@ -735,7 +767,7 @@ public class MainWindowController implements Initializable {
         ObservableList<List<StringProperty>> data = FXCollections.observableArrayList();
         List<List<StringProperty>> bcInfo = chainControl.getBcInfo();
 
-        for (List<StringProperty> list: bcInfo) {
+        for (List<StringProperty> list : bcInfo) {
             List<StringProperty> row = new ArrayList<>();
             row.add(0, list.get(0));
             row.add(1, list.get(1));

@@ -1,0 +1,21 @@
+2021-01-03 14:47:15 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |Table 'ouyeel.saleResource' doesn't exist
+2021-01-03 14:47:33 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |Table 'ouyeel.SQL_CITA' doesn't exist
+2021-01-03 14:47:38 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |Table 'ouyeel.SQL_CITA' doesn't exist
+2021-01-03 14:47:41 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |Table 'ouyeel.SQL_CITA' doesn't exist
+2021-01-03 14:49:27 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |Table 'ouyeel.saleResource' doesn't exist
+2021-01-03 14:50:11 |ERROR |JavaFX Application Thread |SqlController.java:212 |com.zlimbo.zcat.controller.SqlController |contract and table have existed!
+2021-01-03 14:50:55 |ERROR |JavaFX Application Thread |SqlController.java:212 |com.zlimbo.zcat.controller.SqlController |contract and table have existed!
+2021-01-03 14:51:34 |ERROR |JavaFX Application Thread |SqlController.java:212 |com.zlimbo.zcat.controller.SqlController |contract and table have existed!
+2021-01-03 15:00:59 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |Table 'ouyeel.saleResource' doesn't exist
+2021-01-03 15:02:53 |ERROR |JavaFX Application Thread |SqlController.java:212 |com.zlimbo.zcat.controller.SqlController |contract and table have existed!
+2021-01-03 15:06:15 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |Communications link failure
+
+The last packet successfully received from the server was 20,630 milliseconds ago.  The last packet sent successfully to the server was 19,303 milliseconds ago.
+2021-01-03 15:06:17 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |No operations allowed after connection closed.
+2021-01-03 19:30:51 |ERROR |JavaFX Application Thread |SqlController.java:150 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-01-03 19:30:51 |ERROR |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-03 19:33:17 |ERROR |JavaFX Application Thread |SqlController.java:278 |com.zlimbo.zcat.controller.SqlController |Communications link failure
+
+The last packet successfully received from the server was 56,991 milliseconds ago.  The last packet sent successfully to the server was 42,766 milliseconds ago.

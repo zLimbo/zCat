@@ -30,7 +30,9 @@ public class SqlController {
             records = new ArrayList<>();
             errorMessage = null;
             spendTime = 0;
-        };
+        }
+
+        ;
 
         public SqlQueryResult(List<String> columns, List<List<String>> records, long spendTime, String errorMessage) {
             this.columns = columns;
@@ -121,19 +123,20 @@ public class SqlController {
 
     /**
      * 数据库连接
+     *
      * @param databaseName
      * @param host
      * @param port
-     * @param userName
+     * @param username
      * @param password
      */
-    public SqlController(String databaseName, String host, String port, String userName, String password) {
+    public SqlController(String databaseName, String host, String port, String username, String password) {
         logger.debug("[SqlControl] start");
 
         this.databaseName = databaseName;
         this.host = host;
         this.port = port;
-        this.userName = userName;
+        this.userName = username;
         this.password = password;
         String url = "jdbc:mysql://" + host + ":" + port + "/" + databaseName +
                 "?useSSL=false" +
@@ -144,7 +147,7 @@ public class SqlController {
         logger.debug("database url: " + url);
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(url, userName, password);
+            connection = DriverManager.getConnection(url, username, password);
             connectSuccess = true;
         } catch (Exception e) {
             logger.error("database connect fail: " + e.getMessage());
@@ -159,6 +162,7 @@ public class SqlController {
 
     /**
      * sql语句: show tables
+     *
      * @return
      */
     public List<String> sqlShowTables() {
@@ -195,6 +199,7 @@ public class SqlController {
 
     /**
      * sql语句：create table
+     *
      * @param sql
      * @return
      */
@@ -235,6 +240,7 @@ public class SqlController {
 
     /**
      * sql 查询
+     *
      * @param sql
      * @return
      */
@@ -251,10 +257,13 @@ public class SqlController {
         try {
 //            Statement statement = connection.createStatement();
 //            ResultSet resultSet = statement.executeQuery(sql);
+
             preparedStatement = connection.prepareStatement(sql);
             logger.debug(preparedStatement.toString());
+            long start2 = System.currentTimeMillis();
             ResultSet resultSet = preparedStatement.executeQuery();
-
+            long end2 = System.currentTimeMillis();
+            logger.debug("jdbc query spend: {}s", (double) (end2 - start2) / 1000);
             ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
             int columnCount = resultSetMetaData.getColumnCount();
 
@@ -299,6 +308,7 @@ public class SqlController {
 
     /**
      * sql语句：insert
+     *
      * @param sql
      * @return
      */
@@ -311,7 +321,7 @@ public class SqlController {
         PreparedStatement preparedStatement = null;
         try {
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.execute();
+            preparedStatement.executeUpdate();
         } catch (Exception e) {
             logger.error(e.getMessage());
             sqlQueryResult.setErrorMessage(e.getMessage());
@@ -338,6 +348,7 @@ public class SqlController {
 
     /**
      * 获取某一张表的列数据
+     *
      * @param tableName
      * @return
      */
@@ -364,9 +375,10 @@ public class SqlController {
 
     /**
      * 插入大量数据测试
+     *
      * @throws Exception
      */
-    public void testInsertMore() throws Exception{
+    public void testInsertMore() throws Exception {
         logger.debug("[testInsertMore] start");
         Statement statement = connection.createStatement();
         for (int i = 0; i < 10000; ++i) {
