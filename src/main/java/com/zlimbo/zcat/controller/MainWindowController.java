@@ -218,7 +218,7 @@ public class MainWindowController implements Initializable {
             }
         } else if (sqlUpCase.startsWith("INSERT") || sqlUpCase.startsWith("ALTER")) {
             logger.debug("INSERT!");
-            sqlQueryResult = sqlController.sqlInsert(oneLineSql);
+            sqlQueryResult = sqlController.sqlInsertOrAlter(oneLineSql);
             returnFlag = 2;
         } else { // Query
             logger.debug("Query!");
@@ -385,7 +385,7 @@ public class MainWindowController implements Initializable {
                 }
                 stringBuilder.append((");"));
                 String sql = stringBuilder.toString();
-                sqlController.sqlInsert(sql);
+                sqlController.sqlInsertOrAlter(sql);
                 showTable(tableName);   // 更新表显示
             }
             return null;

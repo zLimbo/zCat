@@ -312,8 +312,8 @@ public class SqlController {
      * @param sql
      * @return
      */
-    public SqlQueryResult sqlInsert(String sql) {
-        logger.debug("[sqlInsert] start");
+    public SqlQueryResult sqlInsertOrAlter(String sql) {
+        logger.debug("[sqlInsertOrAlter] start");
         logger.debug("sql:" + sql);
         SqlQueryResult sqlQueryResult = new SqlQueryResult();
         long start = System.currentTimeMillis();
@@ -341,7 +341,7 @@ public class SqlController {
         long end = System.currentTimeMillis();
         long spendTime = end - start;
         sqlQueryResult.setSpendTime(spendTime);
-        logger.debug("[sqlInsert] end");
+        logger.debug("[sqlInsertOrAlter] end");
         return sqlQueryResult;
     }
 
