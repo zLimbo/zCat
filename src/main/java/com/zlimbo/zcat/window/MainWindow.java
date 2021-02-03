@@ -89,14 +89,12 @@ public class MainWindow extends VBox {
 //        sqlController = new SqlController("ouyeel",
 //                "192.168.6.114", "3100", "root", "admin");
 
-//        sqlController = new SqlController("ouyeel",
-//                "127.0.0.1", "8806", "root", "admin");
+        sqlController = new SqlController("ouyeel",
+                "127.0.0.1", "8806", "root", "admin");
+
 
 //        sqlController = new SqlController("ouyeel_cita",
-//                "127.0.0.1", "8806", "root", "123456");
-
-        sqlController = new SqlController("ouyeel_cita",
-                "192.168.6.105", "3307", "root", "admin");
+//                "192.168.6.105", "3307", "root", "admin");
 
 //        sqlController = new SqlController("ouyeel",
 //                "localhost", "3306", "root", "admin");

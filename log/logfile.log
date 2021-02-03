@@ -2213,3 +2213,25 @@ BLOCK_TIME VARCHAR ( 255 ));
 2021-02-01 23:53:22 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
 2021-02-01 23:53:22 |DEBUG |JavaFX Application Thread |MainWindow.java:430 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
 2021-02-01 23:53:22 |DEBUG |JavaFX Application Thread |MainWindow.java:481 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-02-03 16:25:29 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-02-03 16:25:29 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-02-03 16:25:29 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://127.0.0.1:8806/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-02-03 16:25:31 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-02-03 16:25:31 |DEBUG |JavaFX Application Thread |MainWindow.java:562 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-02-03 16:25:31 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-02-03 16:25:31 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: invoice
+2021-02-03 16:25:31 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: test_json
+2021-02-03 16:25:31 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-02-03 16:25:31 |DEBUG |JavaFX Application Thread |MainWindow.java:607 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-02-03 16:25:31 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://127.0.0.1:8806/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |MainWindow.java:562 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: invoice
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: test_json
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |MainWindow.java:607 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-02-03 16:27:33 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
