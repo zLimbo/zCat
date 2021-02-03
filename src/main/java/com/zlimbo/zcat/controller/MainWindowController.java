@@ -89,7 +89,7 @@ public class MainWindowController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         logger.debug("[initialize] start");
 
-        // 字体大小
+        // 字体大小, 微软雅黑字体
         mainVBox.setStyle("-fx-font: 18  arial; -fx-font-family: 'Microsoft YaHei UI'");
 
         // 显示所有Tab的删除图标;
@@ -654,71 +654,6 @@ public class MainWindowController implements Initializable {
 
 
     /**
-     * 连接 cita
-     *
-     * @param actionEvent
-     */
-    public void connectionCita(ActionEvent actionEvent) {
-        logger.debug("[connectionCita] start");
-        Dialog<Pair<String, String>> dialog = new Dialog<>();
-        //dialog.setWidth(200);
-        dialog.setTitle("CITA 新连接");
-        dialog.setHeaderText(null);
-
-        ButtonType connectButtonType = new ButtonType("Connect", ButtonBar.ButtonData.OK_DONE);
-        ButtonType cancelButtonType = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
-        dialog.getDialogPane().getButtonTypes().addAll(connectButtonType, cancelButtonType);
-        Button connectButton = (Button) dialog.getDialogPane().lookupButton(connectButtonType);
-        connectButton.setDisable(true);
-
-        GridPane gridPane = new GridPane();
-        gridPane.setHgap(10);
-        gridPane.setVgap(10);
-        gridPane.setPadding(new Insets(30, 60, 10, 20));
-
-        Label citaUrlLabel = new Label("CITA URL: ");
-        TextField citaUrlTextField = new TextField();
-        citaUrlTextField.setPrefWidth(300);
-        citaUrlTextField.textProperty().addListener(observable -> {
-            if (citaUrlTextField.getText().trim().isEmpty()) {
-                connectButton.setDisable(true);
-            } else {
-                connectButton.setDisable(false);
-            }
-        });
-        gridPane.add(citaUrlLabel, 0, 0);
-        gridPane.add(citaUrlTextField, 1, 0);
-
-        dialog.getDialogPane().setContent(gridPane);
-        // 提交数据
-        dialog.setResultConverter(dialogButton -> {
-            if (dialogButton == connectButtonType) {
-                String citaUrl = citaUrlTextField.getText().trim();
-                if (!chainControlMap.containsKey(citaUrl)) {
-                    ChainControl chainControl = new ChainControl(citaUrl);
-                    if (chainControl.isConnectSuccess()) {
-                        chainControlMap.put(citaUrl, chainControl);
-                    } else {
-                        Alert alert = new Alert(Alert.AlertType.ERROR);
-                        alert.setTitle("Error Connection");
-                        alert.setHeaderText("Invalid connection!");
-                        alert.showAndWait();
-                        return null;
-                    }
-                }
-                showCita(citaUrl);
-            }
-            return null;
-        });
-
-        dialog.showAndWait();
-
-        logger.debug("[connectDatabase] end");
-        //showCita();
-    }
-
-
-    /**
      * cita Tab 显示
      *
      * @param citaUrl
@@ -775,6 +710,66 @@ public class MainWindowController implements Initializable {
         }
         tableView.setItems(data);
         logger.debug("[showCita] end");
+    }
+
+
+    /**
+     * 连接 cita
+     *
+     * @param actionEvent
+     */
+    public void connectionCita(ActionEvent actionEvent) {
+        logger.debug("[connectionCita] start");
+        Dialog<Pair<String, String>> dialog = new Dialog<>();
+        //dialog.setWidth(200);
+        dialog.setTitle("CITA 新连接");
+        dialog.setHeaderText(null);
+
+        ButtonType connectButtonType = new ButtonType("Connect", ButtonBar.ButtonData.OK_DONE);
+        ButtonType cancelButtonType = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
+        dialog.getDialogPane().getButtonTypes().addAll(connectButtonType, cancelButtonType);
+        Button connectButton = (Button) dialog.getDialogPane().lookupButton(connectButtonType);
+        connectButton.setDisable(true);
+
+        GridPane gridPane = new GridPane();
+        gridPane.setHgap(10);
+        gridPane.setVgap(10);
+        gridPane.setPadding(new Insets(30, 60, 10, 20));
+
+        Label citaUrlLabel = new Label("CITA URL: ");
+        TextField citaUrlTextField = new TextField();
+        citaUrlTextField.setPrefWidth(300);
+        citaUrlTextField.textProperty().addListener(observable -> {
+            connectButton.setDisable(citaUrlTextField.getText().trim().isEmpty());
+        });
+        gridPane.add(citaUrlLabel, 0, 0);
+        gridPane.add(citaUrlTextField, 1, 0);
+
+        dialog.getDialogPane().setContent(gridPane);
+        // 提交数据
+        dialog.setResultConverter(dialogButton -> {
+            if (dialogButton == connectButtonType) {
+                String citaUrl = citaUrlTextField.getText().trim();
+                if (!chainControlMap.containsKey(citaUrl)) {
+                    ChainControl chainControl = new ChainControl(citaUrl);
+                    if (chainControl.isConnectSuccess()) {
+                        chainControlMap.put(citaUrl, chainControl);
+                    } else {
+                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                        alert.setTitle("Error Connection");
+                        alert.setHeaderText("Invalid connection!");
+                        alert.showAndWait();
+                        return null;
+                    }
+                }
+                showCita(citaUrl);
+            }
+            return null;
+        });
+
+        dialog.showAndWait();
+
+        logger.debug("[connectDatabase] end");
     }
 
 }

@@ -1,10 +1,13 @@
 package com.zlimbo.zcat;
 
+import com.zlimbo.zcat.window.MainWindow;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,15 +27,21 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         logger.debug("[start] start");
-        // 加载微软雅黑字体
-        //Font.loadFont(Main.class.getResource("/font/msyh.ttc").toExternalForm(), 1024 * 1024 * 50);
+
+//        Parent root = FXMLLoader.load(getClass().getResource("/fxml/MainWindow.fxml"));
+
+//        primaryStage.setScene(new Scene(root));
+
+        Parent root = new MainWindow();
+        Scene scene =  new Scene(root, 1200, 800);
+        primaryStage.setScene(scene);
+
         Application.setUserAgentStylesheet(STYLESHEET_MODENA);
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/MainWindow.fxml"));
         primaryStage.setTitle("zCat");
-        primaryStage.setScene(new Scene(root));
         primaryStage.getIcons().add(new Image(
                 getClass().getResourceAsStream("/image/ouyeel_bc.png")));
         primaryStage.show();
+
         logger.debug("[start] end");
     }
 }

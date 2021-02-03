@@ -1,8 +1,0 @@
-2020-12-30 09:41:43 |ERROR |JavaFX Application Thread |SqlController.java:275 |com.zlimbo.zcat.controller.SqlController |Communications link failure
-
-The last packet successfully received from the server was 61,960 milliseconds ago.  The last packet sent successfully to the server was 6 milliseconds ago.
-2020-12-30 12:49:24 |ERROR |JavaFX Application Thread |SqlController.java:150 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2020-12-30 12:49:24 |ERROR |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |null
-2020-12-30 12:49:30 |ERROR |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |null

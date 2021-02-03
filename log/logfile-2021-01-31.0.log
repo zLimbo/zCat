@@ -1,0 +1,1127 @@
+2021-01-31 16:26:48 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 16:26:48 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 16:26:48 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 16:26:51 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-01-31 16:26:51 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 16:26:51 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 16:26:51 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 16:26:51 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-31 16:26:51 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 16:26:51 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 16:26:52 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 16:27:27 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 16:27:27 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 16:27:27 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 16:27:29 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-01-31 16:27:29 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 16:27:29 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 16:27:29 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 16:27:29 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-31 16:27:29 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 16:27:29 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 16:27:30 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 16:27:50 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 16:27:50 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 16:27:50 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 16:27:52 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-01-31 16:27:52 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 16:27:52 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 16:27:52 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 16:27:52 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-31 16:27:52 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 16:27:52 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 16:27:53 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 16:28:00 |DEBUG |JavaFX Application Thread |MainWindow.java:570 |com.zlimbo.zcat.window.MainWindow |[handle] start
+
+2021-01-31 16:28:00 |DEBUG |JavaFX Application Thread |MainWindow.java:584 |com.zlimbo.zcat.window.MainWindow |[handle] end
+2021-01-31 16:29:55 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_actual
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_cancle
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_plan
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_cancle
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_revoke
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: orderinfo
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: resourceinfo
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: rough_contract
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 16:29:56 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 16:29:57 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 16:32:23 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 16:32:23 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 16:32:23 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.76:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 16:32:44 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-01-31 16:32:44 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 16:32:44 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 16:32:44 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 16:32:44 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
+2021-01-31 16:32:44 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 16:32:44 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 16:32:45 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 16:47:51 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 16:47:51 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 16:47:51 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_actual
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_cancle
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_plan
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_cancle
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_revoke
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: orderinfo
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: resourceinfo
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: rough_contract
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 16:47:52 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 16:47:53 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 16:47:55 |DEBUG |JavaFX Application Thread |MainWindow.java:427 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-01-31 16:47:55 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[1]]
+2021-01-31 16:47:55 |DEBUG |JavaFX Application Thread |MainWindow.java:183 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-01-31 16:47:55 |DEBUG |JavaFX Application Thread |MainWindow.java:162 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[1]]
+2021-01-31 16:47:55 |DEBUG |JavaFX Application Thread |MainWindow.java:168 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-01-31 16:47:55 |DEBUG |JavaFX Application Thread |MainWindow.java:479 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-01-31 16:48:02 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 16:48:02 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: CREATE TABLE resourceinfo  (
+  SYSTEM_ID varchar(100),
+  REQUEST_SN varchar(100),
+  INVOKE_TIME timestamp,
+  BUSINESS_ID varchar(100),
+  CALLBACK_URL varchar(150),
+  KEY_ID varchar(50),
+  ACCOUNT_ID varchar(50),
+  TX_HASH varchar(150),
+  RESOURCE_CODE varchar(100),
+  MANUFACTURER_CODE varchar(50),
+  MANUFACTURER_NAME varchar(100),
+  CATEGORY_CODE varchar(100),
+  CATEGORY_NAME varchar(100),
+  PRODUCT_CODE varchar(50),
+  PRODUCT_NAME varchar(100),
+  SHOP_SIGN varchar(150),
+  SPEC1 varchar(150),
+  SPEC2 varchar(150),
+  SPEC3 varchar(150),
+  SPEC4 varchar(150),
+  SPEC5 varchar(150),
+  SPEC6 varchar(150),
+  GMV varchar(100),
+  MOQ varchar(100),
+  SALE_DATE_START varchar(50),
+  PRICE varchar(100),
+  DELIVERY_DATE varchar(50),
+  DELIVERY_ADD varchar(100),
+  TECH_STD varchar(100),
+  STD_SHOP_SIGN varchar(150),
+  STD_SPEC varchar(100),
+  PRICE_CODE varchar(50),
+  PRICE_TYPE varchar(50),
+  CODE varchar(50),
+  STATUS_CODE varchar(50),
+  GENRE_TIME varchar(50),
+  ORDER_DATE varchar(50),
+  CONTRACT_ADDRESS varchar(100),
+  ON_CHAIN int(1),
+  BLOCK_HEIGHT varchar(50),
+  BLOCK_TIME varchar(50)
+);
+
+2021-01-31 16:48:02 |DEBUG |JavaFX Application Thread |MainWindow.java:345 |com.zlimbo.zcat.window.MainWindow |CREATE
+2021-01-31 16:48:02 |DEBUG |JavaFX Application Thread |SqlController.java:207 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] start
+2021-01-31 16:48:02 |DEBUG |JavaFX Application Thread |SqlController.java:208 |com.zlimbo.zcat.controller.SqlController |sql:CREATE TABLE resourceinfo  (   SYSTEM_ID varchar(100),   REQUEST_SN varchar(100),   INVOKE_TIME timestamp,   BUSINESS_ID varchar(100),   CALLBACK_URL varchar(150),   KEY_ID varchar(50),   ACCOUNT_ID varchar(50),   TX_HASH varchar(150),   RESOURCE_CODE varchar(100),   MANUFACTURER_CODE varchar(50),   MANUFACTURER_NAME varchar(100),   CATEGORY_CODE varchar(100),   CATEGORY_NAME varchar(100),   PRODUCT_CODE varchar(50),   PRODUCT_NAME varchar(100),   SHOP_SIGN varchar(150),   SPEC1 varchar(150),   SPEC2 varchar(150),   SPEC3 varchar(150),   SPEC4 varchar(150),   SPEC5 varchar(150),   SPEC6 varchar(150),   GMV varchar(100),   MOQ varchar(100),   SALE_DATE_START varchar(50),   PRICE varchar(100),   DELIVERY_DATE varchar(50),   DELIVERY_ADD varchar(100),   TECH_STD varchar(100),   STD_SHOP_SIGN varchar(150),   STD_SPEC varchar(100),   PRICE_CODE varchar(50),   PRICE_TYPE varchar(50),   CODE varchar(50),   STATUS_CODE varchar(50),   GENRE_TIME varchar(50),   ORDER_DATE varchar(50),   CONTRACT_ADDRESS varchar(100),   ON_CHAIN int(1),   BLOCK_HEIGHT varchar(50),   BLOCK_TIME varchar(50) ); 
+2021-01-31 16:48:02 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.controller.SqlController |SQL syntax error,please input correct SQL stmt.Delete newline operation and try again
+2021-01-31 16:48:02 |DEBUG |JavaFX Application Thread |SqlController.java:236 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] end
+2021-01-31 16:48:02 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 16:48:02 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 0
+2021-01-31 16:48:34 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 16:48:34 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: CREATE TABLE resourceinfo  (
+  SYSTEM_ID varchar(100),
+  REQUEST_SN varchar(100),
+  INVOKE_TIME timestamp,
+  BUSINESS_ID varchar(100),
+  CALLBACK_URL varchar(150),
+  KEY_ID varchar(50),
+  ACCOUNT_ID varchar(50),
+  TX_HASH varchar(150),
+  RESOURCE_CODE varchar(100),
+  MANUFACTURER_CODE varchar(50),
+  MANUFACTURER_NAME varchar(100),
+  CATEGORY_CODE varchar(100),
+  CATEGORY_NAME varchar(100),
+  PRODUCT_CODE varchar(50),
+  PRODUCT_NAME varchar(100),
+  SHOP_SIGN varchar(150),
+  SPEC1 varchar(150),
+  SPEC2 varchar(150),
+  SPEC3 varchar(150),
+  SPEC4 varchar(150),
+  SPEC5 varchar(150),
+  SPEC6 varchar(150),
+  GMV varchar(100),
+  MOQ varchar(100),
+  SALE_DATE_START varchar(50),
+  PRICE varchar(100),
+  DELIVERY_DATE varchar(50),
+  DELIVERY_ADD varchar(100),
+  TECH_STD varchar(100),
+  STD_SHOP_SIGN varchar(150),
+  STD_SPEC varchar(100),
+  PRICE_CODE varchar(50),
+  PRICE_TYPE varchar(50),
+  CODE varchar(50),
+  STATUS_CODE varchar(50),
+  GENRE_TIME varchar(50),
+  ORDER_DATE varchar(50),
+  CONTRACT_ADDRESS varchar(100),
+  ON_CHAIN int(1),
+  BLOCK_HEIGHT varchar(50),
+  BLOCK_TIME varchar(50)
+);
+
+2021-01-31 16:48:34 |DEBUG |JavaFX Application Thread |MainWindow.java:345 |com.zlimbo.zcat.window.MainWindow |CREATE
+2021-01-31 16:48:34 |DEBUG |JavaFX Application Thread |SqlController.java:207 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] start
+2021-01-31 16:48:34 |DEBUG |JavaFX Application Thread |SqlController.java:208 |com.zlimbo.zcat.controller.SqlController |sql:CREATE TABLE resourceinfo  (   SYSTEM_ID varchar(100),   REQUEST_SN varchar(100),   INVOKE_TIME timestamp,   BUSINESS_ID varchar(100),   CALLBACK_URL varchar(150),   KEY_ID varchar(50),   ACCOUNT_ID varchar(50),   TX_HASH varchar(150),   RESOURCE_CODE varchar(100),   MANUFACTURER_CODE varchar(50),   MANUFACTURER_NAME varchar(100),   CATEGORY_CODE varchar(100),   CATEGORY_NAME varchar(100),   PRODUCT_CODE varchar(50),   PRODUCT_NAME varchar(100),   SHOP_SIGN varchar(150),   SPEC1 varchar(150),   SPEC2 varchar(150),   SPEC3 varchar(150),   SPEC4 varchar(150),   SPEC5 varchar(150),   SPEC6 varchar(150),   GMV varchar(100),   MOQ varchar(100),   SALE_DATE_START varchar(50),   PRICE varchar(100),   DELIVERY_DATE varchar(50),   DELIVERY_ADD varchar(100),   TECH_STD varchar(100),   STD_SHOP_SIGN varchar(150),   STD_SPEC varchar(100),   PRICE_CODE varchar(50),   PRICE_TYPE varchar(50),   CODE varchar(50),   STATUS_CODE varchar(50),   GENRE_TIME varchar(50),   ORDER_DATE varchar(50),   CONTRACT_ADDRESS varchar(100),   ON_CHAIN int(1),   BLOCK_HEIGHT varchar(50),   BLOCK_TIME varchar(50) ); 
+2021-01-31 16:48:34 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.controller.SqlController |SQL syntax error,please input correct SQL stmt.Delete newline operation and try again
+2021-01-31 16:48:34 |DEBUG |JavaFX Application Thread |SqlController.java:236 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] end
+2021-01-31 16:48:34 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 16:48:34 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 0
+2021-01-31 16:48:47 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 16:48:47 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: CREATE TABLE resourceinfo  (
+  SYSTEM_ID varchar(100),
+  REQUEST_SN varchar(100),
+  INVOKE_TIME timestamp,
+  BUSINESS_ID varchar(100),
+  CALLBACK_URL varchar(150),
+  KEY_ID varchar(50),
+  ACCOUNT_ID varchar(50),
+  TX_HASH varchar(150),
+  RESOURCE_CODE varchar(100),
+  MANUFACTURER_CODE varchar(50),
+  MANUFACTURER_NAME varchar(100),
+  CATEGORY_CODE varchar(100),
+  CATEGORY_NAME varchar(100),
+  PRODUCT_CODE varchar(50),
+  PRODUCT_NAME varchar(100),
+  SHOP_SIGN varchar(150),
+  SPEC1 varchar(150),
+  SPEC2 varchar(150),
+  SPEC3 varchar(150),
+  SPEC4 varchar(150),
+  SPEC5 varchar(150),
+  SPEC6 varchar(150),
+  GMV varchar(100),
+  MOQ varchar(100),
+  SALE_DATE_START varchar(50),
+  PRICE varchar(100),
+  DELIVERY_DATE varchar(50),
+  DELIVERY_ADD varchar(100),
+  TECH_STD varchar(100),
+  STD_SHOP_SIGN varchar(150),
+  STD_SPEC varchar(100),
+  PRICE_CODE varchar(50),
+  PRICE_TYPE varchar(50),
+  CODE varchar(50),
+  STATUS_CODE varchar(50),
+  GENRE_TIME varchar(50),
+  ORDER_DATE varchar(50),
+  CONTRACT_ADDRESS varchar(100),
+  ON_CHAIN int(1),
+  BLOCK_HEIGHT varchar(50),
+  BLOCK_TIME varchar(50)
+);
+2021-01-31 16:48:47 |DEBUG |JavaFX Application Thread |MainWindow.java:345 |com.zlimbo.zcat.window.MainWindow |CREATE
+2021-01-31 16:48:47 |DEBUG |JavaFX Application Thread |SqlController.java:207 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] start
+2021-01-31 16:48:47 |DEBUG |JavaFX Application Thread |SqlController.java:208 |com.zlimbo.zcat.controller.SqlController |sql:CREATE TABLE resourceinfo  (   SYSTEM_ID varchar(100),   REQUEST_SN varchar(100),   INVOKE_TIME timestamp,   BUSINESS_ID varchar(100),   CALLBACK_URL varchar(150),   KEY_ID varchar(50),   ACCOUNT_ID varchar(50),   TX_HASH varchar(150),   RESOURCE_CODE varchar(100),   MANUFACTURER_CODE varchar(50),   MANUFACTURER_NAME varchar(100),   CATEGORY_CODE varchar(100),   CATEGORY_NAME varchar(100),   PRODUCT_CODE varchar(50),   PRODUCT_NAME varchar(100),   SHOP_SIGN varchar(150),   SPEC1 varchar(150),   SPEC2 varchar(150),   SPEC3 varchar(150),   SPEC4 varchar(150),   SPEC5 varchar(150),   SPEC6 varchar(150),   GMV varchar(100),   MOQ varchar(100),   SALE_DATE_START varchar(50),   PRICE varchar(100),   DELIVERY_DATE varchar(50),   DELIVERY_ADD varchar(100),   TECH_STD varchar(100),   STD_SHOP_SIGN varchar(150),   STD_SPEC varchar(100),   PRICE_CODE varchar(50),   PRICE_TYPE varchar(50),   CODE varchar(50),   STATUS_CODE varchar(50),   GENRE_TIME varchar(50),   ORDER_DATE varchar(50),   CONTRACT_ADDRESS varchar(100),   ON_CHAIN int(1),   BLOCK_HEIGHT varchar(50),   BLOCK_TIME varchar(50) );
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:236 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] end
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_actual
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_cancle
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_plan
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_cancle
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_revoke
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: orderinfo
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: resourceinfo
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: rough_contract
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:DESCRIBE resourceinfo
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@2ac171aa: DESCRIBE resourceinfo
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.026s
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 16:49:26 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 17:07:20 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 17:07:20 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 17:07:20 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 17:07:20 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 17:07:20 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 17:07:20 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_actual
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_cancle
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_plan
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_cancle
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_revoke
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: orderinfo
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: resourceinfo
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: rough_contract
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 17:07:21 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 17:07:22 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 17:33:01 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 17:33:01 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 17:33:01 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_actual
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_cancle
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_plan
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_cancle
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_revoke
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: orderinfo
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: resourceinfo
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: rough_contract
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 17:33:02 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 17:33:03 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 17:33:04 |DEBUG |JavaFX Application Thread |MainWindow.java:427 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-01-31 17:33:04 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[1]]
+2021-01-31 17:33:04 |DEBUG |JavaFX Application Thread |MainWindow.java:183 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-01-31 17:33:04 |DEBUG |JavaFX Application Thread |MainWindow.java:162 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[1]]
+2021-01-31 17:33:04 |DEBUG |JavaFX Application Thread |MainWindow.java:168 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-01-31 17:33:04 |DEBUG |JavaFX Application Thread |MainWindow.java:479 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-01-31 17:33:07 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:33:07 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 17:33:07 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 17:33:07 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 17:33:07 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 17:33:07 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |sm4_key or sm4_iv is not correspond with the first appearance
+2021-01-31 17:33:07 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 17:33:07 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:33:07 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 0
+2021-01-31 17:33:27 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:33:27 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD1', 
+  'A_BE_BS_081',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 17:33:27 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 17:33:27 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 17:33:27 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD1',    'A_BE_BS_081',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 17:33:28 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 17:33:28 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:33:28 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:33:28 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:33:28 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 2
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD1', 
+  'A_BE_BS_081',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD1',    'A_BE_BS_081',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:33:31 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 2
+2021-01-31 17:33:36 |DEBUG |JavaFX Application Thread |MainWindow.java:427 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-01-31 17:33:36 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[2]]
+2021-01-31 17:33:36 |DEBUG |JavaFX Application Thread |MainWindow.java:183 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-01-31 17:33:36 |DEBUG |JavaFX Application Thread |MainWindow.java:162 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[2]]
+2021-01-31 17:33:36 |DEBUG |JavaFX Application Thread |MainWindow.java:168 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-01-31 17:33:36 |DEBUG |JavaFX Application Thread |MainWindow.java:479 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@ff0792a: select from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:09 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.controller.SqlController |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from resourceinfo where SYSTEM_ID = '123456789012'' at line 1
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:34:09 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 0
+2021-01-31 17:34:23 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:34:23 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:23 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 17:34:23 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 17:34:23 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:23 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@567e229e: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:24 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.774s
+2021-01-31 17:34:24 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 17:34:24 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:34:24 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:34:24 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:34:24 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@5c4e43: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.17s
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:34:36 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 17:36:51 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:36:51 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:36:51 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 17:36:51 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 17:36:51 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:36:51 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@7509f67d: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:36:52 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.194s
+2021-01-31 17:36:52 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 17:36:52 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:36:52 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:36:52 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:36:52 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@10493ead: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.163s
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:37:00 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@1402e582: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.174s
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:37:06 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 17:37:08 |DEBUG |JavaFX Application Thread |MainWindow.java:427 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-01-31 17:37:08 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[3]]
+2021-01-31 17:37:08 |DEBUG |JavaFX Application Thread |MainWindow.java:183 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-01-31 17:37:08 |DEBUG |JavaFX Application Thread |MainWindow.java:162 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[3]]
+2021-01-31 17:37:08 |DEBUG |JavaFX Application Thread |MainWindow.java:168 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-01-31 17:37:08 |DEBUG |JavaFX Application Thread |MainWindow.java:479 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-01-31 17:37:09 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:37:09 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:09 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 17:37:09 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 17:37:09 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:09 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@457dc336: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:10 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.167s
+2021-01-31 17:37:10 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 17:37:10 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:37:10 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:37:10 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:37:10 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@733e24a1: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.179s
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 17:37:55 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 18:08:59 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:08:59 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 18:08:59 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 18:08:59 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 18:08:59 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 18:08:59 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@d124a6c: select * from resourceinfo where SYSTEM_ID = '123456789012';
+2021-01-31 18:09:12 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 18:09:12 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 18:09:12 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_actual
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_cancle
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_plan
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_cancle
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_revoke
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: orderinfo
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: resourceinfo
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: rough_contract
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 18:09:13 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 18:09:14 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 18:09:17 |DEBUG |JavaFX Application Thread |MainWindow.java:570 |com.zlimbo.zcat.window.MainWindow |[handle] start
+
+2021-01-31 18:09:17 |DEBUG |JavaFX Application Thread |MainWindow.java:584 |com.zlimbo.zcat.window.MainWindow |[handle] end
+2021-01-31 18:09:18 |DEBUG |JavaFX Application Thread |MainWindow.java:427 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-01-31 18:09:18 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[1]]
+2021-01-31 18:09:18 |DEBUG |JavaFX Application Thread |MainWindow.java:183 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-01-31 18:09:18 |DEBUG |JavaFX Application Thread |MainWindow.java:162 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[1]]
+2021-01-31 18:09:18 |DEBUG |JavaFX Application Thread |MainWindow.java:168 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-01-31 18:09:18 |DEBUG |JavaFX Application Thread |MainWindow.java:479 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-01-31 18:09:41 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:09:41 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: select * from resourceinfo where SYSTEM_ID = "123456789012";
+2021-01-31 18:09:41 |DEBUG |JavaFX Application Thread |MainWindow.java:370 |com.zlimbo.zcat.window.MainWindow |SELECT
+2021-01-31 18:09:41 |DEBUG |JavaFX Application Thread |SqlController.java:248 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
+2021-01-31 18:09:41 |DEBUG |JavaFX Application Thread |SqlController.java:249 |com.zlimbo.zcat.controller.SqlController |sql:select * from resourceinfo where SYSTEM_ID = "123456789012";
+2021-01-31 18:09:41 |DEBUG |JavaFX Application Thread |SqlController.java:262 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@2e76f6a8: select * from resourceinfo where SYSTEM_ID = "123456789012";
+2021-01-31 18:09:42 |DEBUG |JavaFX Application Thread |SqlController.java:266 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.187s
+2021-01-31 18:09:42 |DEBUG |JavaFX Application Thread |SqlController.java:304 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-31 18:09:42 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 18:09:42 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 18:09:42 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:09:42 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-01-31 18:13:42 |DEBUG |JavaFX Application Thread |MainWindow.java:427 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-01-31 18:13:42 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[2]]
+2021-01-31 18:13:42 |DEBUG |JavaFX Application Thread |MainWindow.java:183 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-01-31 18:13:42 |DEBUG |JavaFX Application Thread |MainWindow.java:162 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[2]]
+2021-01-31 18:13:42 |DEBUG |JavaFX Application Thread |MainWindow.java:168 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-01-31 18:13:42 |DEBUG |JavaFX Application Thread |MainWindow.java:479 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-01-31 18:15:14 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:15:14 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:15:14 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:15:14 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:15:14 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:15:33 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |Communications link failure
+
+The last packet successfully received from the server was 350,948 milliseconds ago.  The last packet sent successfully to the server was 18,917 milliseconds ago.
+2021-01-31 18:15:33 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:15:33 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:15:33 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 0
+2021-01-31 18:16:23 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:16:23 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:16:23 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:16:23 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:16:23 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:16:23 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |No operations allowed after connection closed.
+2021-01-31 18:16:23 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:16:23 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:16:23 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 0
+2021-01-31 18:16:38 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-01-31 18:16:38 |DEBUG |JavaFX Application Thread |SqlController.java:134 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
+2021-01-31 18:16:38 |DEBUG |JavaFX Application Thread |SqlController.java:147 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://10.60.178.75:3308/cita_sql?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-31 18:16:38 |DEBUG |JavaFX Application Thread |SqlController.java:159 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-31 18:16:38 |DEBUG |JavaFX Application Thread |MainWindow.java:551 |com.zlimbo.zcat.window.MainWindow |[showDatabase] start
+2021-01-31 18:16:38 |DEBUG |JavaFX Application Thread |SqlController.java:169 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_actual
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_cancle
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: delivery_plan
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_cancle
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: draft_revoke
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: orderinfo
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: resourceinfo
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:177 |com.zlimbo.zcat.controller.SqlController |table: rough_contract
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |SqlController.java:195 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-31 18:16:39 |DEBUG |JavaFX Application Thread |MainWindow.java:596 |com.zlimbo.zcat.window.MainWindow |[showDatabase] end
+2021-01-31 18:16:40 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-01-31 18:16:49 |DEBUG |JavaFX Application Thread |MainWindow.java:427 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-01-31 18:16:49 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[1]]
+2021-01-31 18:16:49 |DEBUG |JavaFX Application Thread |MainWindow.java:183 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-01-31 18:16:49 |DEBUG |JavaFX Application Thread |MainWindow.java:162 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[1]]
+2021-01-31 18:16:49 |DEBUG |JavaFX Application Thread |MainWindow.java:168 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-01-31 18:16:49 |DEBUG |JavaFX Application Thread |MainWindow.java:479 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-01-31 18:16:54 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:16:54 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:16:54 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:16:54 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:16:54 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:16:54 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |sm4_key or sm4_iv is not correspond with the first appearance
+2021-01-31 18:16:54 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:16:54 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:16:54 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 0
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD12', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD12',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:17:09 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 2
+2021-01-31 18:18:00 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:18:00 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD12', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:18:00 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:18:00 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:18:00 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD12',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:18:01 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:18:01 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 18:18:01 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 18:18:01 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:18:01 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 2
+2021-01-31 18:18:15 |DEBUG |JavaFX Application Thread |MainWindow.java:427 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-01-31 18:18:15 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[2]]
+2021-01-31 18:18:15 |DEBUG |JavaFX Application Thread |MainWindow.java:183 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-01-31 18:18:15 |DEBUG |JavaFX Application Thread |MainWindow.java:162 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[2]]
+2021-01-31 18:18:15 |DEBUG |JavaFX Application Thread |MainWindow.java:168 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-01-31 18:18:15 |DEBUG |JavaFX Application Thread |MainWindow.java:479 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-01-31 18:18:22 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:18:22 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD12', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:18:22 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:18:22 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:18:22 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD12',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:18:23 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:18:23 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 18:18:23 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 18:18:23 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:18:23 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 2
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD12', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD12',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:19:21 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 2
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD12', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD12',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:19:41 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 2
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |MainWindow.java:334 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |MainWindow.java:335 |com.zlimbo.zcat.window.MainWindow |sql: INSERT INTO resourceinfo VALUES (
+  '123456789012',
+  'requestSn',
+  '1970-01-20 14:57:46',
+  'businessId',
+  '',
+  'QXLD12', 
+  'A_BE_BS_08',
+  '{
+    "MANUFACTURER_NAME":"MANUFACTURER_NAME",
+    "PRODUCT_CODE":"PRODUCT_CODE",
+    "STD_SPEC":"STD_SPEC",
+    "SHOP_SIGN":"SHOP_SIGN",
+    "STD_SHOP_SIGN":"STD_SHOP_SIGN",
+    "CATEGORY_NAME":"CATEGORY_NAME",
+    "SPEC2":"SPEC2",
+    "SPEC1":"SPEC1",
+    "CATEGORY_CODE":"CATEGORY_CODE",
+    "GENRE_TIME":"GENRE_TIME",
+    "RESOURCE_CODE":"RESOURCE_CODE",
+    "PRICE":"PRICE",
+    "ORDER_DATE":"ORDER_DATE",
+    "PRICE_TYPE":"PRICE_TYPE",
+    "SALE_DATE_START":"SALE_DATE_START",
+    "MANUFACTURER_CODE":"MANUFACTURER_CODE",
+    "STATUS_CODE":"STATUS_CODE",
+    "PRODUCT_NAME":"PRODUCT_NAME",
+    "SPEC6":"SPEC6",
+    "SPEC5":"SPEC5",
+    "PRICE_CODE":"PRICE_CODE",
+    "SPEC4":"SPEC4",
+    "MOQ":"MOQ",
+    "DELIVERY_ADD":"DELIVERY_ADD",
+    "SPEC3":"SPEC3",
+    "GMV":"GMV",
+    "TECH_STD":"TECH_STD",
+    "CODE":"CODE",
+    "DELIVERY_DATE":"DELIVERY_DATE"
+  }',
+  '0123456789abcdef0123456789abcdef',
+  '0123456789abcdef0123456789abcdef',
+  'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',
+  '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51'
+);
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |MainWindow.java:363 |com.zlimbo.zcat.window.MainWindow |UPDATE
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |SqlController.java:316 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] start
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |SqlController.java:317 |com.zlimbo.zcat.controller.SqlController |sql:INSERT INTO resourceinfo VALUES (   '123456789012',   'requestSn',   '1970-01-20 14:57:46',   'businessId',   '',   'QXLD12',    'A_BE_BS_08',   '{     "MANUFACTURER_NAME":"MANUFACTURER_NAME",     "PRODUCT_CODE":"PRODUCT_CODE",     "STD_SPEC":"STD_SPEC",     "SHOP_SIGN":"SHOP_SIGN",     "STD_SHOP_SIGN":"STD_SHOP_SIGN",     "CATEGORY_NAME":"CATEGORY_NAME",     "SPEC2":"SPEC2",     "SPEC1":"SPEC1",     "CATEGORY_CODE":"CATEGORY_CODE",     "GENRE_TIME":"GENRE_TIME",     "RESOURCE_CODE":"RESOURCE_CODE",     "PRICE":"PRICE",     "ORDER_DATE":"ORDER_DATE",     "PRICE_TYPE":"PRICE_TYPE",     "SALE_DATE_START":"SALE_DATE_START",     "MANUFACTURER_CODE":"MANUFACTURER_CODE",     "STATUS_CODE":"STATUS_CODE",     "PRODUCT_NAME":"PRODUCT_NAME",     "SPEC6":"SPEC6",     "SPEC5":"SPEC5",     "PRICE_CODE":"PRICE_CODE",     "SPEC4":"SPEC4",     "MOQ":"MOQ",     "DELIVERY_ADD":"DELIVERY_ADD",     "SPEC3":"SPEC3",     "GMV":"GMV",     "TECH_STD":"TECH_STD",     "CODE":"CODE",     "DELIVERY_DATE":"DELIVERY_DATE"   }',   '0123456789abcdef0123456789abcdef',   '0123456789abcdef0123456789abcdef',   'd6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005',   '2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51' );
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |SqlController.java:344 |com.zlimbo.zcat.controller.SqlController |[sqlInsertOrAlter] end
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |MainWindow.java:283 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |MainWindow.java:321 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |MainWindow.java:417 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-01-31 18:20:08 |DEBUG |JavaFX Application Thread |MainWindow.java:468 |com.zlimbo.zcat.window.MainWindow |flag: 2

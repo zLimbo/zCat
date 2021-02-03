@@ -138,7 +138,7 @@ public class ChainControl {
     }
 
 
-    List<List<StringProperty>> getBcInfo() {
+    public List<List<StringProperty>> getBcInfo() {
         logger.debug("[getBcInfo] start");
         List<List<StringProperty>> bcInfo = new ArrayList<>();
         bcInfo.add(Arrays.asList(new SimpleStringProperty("peer count"), peerCount));
