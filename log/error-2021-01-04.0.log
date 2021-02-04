@@ -1,2 +1,2 @@
-2021-01-04 19:47:44 |ERROR |JavaFX Application Thread |SqlController.java:278 |com.zlimbo.zcat.controller.SqlController |Can not issue data manipulation statements with executeQuery().
-2021-01-04 19:47:52 |ERROR |JavaFX Application Thread |SqlController.java:212 |com.zlimbo.zcat.controller.SqlController |Table 'invoice' already exists
+2021-01-04 19:47:44 |ERROR |JavaFX Application Thread |SqlController.java:278 |com.zlimbo.zcat.connect.SqlConnector |Can not issue data manipulation statements with executeQuery().
+2021-01-04 19:47:52 |ERROR |JavaFX Application Thread |SqlController.java:212 |com.zlimbo.zcat.connect.SqlConnector |Table 'invoice' already exists

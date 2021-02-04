@@ -1,24 +1,24 @@
 2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |Main.java:26 |com.zlimbo.zcat.Main |[start] start
 2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |MainWindowController.java:82 |com.zlimbo.zcat.controller.MainWindowController |[initialize] start
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:131 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:144 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://localhost:3306/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:156 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:131 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:144 |com.zlimbo.zcat.connect.SqlConnector |database url: jdbc:mysql://localhost:3306/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:156 |com.zlimbo.zcat.connect.SqlConnector |[SqlController] end
 2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |MainWindowController.java:497 |com.zlimbo.zcat.controller.MainWindowController |[showDatabase] start
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:165 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: invoice
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: person
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: privatekey
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: resinfo
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: resinfo2
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: resinfo3
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: resinfo4
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: saleresource
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: sc
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: stu
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: test
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: tx
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: userkey
-2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:191 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:165 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] start
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: invoice
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: person
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: privatekey
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: resinfo
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: resinfo2
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: resinfo3
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: resinfo4
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: saleresource
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: sc
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: stu
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: test
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: tx
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: userkey
+2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |SqlController.java:191 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] end
 2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |MainWindowController.java:536 |com.zlimbo.zcat.controller.MainWindowController |[showDatabase] end
 2021-01-04 11:05:00 |DEBUG |JavaFX Application Thread |MainWindowController.java:112 |com.zlimbo.zcat.controller.MainWindowController |[initialize] end
 2021-01-04 11:05:01 |DEBUG |JavaFX Application Thread |Main.java:35 |com.zlimbo.zcat.Main |[start] end
@@ -36,11 +36,11 @@
 2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:187 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] start
 2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:188 |com.zlimbo.zcat.controller.MainWindowController |sql: SELECT * FROM invoice
 2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:217 |com.zlimbo.zcat.controller.MainWindowController |Query!
-2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:242 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
-2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:243 |com.zlimbo.zcat.controller.SqlController |sql:SELECT * FROM invoice
-2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:256 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@160ff033: SELECT * FROM invoice
-2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:260 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.003s
-2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:298 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:242 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] start
+2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:243 |com.zlimbo.zcat.connect.SqlConnector |sql:SELECT * FROM invoice
+2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:256 |com.zlimbo.zcat.connect.SqlConnector |com.mysql.jdbc.JDBC42PreparedStatement@160ff033: SELECT * FROM invoice
+2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:260 |com.zlimbo.zcat.connect.SqlConnector |jdbc query spend: 0.003s
+2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |SqlController.java:298 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] end
 2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:277 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] start
 2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:315 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] end
 2021-01-04 11:05:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:264 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
@@ -57,9 +57,9 @@
 ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
 
 2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |MainWindowController.java:213 |com.zlimbo.zcat.controller.MainWindowController |INSERT!
-2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] start
-2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.controller.SqlController |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51') 
-2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] end
+2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] start
+2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.connect.SqlConnector |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
+2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] end
 2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |MainWindowController.java:277 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] start
 2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |MainWindowController.java:315 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] end
 2021-01-04 11:05:23 |DEBUG |JavaFX Application Thread |MainWindowController.java:264 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
@@ -69,9 +69,9 @@
 ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
 
 2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |MainWindowController.java:213 |com.zlimbo.zcat.controller.MainWindowController |INSERT!
-2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] start
-2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.controller.SqlController |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51') 
-2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] end
+2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] start
+2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.connect.SqlConnector |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
+2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] end
 2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |MainWindowController.java:277 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] start
 2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |MainWindowController.java:315 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] end
 2021-01-04 11:05:36 |DEBUG |JavaFX Application Thread |MainWindowController.java:264 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
@@ -81,9 +81,9 @@
 ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
 
 2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |MainWindowController.java:213 |com.zlimbo.zcat.controller.MainWindowController |INSERT!
-2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] start
-2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.controller.SqlController |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51') 
-2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] end
+2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] start
+2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.connect.SqlConnector |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
+2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] end
 2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |MainWindowController.java:277 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] start
 2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |MainWindowController.java:315 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] end
 2021-01-04 11:05:38 |DEBUG |JavaFX Application Thread |MainWindowController.java:264 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
@@ -93,9 +93,9 @@
 ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
 
 2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |MainWindowController.java:213 |com.zlimbo.zcat.controller.MainWindowController |INSERT!
-2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] start
-2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.controller.SqlController |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51') 
-2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] end
+2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] start
+2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.connect.SqlConnector |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
+2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] end
 2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |MainWindowController.java:277 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] start
 2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |MainWindowController.java:315 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] end
 2021-01-04 11:05:39 |DEBUG |JavaFX Application Thread |MainWindowController.java:264 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
@@ -105,9 +105,9 @@
 ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
 
 2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |MainWindowController.java:213 |com.zlimbo.zcat.controller.MainWindowController |INSERT!
-2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] start
-2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.controller.SqlController |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51') 
-2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] end
+2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] start
+2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.connect.SqlConnector |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
+2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] end
 2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |MainWindowController.java:277 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] start
 2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |MainWindowController.java:315 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] end
 2021-01-04 11:05:40 |DEBUG |JavaFX Application Thread |MainWindowController.java:264 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
@@ -117,23 +117,23 @@
 ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
 
 2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |MainWindowController.java:213 |com.zlimbo.zcat.controller.MainWindowController |INSERT!
-2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] start
-2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.controller.SqlController |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51') 
-2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.controller.SqlController |[sqlInsert] end
+2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |SqlController.java:309 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] start
+2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |SqlController.java:310 |com.zlimbo.zcat.connect.SqlConnector |sql:insert into invoice VALUES ('数据学院', '20','2019-03-05 11:11:11.11','businessidd','http://www.baidu.com',10,20, '{"CONSUMER_NAME":"数据学院","CONSUMER_TAXES_NO":"12100000425006133D","INVOICE_DATE":"2020-10-03","INVOICE_NO":"3100982170","INVOICE_NUMBER":"1","INVOICE_TYPE":"增值税","PRICE":"1000","PRICE_PLUS_TAXES":"1000","SELLER_NAME":"华东师大","SELLER_TAXES_NO":"913100003245878130","STATEMENT_SHEET":"1","STATEMENT_WEIGHT":"1kg","TAXES":"150","TAXES_POINT":"17%","TIMESTAMPS":"1601712721"} ','0123456789abcdef0123456789abcdef','0123456789abcdef0123456789abcdef','d6c83aee4bfbeb135a2dcef8c803b186d0678a99002b09d3c60c22aca7105005','2204404536ab867d9a964bfcc5e6fdaa7d77e509ce5891d38b3ebbb036e5c225994597ea6d0bdff3539fd3062b3943a1c7dd75d173f35101b71298e9f7f08d51')
+2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |SqlController.java:337 |com.zlimbo.zcat.connect.SqlConnector |[sqlInsert] end
 2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |MainWindowController.java:277 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] start
 2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |MainWindowController.java:315 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] end
 2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |MainWindowController.java:264 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
 2021-01-04 11:05:41 |DEBUG |JavaFX Application Thread |MainWindowController.java:586 |com.zlimbo.zcat.controller.MainWindowController |flag: 2
 2021-01-04 19:47:30 |DEBUG |JavaFX Application Thread |Main.java:26 |com.zlimbo.zcat.Main |[start] start
 2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |MainWindowController.java:82 |com.zlimbo.zcat.controller.MainWindowController |[initialize] start
-2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:131 |com.zlimbo.zcat.controller.SqlController |[SqlControl] start
-2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:144 |com.zlimbo.zcat.controller.SqlController |database url: jdbc:mysql://192.168.6.108:3306/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
-2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:156 |com.zlimbo.zcat.controller.SqlController |[SqlController] end
+2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:131 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:144 |com.zlimbo.zcat.connect.SqlConnector |database url: jdbc:mysql://192.168.6.108:3306/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:156 |com.zlimbo.zcat.connect.SqlConnector |[SqlController] end
 2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |MainWindowController.java:494 |com.zlimbo.zcat.controller.MainWindowController |[showDatabase] start
-2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:165 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
-2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: invoice
-2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: saleResource
-2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:191 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:165 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] start
+2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: invoice
+2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: saleResource
+2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |SqlController.java:191 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] end
 2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |MainWindowController.java:531 |com.zlimbo.zcat.controller.MainWindowController |[showDatabase] end
 2021-01-04 19:47:31 |DEBUG |JavaFX Application Thread |MainWindowController.java:109 |com.zlimbo.zcat.controller.MainWindowController |[initialize] end
 2021-01-04 19:47:32 |DEBUG |JavaFX Application Thread |Main.java:35 |com.zlimbo.zcat.Main |[start] end
@@ -171,11 +171,11 @@ CREATE TABLE invoice (
 
 
 2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |MainWindowController.java:214 |com.zlimbo.zcat.controller.MainWindowController |Query!
-2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |SqlController.java:242 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
-2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |SqlController.java:243 |com.zlimbo.zcat.controller.SqlController |sql: DROP TABLE IF EXISTS invoice2; CREATE TABLE invoice ( 	SYSTEM_ID varchar(255),  	REQUEST_SN varchar(255),  	INVOKE_TIME varchar(255),  	BUSINESS_ID varchar(255),  	CALLBACK_URL varchar(255),  	KEY_ID varchar(255),  	ACCOUNT_ID varchar(255),  	DATA_INFO json,  	SM4_KEY varchar(255),  	SM4_IV varchar(255),  	PRIVATE_KEY varchar(255),  	PUBLIC_KEY varchar(255), 	ON_CHAIN smallint,  	TX_HASH varchar(255),  	BLOCK_TIME varchar(255),  	BLOCK_HEIGHT varchar(255) );   
-2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |SqlController.java:256 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@143e28b1:  DROP TABLE IF EXISTS invoice2; CREATE TABLE invoice ( 	SYSTEM_ID varchar(255),  	REQUEST_SN varchar(255),  	INVOKE_TIME varchar(255),  	BUSINESS_ID varchar(255),  	CALLBACK_URL varchar(255),  	KEY_ID varchar(255),  	ACCOUNT_ID varchar(255),  	DATA_INFO json,  	SM4_KEY varchar(255),  	SM4_IV varchar(255),  	PRIVATE_KEY varchar(255),  	PUBLIC_KEY varchar(255), 	ON_CHAIN smallint,  	TX_HASH varchar(255),  	BLOCK_TIME varchar(255),  	BLOCK_HEIGHT varchar(255) );   
-2021-01-04 19:47:44 |ERROR |JavaFX Application Thread |SqlController.java:278 |com.zlimbo.zcat.controller.SqlController |Can not issue data manipulation statements with executeQuery().
-2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |SqlController.java:298 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |SqlController.java:242 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] start
+2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |SqlController.java:243 |com.zlimbo.zcat.connect.SqlConnector |sql: DROP TABLE IF EXISTS invoice2; CREATE TABLE invoice ( 	SYSTEM_ID varchar(255),  	REQUEST_SN varchar(255),  	INVOKE_TIME varchar(255),  	BUSINESS_ID varchar(255),  	CALLBACK_URL varchar(255),  	KEY_ID varchar(255),  	ACCOUNT_ID varchar(255),  	DATA_INFO json,  	SM4_KEY varchar(255),  	SM4_IV varchar(255),  	PRIVATE_KEY varchar(255),  	PUBLIC_KEY varchar(255), 	ON_CHAIN smallint,  	TX_HASH varchar(255),  	BLOCK_TIME varchar(255),  	BLOCK_HEIGHT varchar(255) );
+2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |SqlController.java:256 |com.zlimbo.zcat.connect.SqlConnector |com.mysql.jdbc.JDBC42PreparedStatement@143e28b1:  DROP TABLE IF EXISTS invoice2; CREATE TABLE invoice ( 	SYSTEM_ID varchar(255),  	REQUEST_SN varchar(255),  	INVOKE_TIME varchar(255),  	BUSINESS_ID varchar(255),  	CALLBACK_URL varchar(255),  	KEY_ID varchar(255),  	ACCOUNT_ID varchar(255),  	DATA_INFO json,  	SM4_KEY varchar(255),  	SM4_IV varchar(255),  	PRIVATE_KEY varchar(255),  	PUBLIC_KEY varchar(255), 	ON_CHAIN smallint,  	TX_HASH varchar(255),  	BLOCK_TIME varchar(255),  	BLOCK_HEIGHT varchar(255) );
+2021-01-04 19:47:44 |ERROR |JavaFX Application Thread |SqlController.java:278 |com.zlimbo.zcat.connect.SqlConnector |Can not issue data manipulation statements with executeQuery().
+2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |SqlController.java:298 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] end
 2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |MainWindowController.java:261 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
 2021-01-04 19:47:44 |DEBUG |JavaFX Application Thread |MainWindowController.java:581 |com.zlimbo.zcat.controller.MainWindowController |flag: 0
 2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |MainWindowController.java:184 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] start
@@ -202,10 +202,10 @@ CREATE TABLE invoice (
 
 
 2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |MainWindowController.java:195 |com.zlimbo.zcat.controller.MainWindowController |CREATE TABLE!
-2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:202 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] start
-2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:203 |com.zlimbo.zcat.controller.SqlController |sql: CREATE TABLE invoice ( 	SYSTEM_ID varchar(255),  	REQUEST_SN varchar(255),  	INVOKE_TIME varchar(255),  	BUSINESS_ID varchar(255),  	CALLBACK_URL varchar(255),  	KEY_ID varchar(255),  	ACCOUNT_ID varchar(255),  	DATA_INFO json,  	SM4_KEY varchar(255),  	SM4_IV varchar(255),  	PRIVATE_KEY varchar(255),  	PUBLIC_KEY varchar(255), 	ON_CHAIN smallint,  	TX_HASH varchar(255),  	BLOCK_TIME varchar(255),  	BLOCK_HEIGHT varchar(255) );   
-2021-01-04 19:47:52 |ERROR |JavaFX Application Thread |SqlController.java:212 |com.zlimbo.zcat.controller.SqlController |Table 'invoice' already exists
-2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:231 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] end
+2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:202 |com.zlimbo.zcat.connect.SqlConnector |[sqlCreateTable] start
+2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:203 |com.zlimbo.zcat.connect.SqlConnector |sql: CREATE TABLE invoice ( 	SYSTEM_ID varchar(255),  	REQUEST_SN varchar(255),  	INVOKE_TIME varchar(255),  	BUSINESS_ID varchar(255),  	CALLBACK_URL varchar(255),  	KEY_ID varchar(255),  	ACCOUNT_ID varchar(255),  	DATA_INFO json,  	SM4_KEY varchar(255),  	SM4_IV varchar(255),  	PRIVATE_KEY varchar(255),  	PUBLIC_KEY varchar(255), 	ON_CHAIN smallint,  	TX_HASH varchar(255),  	BLOCK_TIME varchar(255),  	BLOCK_HEIGHT varchar(255) );
+2021-01-04 19:47:52 |ERROR |JavaFX Application Thread |SqlController.java:212 |com.zlimbo.zcat.connect.SqlConnector |Table 'invoice' already exists
+2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |SqlController.java:231 |com.zlimbo.zcat.connect.SqlConnector |[sqlCreateTable] end
 2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |MainWindowController.java:261 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end
 2021-01-04 19:47:52 |DEBUG |JavaFX Application Thread |MainWindowController.java:581 |com.zlimbo.zcat.controller.MainWindowController |flag: 0
 2021-01-04 19:48:05 |DEBUG |JavaFX Application Thread |MainWindowController.java:184 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] start
@@ -232,21 +232,21 @@ CREATE TABLE invoice2 (
 
 
 2021-01-04 19:48:05 |DEBUG |JavaFX Application Thread |MainWindowController.java:195 |com.zlimbo.zcat.controller.MainWindowController |CREATE TABLE!
-2021-01-04 19:48:05 |DEBUG |JavaFX Application Thread |SqlController.java:202 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] start
-2021-01-04 19:48:05 |DEBUG |JavaFX Application Thread |SqlController.java:203 |com.zlimbo.zcat.controller.SqlController |sql: CREATE TABLE invoice2 ( 	SYSTEM_ID varchar(255),  	REQUEST_SN varchar(255),  	INVOKE_TIME varchar(255),  	BUSINESS_ID varchar(255),  	CALLBACK_URL varchar(255),  	KEY_ID varchar(255),  	ACCOUNT_ID varchar(255),  	DATA_INFO json,  	SM4_KEY varchar(255),  	SM4_IV varchar(255),  	PRIVATE_KEY varchar(255),  	PUBLIC_KEY varchar(255), 	ON_CHAIN smallint,  	TX_HASH varchar(255),  	BLOCK_TIME varchar(255),  	BLOCK_HEIGHT varchar(255) );   
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:231 |com.zlimbo.zcat.controller.SqlController |[sqlCreateTable] end
+2021-01-04 19:48:05 |DEBUG |JavaFX Application Thread |SqlController.java:202 |com.zlimbo.zcat.connect.SqlConnector |[sqlCreateTable] start
+2021-01-04 19:48:05 |DEBUG |JavaFX Application Thread |SqlController.java:203 |com.zlimbo.zcat.connect.SqlConnector |sql: CREATE TABLE invoice2 ( 	SYSTEM_ID varchar(255),  	REQUEST_SN varchar(255),  	INVOKE_TIME varchar(255),  	BUSINESS_ID varchar(255),  	CALLBACK_URL varchar(255),  	KEY_ID varchar(255),  	ACCOUNT_ID varchar(255),  	DATA_INFO json,  	SM4_KEY varchar(255),  	SM4_IV varchar(255),  	PRIVATE_KEY varchar(255),  	PUBLIC_KEY varchar(255), 	ON_CHAIN smallint,  	TX_HASH varchar(255),  	BLOCK_TIME varchar(255),  	BLOCK_HEIGHT varchar(255) );
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:231 |com.zlimbo.zcat.connect.SqlConnector |[sqlCreateTable] end
 2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:494 |com.zlimbo.zcat.controller.MainWindowController |[showDatabase] start
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:165 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] start
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: invoice
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: invoice2
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.controller.SqlController |table: saleResource
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:191 |com.zlimbo.zcat.controller.SqlController |[sqlShowTables] end
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:165 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] start
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: invoice
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: invoice2
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:173 |com.zlimbo.zcat.connect.SqlConnector |table: saleResource
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:191 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] end
 2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:531 |com.zlimbo.zcat.controller.MainWindowController |[showDatabase] end
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:242 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] start
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:243 |com.zlimbo.zcat.controller.SqlController |sql:DESCRIBE invoice2
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:256 |com.zlimbo.zcat.controller.SqlController |com.mysql.jdbc.JDBC42PreparedStatement@e745942: DESCRIBE invoice2
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:260 |com.zlimbo.zcat.controller.SqlController |jdbc query spend: 0.05s
-2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:298 |com.zlimbo.zcat.controller.SqlController |[sqlQuery] end
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:242 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] start
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:243 |com.zlimbo.zcat.connect.SqlConnector |sql:DESCRIBE invoice2
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:256 |com.zlimbo.zcat.connect.SqlConnector |com.mysql.jdbc.JDBC42PreparedStatement@e745942: DESCRIBE invoice2
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:260 |com.zlimbo.zcat.connect.SqlConnector |jdbc query spend: 0.05s
+2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |SqlController.java:298 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] end
 2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:274 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] start
 2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:312 |com.zlimbo.zcat.controller.MainWindowController |[showQuerySingle] end
 2021-01-04 19:48:06 |DEBUG |JavaFX Application Thread |MainWindowController.java:261 |com.zlimbo.zcat.controller.MainWindowController |[executeSqlAndShowTableView] end

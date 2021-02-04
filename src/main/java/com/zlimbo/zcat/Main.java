@@ -1,13 +1,11 @@
 package com.zlimbo.zcat;
 
+import com.zlimbo.zcat.connect.ConnectionLog;
 import com.zlimbo.zcat.window.MainWindow;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +19,9 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+        ConnectionLog.load();
         launch(args);
+        ConnectionLog.save();
     }
 
     @Override

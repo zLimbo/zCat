@@ -1,1 +1,1 @@
-2021-01-06 22:43:57 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.controller.SqlController |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) FROM invoice' at line 1
+2021-01-06 22:43:57 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.connect.SqlConnector |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) FROM invoice' at line 1

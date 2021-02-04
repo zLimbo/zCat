@@ -1,15 +1,15 @@
 package com.zlimbo.zcat.window;
 
+import com.zlimbo.zcat.connect.ConnectionLog;
+import com.zlimbo.zcat.connect.ConnectionParam;
+import com.zlimbo.zcat.connect.SqlConnector;
 import com.zlimbo.zcat.controller.ChainControl;
-import com.zlimbo.zcat.controller.SqlController;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
-import javafx.geometry.NodeOrientation;
 import javafx.geometry.Orientation;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
@@ -20,10 +20,7 @@ import javafx.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -42,7 +39,7 @@ public class MainWindow extends VBox {
     /**
      * sql 相关操作类
      */
-    SqlController sqlController = null;
+    SqlConnector sqlConnector = null;
 
     /**
      * 存储显示的 Tab, 方便使用 TabName 查找对应的 Tab
@@ -53,6 +50,11 @@ public class MainWindow extends VBox {
      * 存储 cita url 和其相关操作类的映射
      */
     Map<String, ChainControl> chainControlMap = new HashMap<>();
+
+    /**
+     * 存储 database 连接
+     */
+    Map<TreeItem, SqlConnector> treeItemSqlConnectorMap = new HashMap<>();
 
 
     private Button newQueryButton = null;
@@ -79,31 +81,27 @@ public class MainWindow extends VBox {
         newQueryButton.setDisable(true);
 
         test();
-
     }
 
 
     private void test() {
         // 测试
-
-//        sqlController = new SqlController("ouyeel",
-//                "192.168.6.114", "3100", "root", "admin");
-
-        sqlController = new SqlController("ouyeel",
-                "127.0.0.1", "8806", "root", "admin");
-
-
-//        sqlController = new SqlController("ouyeel_cita",
-//                "192.168.6.105", "3307", "root", "admin");
-
-//        sqlController = new SqlController("ouyeel",
-//                "localhost", "3306", "root", "admin");
-
-//        sqlController = new SqlController("cita_sql",
-//                "10.60.178.75", "3308", "citauser", "Cita@2021");
-
+        
+//        ConnectionParam connectionParam = new ConnectionParam(
+//                "127.0.0.1", "8806", "ouyeel", "root", "admin");
+        ConnectionParam connectionParam = new ConnectionParam(
+                "localhost", "3306", "ouyeel", "root", "admin");
+        ConnectionLog.addConnectionParam(connectionParam);
+        sqlConnector = new SqlConnector(connectionParam);
         newQueryButton.setDisable(false);
         showDatabase();
+
+//        for (int i = 0; i < 10; ++i) {
+//            ConnectionParam connectionParam1 = new ConnectionParam(
+//                    "127.0.0.1", "8806", "ouyeel", "root", "admin");
+//            connectionParam1.setUser("user" + i);
+//            ConnectionLog.addConnectionParam(connectionParam1);
+//        }
 
     }
 
@@ -116,7 +114,9 @@ public class MainWindow extends VBox {
         Menu optionMenu = new Menu("设置");
         Menu helpMenu = new Menu("帮助");
 
-        ToggleGroup tg = new ToggleGroup();
+        ToggleGroup toggleGroup = new ToggleGroup();
+
+
         menuBar.getMenus().addAll(
                 fileMenu,
                 editMenu,
@@ -217,7 +217,7 @@ public class MainWindow extends VBox {
     private void addRecord(String tableName) {
         logger.debug("[addRecord] start");
 
-        List<String> columnNames = sqlController.getColumns(tableName);
+        List<String> columnNames = sqlConnector.getColumns(tableName);
         List<TextField> textFields = new ArrayList<>();
 
         Dialog<Pair<String, String>> dialog = new Dialog<>();
@@ -270,7 +270,7 @@ public class MainWindow extends VBox {
                 }
                 stringBuilder.append((");"));
                 String sql = stringBuilder.toString();
-                sqlController.sqlInsertOrAlter(sql);
+                sqlConnector.sqlUpdate(sql);
                 showTable(tableName);   // 更新表显示
             }
             return null;
@@ -346,15 +346,15 @@ public class MainWindow extends VBox {
         logger.debug("sql: " + sql);
         int returnFlag = 0;
         tableSplitPane.getItems().clear();
-        SqlController.SqlQueryResult sqlQueryResult = null;
+        SqlConnector.SqlQueryResult sqlQueryResult = null;
         String oneLineSql = sql.replace("\n", " ");
         String sqlUpCase = sql.toUpperCase().trim();
         if (sqlUpCase.isEmpty()) {
-            sqlQueryResult = new SqlController.SqlQueryResult();
+            sqlQueryResult = new SqlConnector.SqlQueryResult();
             sqlQueryResult.setErrorMessage("SQL语句不能为空！");
         } else if (sqlUpCase.startsWith("CREATE")) {
             logger.debug("CREATE");
-            sqlQueryResult = sqlController.sqlCreateTable(oneLineSql);
+            sqlQueryResult = sqlConnector.sqlCreateTable(oneLineSql);
             long spendTime = sqlQueryResult.getSpendTime();
             returnFlag = 1;
             if (sqlQueryResult.getErrorMessage() == null) {
@@ -362,7 +362,7 @@ public class MainWindow extends VBox {
                 Matcher matcher = Pattern.compile("^\\s*\\w+\\s+\\w+\\s+(\\w+)").matcher(sql);  // 正则获取表名
                 if (matcher.find()) {
                     String tableName = matcher.group(1);
-                    sqlQueryResult = sqlController.sqlQuery("DESCRIBE " + tableName);
+                    sqlQueryResult = sqlConnector.sqlQuery("DESCRIBE " + tableName);
                     sqlQueryResult.setSpendTime(spendTime);
                     returnFlag = 3;
                 }
@@ -372,14 +372,14 @@ public class MainWindow extends VBox {
                 sqlUpCase.startsWith("DROP") ||
                 sqlUpCase.startsWith("UPDATE")) {
             logger.debug("UPDATE");
-            sqlQueryResult = sqlController.sqlInsertOrAlter(oneLineSql);
+            sqlQueryResult = sqlConnector.sqlUpdate(oneLineSql);
             if (sqlUpCase.startsWith("DROP") && sqlQueryResult.getErrorMessage() == null) {
                 showDatabase();
             }
             returnFlag = 2;
         } else {
             logger.debug("SELECT");
-            sqlQueryResult = sqlController.sqlQuery(oneLineSql);
+            sqlQueryResult = sqlConnector.sqlQuery(oneLineSql);
             returnFlag = 3;
         }
         String errorMessage = sqlQueryResult.getErrorMessage();
@@ -561,12 +561,13 @@ public class MainWindow extends VBox {
     private void showDatabase() {
         logger.debug("[showDatabase] start");
 
-        if (sqlController == null) {
+        if (sqlConnector == null) {
             return;
         }
 
-        List<String> tables = sqlController.sqlShowTables();
-        TreeItem<String> databaseItem = new TreeItem<>(sqlController.getDatabaseName(),
+
+        List<String> tables = sqlConnector.sqlShowTables();
+        TreeItem<String> databaseItem = new TreeItem<>(sqlConnector.getDatabase(),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/database.png"))));
         for (String table : tables) {
             TreeItem<String> tableItem = new TreeItem<>(table,
@@ -574,6 +575,8 @@ public class MainWindow extends VBox {
             databaseItem.getChildren().add(tableItem);
         }
         dbTreeView.setRoot(databaseItem);
+
+
         databaseItem.setExpanded(true);
         dbTreeView.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
@@ -583,7 +586,7 @@ public class MainWindow extends VBox {
                 if (event.getClickCount() == 2) {
                     TreeItem<String> item = (TreeItem<String>) dbTreeView.getSelectionModel().getSelectedItem();
                     logger.debug("item name: " + item.getValue());
-                    if (item.getValue() != sqlController.getDatabaseName()) {
+                    if (item.getValue() != sqlConnector.getDatabase()) {
                         String tableName = item.getValue();
                         showTable(tableName);
                     } else {
@@ -597,10 +600,10 @@ public class MainWindow extends VBox {
         });
 
         bottomBar.getItems().clear();
-        Label dbInfoLabel = new Label("connection: [" + sqlController.getUserName() + "@" +
-                sqlController.getHost() + ":" +
-                sqlController.getPort() + ":" +
-                sqlController.getDatabaseName() + "]");
+        Label dbInfoLabel = new Label("connection: [" + sqlConnector.getUser() + "@" +
+                sqlConnector.getHost() + ":" +
+                sqlConnector.getPort() + ":" +
+                sqlConnector.getDatabase() + "]");
         bottomBar.getItems().add(dbInfoLabel);
 
 
@@ -630,32 +633,33 @@ public class MainWindow extends VBox {
         gridPane.setPadding(new Insets(20, 150, 10, 30));
 
         List<TextField> textFields = new ArrayList<>();
-        Label databaseNameLabel = new Label("Database Name: ");
-        TextField databaseNameTextField = new TextField();
-        gridPane.add(databaseNameLabel, 0, 0);
-        gridPane.add(databaseNameTextField, 1, 0);
-        textFields.add(databaseNameTextField);
 
         Label hostLabel = new Label("Host: ");
         TextField hostTextField = new TextField();
         hostTextField.setText("localhost");
-        gridPane.add(hostLabel, 0, 1);
-        gridPane.add(hostTextField, 1, 1);
+        gridPane.add(hostLabel, 0, 0);
+        gridPane.add(hostTextField, 1, 0);
         textFields.add(hostTextField);
 
         Label portLabel = new Label("Port: ");
         TextField portTextField = new TextField();
         portTextField.setText("3306");
-        gridPane.add(portLabel, 0, 2);
-        gridPane.add(portTextField, 1, 2);
+        gridPane.add(portLabel, 0, 1);
+        gridPane.add(portTextField, 1, 1);
         textFields.add(portTextField);
 
-        Label userNameLabel = new Label("User Name: ");
-        TextField userNameTextField = new TextField();
-        userNameTextField.setText("root");
-        gridPane.add(userNameLabel, 0, 3);
-        gridPane.add(userNameTextField, 1, 3);
-        textFields.add(userNameTextField);
+        Label databaseLabel = new Label("Database Name: ");
+        TextField databaseTextField = new TextField();
+        gridPane.add(databaseLabel, 0, 2);
+        gridPane.add(databaseTextField, 1, 2);
+        textFields.add(databaseTextField);
+
+        Label userLabel = new Label("User Name: ");
+        TextField userTextField = new TextField();
+        userTextField.setText("root");
+        gridPane.add(userLabel, 0, 3);
+        gridPane.add(userTextField, 1, 3);
+        textFields.add(userTextField);
 
         Label passwordLabel = new Label("Password: ");
         PasswordField passwordField = new PasswordField();
@@ -679,15 +683,18 @@ public class MainWindow extends VBox {
         // 提交数据
         dialog.setResultConverter(dialogButton -> {
             if (dialogButton == connectButtonType) {
-                String databaseName = databaseNameTextField.getText();
                 String host = hostTextField.getText();
                 String port = portTextField.getText();
-                String userName = userNameTextField.getText();
+                String database = databaseTextField.getText();
+                String user = userTextField.getText();
                 String password = passwordField.getText();
-                SqlController sqlController1 = new SqlController(databaseName, host, port, userName, password);
-                if (sqlController1.isConnectSuccess()) {
+                ConnectionParam connectionParam =
+                        new ConnectionParam(host, port, database, user, password);
+                ConnectionLog.addConnectionParam(connectionParam);
+                SqlConnector sqlConnector1 = new SqlConnector(connectionParam);
+                if (sqlConnector1.isConnectSuccess()) {
                     //logger.debug("database connect success");
-                    sqlController = sqlController1;
+                    sqlConnector = sqlConnector1;
                     showTabPane.getTabs().clear();
                     tabMap.clear(); // 清空
                     showDatabase();

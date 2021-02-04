@@ -1,25 +1,25 @@
-2021-01-31 16:26:51 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+2021-01-31 16:26:51 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2021-01-31 16:26:51 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
-2021-01-31 16:27:29 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+2021-01-31 16:26:51 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
+2021-01-31 16:27:29 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2021-01-31 16:27:29 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
-2021-01-31 16:27:52 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+2021-01-31 16:27:29 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
+2021-01-31 16:27:52 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2021-01-31 16:27:52 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
-2021-01-31 16:32:44 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.controller.SqlController |database connect fail: Communications link failure
+2021-01-31 16:27:52 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
+2021-01-31 16:32:44 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2021-01-31 16:32:44 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.controller.SqlController |null
-2021-01-31 16:48:02 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.controller.SqlController |SQL syntax error,please input correct SQL stmt.Delete newline operation and try again
-2021-01-31 16:48:34 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.controller.SqlController |SQL syntax error,please input correct SQL stmt.Delete newline operation and try again
-2021-01-31 17:33:07 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |sm4_key or sm4_iv is not correspond with the first appearance
-2021-01-31 17:34:09 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.controller.SqlController |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from resourceinfo where SYSTEM_ID = '123456789012'' at line 1
-2021-01-31 18:15:33 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |Communications link failure
+2021-01-31 16:32:44 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
+2021-01-31 16:48:02 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |SQL syntax error,please input correct SQL stmt.Delete newline operation and try again
+2021-01-31 16:48:34 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |SQL syntax error,please input correct SQL stmt.Delete newline operation and try again
+2021-01-31 17:33:07 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.connect.SqlConnector |sm4_key or sm4_iv is not correspond with the first appearance
+2021-01-31 17:34:09 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.connect.SqlConnector |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from resourceinfo where SYSTEM_ID = '123456789012'' at line 1
+2021-01-31 18:15:33 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.connect.SqlConnector |Communications link failure
 
 The last packet successfully received from the server was 350,948 milliseconds ago.  The last packet sent successfully to the server was 18,917 milliseconds ago.
-2021-01-31 18:16:23 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |No operations allowed after connection closed.
-2021-01-31 18:16:54 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.controller.SqlController |sm4_key or sm4_iv is not correspond with the first appearance
+2021-01-31 18:16:23 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.connect.SqlConnector |No operations allowed after connection closed.
+2021-01-31 18:16:54 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.connect.SqlConnector |sm4_key or sm4_iv is not correspond with the first appearance

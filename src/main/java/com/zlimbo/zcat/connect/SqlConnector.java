@@ -1,4 +1,4 @@
-package com.zlimbo.zcat.controller;
+package com.zlimbo.zcat.connect;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SqlController {
+public class SqlConnector {
 
     /**
      * 日志
@@ -31,8 +31,6 @@ public class SqlController {
             errorMessage = null;
             spendTime = 0;
         }
-
-        ;
 
         public SqlQueryResult(List<String> columns, List<List<String>> records, long spendTime, String errorMessage) {
             this.columns = columns;
@@ -68,77 +66,23 @@ public class SqlController {
 
 
     private Connection connection;
-    private String databaseName;
-    private String host;
-    private String port;
-    private String userName;
-    private String password;
+    private final ConnectionParam connectionParam;
 
     private boolean connectSuccess;
     private String errorMessage;
 
-    public String getErrorMessage() {
-        return errorMessage;
-    }
-
-    public String getDatabaseName() {
-        return databaseName;
-    }
-
-    public String getHost() {
-        return host;
-    }
-
-    public String getPort() {
-        return port;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public boolean isConnectSuccess() {
-        return connectSuccess;
-    }
-
-    Connection getConnection() {
-        return connection;
-    }
-
-    public void finialize() {
-        try {
-            if (connection != null) {
-                connection.close();
-            }
-        } catch (Exception e) {
-            logger.error("finialize fail: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
-
-
     /**
      * 数据库连接
-     *
-     * @param databaseName
-     * @param host
-     * @param port
-     * @param username
-     * @param password
+     * @param connectionParam
      */
-    public SqlController(String databaseName, String host, String port, String username, String password) {
+    public SqlConnector(ConnectionParam connectionParam) {
         logger.debug("[SqlControl] start");
 
-        this.databaseName = databaseName;
-        this.host = host;
-        this.port = port;
-        this.userName = username;
-        this.password = password;
-        String url = "jdbc:mysql://" + host + ":" + port + "/" + databaseName +
+        this.connectionParam = connectionParam;
+        String url = "jdbc:mysql://" +
+                connectionParam.getHost() + ":" +
+                connectionParam.getPort() + "/" +
+                connectionParam.getDatabase() +
                 "?useSSL=false" +
                 "&useUnicode=true" +
                 "&characterEncoding=UTF8" +
@@ -147,7 +91,8 @@ public class SqlController {
         logger.debug("database url: " + url);
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(url, username, password);
+            connection = DriverManager.getConnection(
+                    url, connectionParam.getUser(), connectionParam.getPassword());
             connectSuccess = true;
         } catch (Exception e) {
             logger.error("database connect fail: " + e.getMessage());
@@ -156,7 +101,7 @@ public class SqlController {
             e.printStackTrace();
         }
 
-        logger.debug("[SqlController] end");
+        logger.debug("[SqlConnector] end");
     }
 
 
@@ -307,13 +252,13 @@ public class SqlController {
 
 
     /**
-     * sql语句：insert
+     * sql语句：insert、update、alter等相关update操作
      *
      * @param sql
      * @return
      */
-    public SqlQueryResult sqlInsertOrAlter(String sql) {
-        logger.debug("[sqlInsertOrAlter] start");
+    public SqlQueryResult sqlUpdate(String sql) {
+        logger.debug("[sqlUpdate] start");
         logger.debug("sql:" + sql);
         SqlQueryResult sqlQueryResult = new SqlQueryResult();
         long start = System.currentTimeMillis();
@@ -341,7 +286,7 @@ public class SqlController {
         long end = System.currentTimeMillis();
         long spendTime = end - start;
         sqlQueryResult.setSpendTime(spendTime);
-        logger.debug("[sqlInsertOrAlter] end");
+        logger.debug("[sqlUpdate] end");
         return sqlQueryResult;
     }
 
@@ -372,18 +317,46 @@ public class SqlController {
         return columns;
     }
 
+    public String getErrorMessage() {
+        return errorMessage;
+    }
 
-    /**
-     * 插入大量数据测试
-     *
-     * @throws Exception
-     */
-    public void testInsertMore() throws Exception {
-        logger.debug("[testInsertMore] start");
-        Statement statement = connection.createStatement();
-        for (int i = 0; i < 10000; ++i) {
-            statement.execute("insert into tmp values(" + i + ")");
+    public String getDatabase() {
+        return connectionParam.getDatabase();
+    }
+
+    public String getHost() {
+        return connectionParam.getHost();
+    }
+
+    public String getPort() {
+        return connectionParam.getPort();
+    }
+
+    public String getUser() {
+        return connectionParam.getUser();
+    }
+
+    public String getPassword() {
+        return connectionParam.getPassword();
+    }
+
+    public boolean isConnectSuccess() {
+        return connectSuccess;
+    }
+
+    Connection getConnection() {
+        return connection;
+    }
+
+    public void finialize() {
+        try {
+            if (connection != null) {
+                connection.close();
+            }
+        } catch (Exception e) {
+            logger.error("finialize fail: " + e.getMessage());
+            e.printStackTrace();
         }
-        logger.debug("[testInsertMore] end");
     }
 }
