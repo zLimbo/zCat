@@ -3,7 +3,7 @@ package com.zlimbo.zcat.window;
 import com.zlimbo.zcat.connect.ConnectionLog;
 import com.zlimbo.zcat.connect.ConnectionParam;
 import com.zlimbo.zcat.connect.SqlConnector;
-import com.zlimbo.zcat.controller.ChainControl;
+import com.zlimbo.zcat.chain.ChainConnect;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
@@ -29,12 +29,12 @@ public class MainWindow extends VBox {
     /**
      * 日志
      */
-    private static Logger logger = LoggerFactory.getLogger(MainWindow.class);
+    private static final Logger logger = LoggerFactory.getLogger(MainWindow.class);
 
     /**
      * queryTab 分配id
      */
-    int queryTabId = 1;
+    private int queryTabId = 1;
 
 //    /**
 //     * sql 相关操作类
@@ -44,32 +44,29 @@ public class MainWindow extends VBox {
     /**
      * 存储显示的 Tab, 方便使用 TabName 查找对应的 Tab
      */
-    Map<String, Tab> tabMap = new HashMap<>();
+    private Map<String, Tab> tabMap = new HashMap<>();
 
     /**
      * 存储 cita url 和其相关操作类的映射
      */
-    Map<String, ChainControl> chainControlMap = new HashMap<>();
+    private final Map<String, ChainConnect> chainControlMap = new HashMap<>();
 
     /**
      * 存储 database 连接参数
      */
-    Map<TreeItem<String>, ConnectionParam> treeItemConnectionParamMap = new HashMap<>();
+    private final Map<TreeItem<String>, ConnectionParam> treeItemConnectionParamMap = new HashMap<>();
 
-    SqlConnector sqlConnector = null;
+    private SqlConnector sqlConnector = null;
 
-    TreeItem<String> currentTreeItem = null;
+    private TreeItem<String> currentTreeItem = null;
 
-
-    private Button newQueryButton = null;
     private final TreeItem<String> treeItemRoot = new TreeItem<>("root");
+    private Button newQueryButton = null;
     private TabPane showTabPane = null;
-    private ToolBar bottomBar = null;
-
+    private final ToolBar bottomBar;
 
     public MainWindow() {
         setStyle("-fx-font: 18  arial; -fx-font-family: 'Microsoft YaHei UI';");
-//        setStyle("margin-top: 0px ; margin-bottom: 0px;");
         MenuBar menuBar = buildMenuBar();
         ToolBar toolBar = buildToolBar();
         SplitPane splitPane = buildSplitPane();
@@ -84,20 +81,19 @@ public class MainWindow extends VBox {
         // 没有数据库不显示 query
         newQueryButton.setDisable(true);
 
-        loadDatabasesTree();
-//        test();
+        loadConnectionTreeItem();
     }
 
-    private void loadDatabasesTree() {
+    private void loadConnectionTreeItem() {
         List<ConnectionParam> connectionParams = ConnectionLog.getConnectionParams();
         for (ConnectionParam connectionParam: connectionParams) {
-            addDatabaseTreeItem(connectionParam);
+            addConnectionTreeItem(connectionParam);
         }
     }
 
-    private TreeItem<String> addDatabaseTreeItem(ConnectionParam connectionParam) {
+    private TreeItem<String> addConnectionTreeItem(ConnectionParam connectionParam) {
         TreeItem<String> connectionParamTreeItem = new TreeItem<>(
-                connectionParam.getDatabase() + "[" +
+                connectionParam.getDatabase() + " [" +
                         connectionParam.getHost() + ":" +
                         connectionParam.getPort() + "]",
                 new ImageView(new Image(getClass().getResourceAsStream("/image/database.png"))));
@@ -107,26 +103,11 @@ public class MainWindow extends VBox {
         return connectionParamTreeItem;
     }
 
-    private void test() {
-        // 测试
-
-//        ConnectionParam connectionParam = new ConnectionParam(
-//                "127.0.0.1", "8806", "ouyeel", "root", "admin");
-//        ConnectionParam connectionParam = new ConnectionParam(
-//                "localhost", "3306", "ouyeel", "root", "admin");
-//        ConnectionLog.addConnectionParam(connectionParam);
-//        sqlConnector = new SqlConnector(connectionParam);
-//        newQueryButton.setDisable(false);
-//        showDatabase();
-
-//        for (int i = 0; i < 10; ++i) {
-//            ConnectionParam connectionParam1 = new ConnectionParam(
-//                    "127.0.0.1", "8806", "ouyeel", "root", "admin");
-//            connectionParam1.setUser("user" + i);
-//            ConnectionLog.addConnectionParam(connectionParam1);
-//        }
+    private void removeConnectionTreeItem(TreeItem treeItem) {
+        ConnectionLog.removeConnectionParam(treeItemConnectionParamMap.get(treeItem));
+        treeItemRoot.getChildren().remove(treeItem);
+        treeItemConnectionParamMap.remove(treeItem);
     }
-
 
     private MenuBar buildMenuBar() {
         MenuBar menuBar = new MenuBar();
@@ -734,7 +715,7 @@ public class MainWindow extends VBox {
                 if (newSqlConnector.isConnectSuccess()) {
                     //logger.debug("database connect success");
                     closeDatabase();
-                    TreeItem<String> treeItem = addDatabaseTreeItem(connectionParam);
+                    TreeItem<String> treeItem = addConnectionTreeItem(connectionParam);
                     sqlConnector = newSqlConnector;
                     currentTreeItem = treeItem;
                     showDatabase();
@@ -767,13 +748,7 @@ public class MainWindow extends VBox {
     }
 
 
-    /**
-     * 删除 treeItem及其相应的database
-     */
-    private void removeTreeItem(TreeItem treeItem) {
-        treeItemRoot.getChildren().remove(treeItem);
-        treeItemConnectionParamMap.remove(treeItem);
-    }
+
 
 
     /**
@@ -788,8 +763,8 @@ public class MainWindow extends VBox {
             return;
         }
 
-        ChainControl chainControl = chainControlMap.get(citaUrl);
-        chainControl.updateStart();
+        ChainConnect chainConnect = chainControlMap.get(citaUrl);
+        chainConnect.updateStart();
         Tab citaTab = new Tab(citaUrl + " @CITA");
 
         addTab(citaUrl, citaTab);
@@ -811,7 +786,7 @@ public class MainWindow extends VBox {
         citaTab.setContent(borderPane);
 
         closeButton.setOnAction(event -> {
-            chainControl.updateStop();
+            chainConnect.updateStop();
             chainControlMap.remove(citaUrl);
             closeTab(citaUrl, citaTab);
         });
@@ -823,7 +798,7 @@ public class MainWindow extends VBox {
         tableView.getColumns().addAll(keyColumn, valueColumn);
 
         ObservableList<List<StringProperty>> data = FXCollections.observableArrayList();
-        List<List<StringProperty>> bcInfo = chainControl.getBcInfo();
+        List<List<StringProperty>> bcInfo = chainConnect.getBcInfo();
 
         for (List<StringProperty> list : bcInfo) {
             List<StringProperty> row = new ArrayList<>();
@@ -873,9 +848,9 @@ public class MainWindow extends VBox {
             if (dialogButton == connectButtonType) {
                 String citaUrl = citaUrlTextField.getText().trim();
                 if (!chainControlMap.containsKey(citaUrl)) {
-                    ChainControl chainControl = new ChainControl(citaUrl);
-                    if (chainControl.isConnectSuccess()) {
-                        chainControlMap.put(citaUrl, chainControl);
+                    ChainConnect chainConnect = new ChainConnect(citaUrl);
+                    if (chainConnect.isConnectSuccess()) {
+                        chainControlMap.put(citaUrl, chainConnect);
                     } else {
                         Alert alert = new Alert(Alert.AlertType.ERROR);
                         alert.setTitle("Error Connection");
