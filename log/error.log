@@ -1,39 +1,41 @@
-2021-02-01 15:56:33 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.connect.SqlConnector |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FORM invoice' at line 1
-2021-02-01 21:31:39 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+2021-02-05 09:45:40 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2021-02-01 21:31:39 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-01 21:32:10 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: password is wrong
-2021-02-01 21:32:10 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-01 21:33:13 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: password is wrong
-2021-02-01 21:33:13 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-01 21:33:37 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: password is wrong
-2021-02-01 21:33:37 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-01 21:37:28 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: password is wrong
-2021-02-01 21:37:28 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-01 21:37:57 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: password is wrong
-2021-02-01 21:37:57 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-01 21:44:43 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: password is wrong
-2021-02-01 21:44:43 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-01 21:51:23 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:51:37 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:52:01 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:52:15 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:52:21 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:52:27 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:52:33 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:53:16 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:54:05 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:56:04 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 21:57:55 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 22:03:29 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 22:12:21 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |contract and table have existed!
-2021-02-01 22:12:39 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 22:13:29 |ERROR |JavaFX Application Thread |SqlController.java:284 |com.zlimbo.zcat.connect.SqlConnector |Table 'ouyeel.invoice111' doesn't exist
-2021-02-01 23:17:11 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: password is wrong
-2021-02-01 23:17:11 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-01 23:34:15 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 23:35:31 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 23:36:10 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 23:38:17 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
-2021-02-01 23:38:41 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |deploy error when creating table,please try again!
+2021-02-05 09:45:40 |ERROR |JavaFX Application Thread |SqlConnector.java:126 |com.zlimbo.zcat.connect.SqlConnector |null
+2021-02-05 09:49:24 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 09:49:24 |ERROR |JavaFX Application Thread |SqlConnector.java:126 |com.zlimbo.zcat.connect.SqlConnector |null
+2021-02-05 09:52:22 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 09:58:03 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:26:23 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:28:57 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:29:13 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:30:17 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:31:44 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:31:54 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:32:55 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:33:31 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-02-05 10:34:59 |ERROR |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

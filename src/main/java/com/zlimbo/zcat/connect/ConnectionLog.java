@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
@@ -31,27 +32,33 @@ public class ConnectionLog {
         return new ArrayList<>(CONNECTION_PARAMS);
     }
 
-    public static void save() {
+    public static boolean save() {
         logger.debug("save CONNECTION_PARAMS: [{}]", CONNECTION_PARAMS);
         try {
             JSONArray json = (JSONArray) JSONObject.toJSON(CONNECTION_PARAMS);
             String jsonString = json.toJSONString();
+//            MessageDigest md5Digest = MessageDigest.getInstance("MD5");
+//            md5Digest.update(jsonString.getBytes(StandardCharsets.UTF_8));
+//            byte[] data = md5Digest.digest();
             try (OutputStream outputStream = new FileOutputStream(SAVE_PATH)) {
                 outputStream.write(jsonString.getBytes(StandardCharsets.UTF_8));
             }
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
+        return true;
     }
 
     public static boolean load() {
-        byte[] data = new byte[1024];
+        byte[] data = new byte[8 * 1024];
         try {
             try (InputStream inputStream = new FileInputStream(SAVE_PATH)) {
                 inputStream.read(data);
             }
             String jsonString = new String(data, StandardCharsets.UTF_8);
-            CONNECTION_PARAMS = JSONArray.parseObject(jsonString, LinkedHashSet.class);
+            JSONArray jsonArray = JSONArray.parseObject(jsonString, JSONArray.class);
+            CONNECTION_PARAMS = new LinkedHashSet<>(jsonArray.toJavaList(ConnectionParam.class));
         } catch (Exception e) {
             e.printStackTrace();
             CONNECTION_PARAMS = new LinkedHashSet<>();

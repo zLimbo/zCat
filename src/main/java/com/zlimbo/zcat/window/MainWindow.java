@@ -36,10 +36,10 @@ public class MainWindow extends VBox {
      */
     int queryTabId = 1;
 
-    /**
-     * sql 相关操作类
-     */
-    SqlConnector sqlConnector = null;
+//    /**
+//     * sql 相关操作类
+//     */
+//    SqlConnector sqlConnector = null;
 
     /**
      * 存储显示的 Tab, 方便使用 TabName 查找对应的 Tab
@@ -52,13 +52,17 @@ public class MainWindow extends VBox {
     Map<String, ChainControl> chainControlMap = new HashMap<>();
 
     /**
-     * 存储 database 连接
+     * 存储 database 连接参数
      */
-    Map<TreeItem, SqlConnector> treeItemSqlConnectorMap = new HashMap<>();
+    Map<TreeItem<String>, ConnectionParam> treeItemConnectionParamMap = new HashMap<>();
+
+    SqlConnector sqlConnector = null;
+
+    TreeItem<String> currentTreeItem = null;
 
 
     private Button newQueryButton = null;
-    private TreeView<String> dbTreeView = null;
+    private final TreeItem<String> treeItemRoot = new TreeItem<>("root");
     private TabPane showTabPane = null;
     private ToolBar bottomBar = null;
 
@@ -80,21 +84,40 @@ public class MainWindow extends VBox {
         // 没有数据库不显示 query
         newQueryButton.setDisable(true);
 
-        test();
+        loadDatabasesTree();
+//        test();
     }
 
+    private void loadDatabasesTree() {
+        List<ConnectionParam> connectionParams = ConnectionLog.getConnectionParams();
+        for (ConnectionParam connectionParam: connectionParams) {
+            addDatabaseTreeItem(connectionParam);
+        }
+    }
+
+    private TreeItem<String> addDatabaseTreeItem(ConnectionParam connectionParam) {
+        TreeItem<String> connectionParamTreeItem = new TreeItem<>(
+                connectionParam.getDatabase() + "[" +
+                        connectionParam.getHost() + ":" +
+                        connectionParam.getPort() + "]",
+                new ImageView(new Image(getClass().getResourceAsStream("/image/database.png"))));
+        treeItemRoot.getChildren().add(connectionParamTreeItem);
+        treeItemConnectionParamMap.put(connectionParamTreeItem, connectionParam);
+        ConnectionLog.addConnectionParam(connectionParam);
+        return connectionParamTreeItem;
+    }
 
     private void test() {
         // 测试
-        
+
 //        ConnectionParam connectionParam = new ConnectionParam(
 //                "127.0.0.1", "8806", "ouyeel", "root", "admin");
-        ConnectionParam connectionParam = new ConnectionParam(
-                "localhost", "3306", "ouyeel", "root", "admin");
-        ConnectionLog.addConnectionParam(connectionParam);
-        sqlConnector = new SqlConnector(connectionParam);
-        newQueryButton.setDisable(false);
-        showDatabase();
+//        ConnectionParam connectionParam = new ConnectionParam(
+//                "localhost", "3306", "ouyeel", "root", "admin");
+//        ConnectionLog.addConnectionParam(connectionParam);
+//        sqlConnector = new SqlConnector(connectionParam);
+//        newQueryButton.setDisable(false);
+//        showDatabase();
 
 //        for (int i = 0; i < 10; ++i) {
 //            ConnectionParam connectionParam1 = new ConnectionParam(
@@ -102,7 +125,6 @@ public class MainWindow extends VBox {
 //            connectionParam1.setUser("user" + i);
 //            ConnectionLog.addConnectionParam(connectionParam1);
 //        }
-
     }
 
 
@@ -142,7 +164,8 @@ public class MainWindow extends VBox {
                 newQueryButton
         );
 
-        connectDataBaseButton.setOnAction(event -> newConnection());
+        connectDataBaseButton.setOnAction(
+                event -> newConnection("MySQL 新连接", "localhost", "3306", "", ""));
         connectCitaButton.setOnAction(event -> connectionCita());
         newQueryButton.setOnAction(event -> newQuery());
 
@@ -152,14 +175,61 @@ public class MainWindow extends VBox {
 
     private SplitPane buildSplitPane() {
         SplitPane splitPane = new SplitPane();
-        dbTreeView = new TreeView<>();
+        TreeView<String> treeView = new TreeView<>();
         showTabPane = new TabPane();
         splitPane.getItems().addAll(
-                dbTreeView,
+                treeView,
                 showTabPane
         );
         splitPane.setDividerPosition(0, 0.25);
+        treeViewConfig(treeView);
         return splitPane;
+    }
+
+    private void treeViewConfig(TreeView<String> treeView) {
+        treeView.setRoot(treeItemRoot);
+        treeView.setShowRoot(false);
+
+        treeView.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                logger.debug("[handle] start\n");
+
+                if (event.getClickCount() == 2) {
+                    TreeItem<String> item = treeView.getSelectionModel().getSelectedItem();
+                    logger.debug("item name: " + item.getValue());
+
+                    if (treeItemConnectionParamMap.containsKey(item)) {
+                        ConnectionParam connectionParam = treeItemConnectionParamMap.get(item);
+                        SqlConnector newSqlConnector = new SqlConnector(connectionParam);
+                        if (newSqlConnector.isConnectSuccess()) {
+                            closeDatabase();
+                            sqlConnector = newSqlConnector;
+                            currentTreeItem = item;
+                            showDatabase();
+                        } else {
+//                            removeTreeItem(item);
+                            Alert alert = new Alert(Alert.AlertType.ERROR);
+                            alert.setTitle("连接错误");
+                            alert.setHeaderText("不正确的连接!");
+                            alert.showAndWait();
+
+                            newConnection(
+                                    "请重新输入连接参数",
+                                    connectionParam.getHost(),
+                                    connectionParam.getPort(),
+                                    connectionParam.getDatabase(),
+                                    connectionParam.getUser());
+                        }
+                    } else {
+                        String tableName = item.getValue();
+                        showTable(tableName);
+                    }
+                }
+
+                logger.debug("[handle] end");
+            }
+        });
     }
 
 
@@ -565,39 +635,13 @@ public class MainWindow extends VBox {
             return;
         }
 
-
         List<String> tables = sqlConnector.sqlShowTables();
-        TreeItem<String> databaseItem = new TreeItem<>(sqlConnector.getDatabase(),
-                new ImageView(new Image(getClass().getResourceAsStream("/image/database.png"))));
         for (String table : tables) {
             TreeItem<String> tableItem = new TreeItem<>(table,
                     new ImageView(new Image(getClass().getResourceAsStream("/image/table.png"))));
-            databaseItem.getChildren().add(tableItem);
+            currentTreeItem.getChildren().add(tableItem);
         }
-        dbTreeView.setRoot(databaseItem);
-
-
-        databaseItem.setExpanded(true);
-        dbTreeView.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                logger.debug("[handle] start\n");
-
-                if (event.getClickCount() == 2) {
-                    TreeItem<String> item = (TreeItem<String>) dbTreeView.getSelectionModel().getSelectedItem();
-                    logger.debug("item name: " + item.getValue());
-                    if (item.getValue() != sqlConnector.getDatabase()) {
-                        String tableName = item.getValue();
-                        showTable(tableName);
-                    } else {
-//                        showTabPane.getSelectionModel().select(objectsTab);
-                        showDatabase();
-                    }
-                }
-
-                logger.debug("[handle] end");
-            }
-        });
+        currentTreeItem.setExpanded(true);
 
         bottomBar.getItems().clear();
         Label dbInfoLabel = new Label("connection: [" + sqlConnector.getUser() + "@" +
@@ -606,7 +650,7 @@ public class MainWindow extends VBox {
                 sqlConnector.getDatabase() + "]");
         bottomBar.getItems().add(dbInfoLabel);
 
-
+        newQueryButton.setDisable(false);
         logger.debug("[showDatabase] end");
     }
 
@@ -615,10 +659,10 @@ public class MainWindow extends VBox {
      * 连接新的数据库
      *
      */
-    public void newConnection() {
+    public void newConnection(String title, String host, String port, String database, String user) {
         logger.debug("[connectDatabase] start");
         Dialog<Pair<String, String>> dialog = new Dialog<>();
-        dialog.setTitle("MySQL 新连接");
+        dialog.setTitle(title);
         dialog.setHeaderText(null);
 
         ButtonType connectButtonType = new ButtonType("连接", ButtonBar.ButtonData.OK_DONE);
@@ -635,28 +679,25 @@ public class MainWindow extends VBox {
         List<TextField> textFields = new ArrayList<>();
 
         Label hostLabel = new Label("Host: ");
-        TextField hostTextField = new TextField();
-        hostTextField.setText("localhost");
+        TextField hostTextField = new TextField(host);
         gridPane.add(hostLabel, 0, 0);
         gridPane.add(hostTextField, 1, 0);
         textFields.add(hostTextField);
 
         Label portLabel = new Label("Port: ");
-        TextField portTextField = new TextField();
-        portTextField.setText("3306");
+        TextField portTextField = new TextField(port);
         gridPane.add(portLabel, 0, 1);
         gridPane.add(portTextField, 1, 1);
         textFields.add(portTextField);
 
-        Label databaseLabel = new Label("Database Name: ");
-        TextField databaseTextField = new TextField();
+        Label databaseLabel = new Label("Database: ");
+        TextField databaseTextField = new TextField(database);
         gridPane.add(databaseLabel, 0, 2);
         gridPane.add(databaseTextField, 1, 2);
         textFields.add(databaseTextField);
 
-        Label userLabel = new Label("User Name: ");
-        TextField userTextField = new TextField();
-        userTextField.setText("root");
+        Label userLabel = new Label("User: ");
+        TextField userTextField = new TextField(user);
         gridPane.add(userLabel, 0, 3);
         gridPane.add(userTextField, 1, 3);
         textFields.add(userTextField);
@@ -683,28 +724,25 @@ public class MainWindow extends VBox {
         // 提交数据
         dialog.setResultConverter(dialogButton -> {
             if (dialogButton == connectButtonType) {
-                String host = hostTextField.getText();
-                String port = portTextField.getText();
-                String database = databaseTextField.getText();
-                String user = userTextField.getText();
-                String password = passwordField.getText();
-                ConnectionParam connectionParam =
-                        new ConnectionParam(host, port, database, user, password);
-                ConnectionLog.addConnectionParam(connectionParam);
-                SqlConnector sqlConnector1 = new SqlConnector(connectionParam);
-                if (sqlConnector1.isConnectSuccess()) {
+                ConnectionParam connectionParam = new ConnectionParam(
+                        hostTextField.getText(),
+                        portTextField.getText(),
+                        databaseTextField.getText(),
+                        userTextField.getText(),
+                        passwordField.getText());
+                SqlConnector newSqlConnector = new SqlConnector(connectionParam);
+                if (newSqlConnector.isConnectSuccess()) {
                     //logger.debug("database connect success");
-                    sqlConnector = sqlConnector1;
-                    showTabPane.getTabs().clear();
-                    tabMap.clear(); // 清空
+                    closeDatabase();
+                    TreeItem<String> treeItem = addDatabaseTreeItem(connectionParam);
+                    sqlConnector = newSqlConnector;
+                    currentTreeItem = treeItem;
                     showDatabase();
-                    newQueryButton.setDisable(false);
                 } else {
                     //logger.debug("database connect fail");
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("连接错误");
                     alert.setHeaderText("不正确的连接!");
-
                     alert.showAndWait();
                 }
             }
@@ -714,6 +752,27 @@ public class MainWindow extends VBox {
         dialog.showAndWait();
 
         logger.debug("[connectDatabase] end");
+    }
+
+    /**
+     * 关闭当前 database
+     */
+    private void closeDatabase() {
+        if (currentTreeItem != null) {
+            currentTreeItem.getChildren().clear();
+        }
+        showTabPane.getTabs().clear();
+        tabMap.clear(); // 清空
+        newQueryButton.setDisable(false);
+    }
+
+
+    /**
+     * 删除 treeItem及其相应的database
+     */
+    private void removeTreeItem(TreeItem treeItem) {
+        treeItemRoot.getChildren().remove(treeItem);
+        treeItemConnectionParamMap.remove(treeItem);
     }
 
 

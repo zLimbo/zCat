@@ -34,8 +34,12 @@ public class ConnectionParam {
 
     @Override
     public int hashCode() {
-        System.out.println("hashCode");
         return Objects.hash(host, port, database, user, password);
+    }
+
+    @Override
+    public String toString() {
+        return JSONObject.toJSONString(this);
     }
 
     public String getHost() {
@@ -77,4 +81,5 @@ public class ConnectionParam {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
