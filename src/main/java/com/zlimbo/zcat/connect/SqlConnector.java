@@ -65,10 +65,9 @@ public class SqlConnector {
     }
 
 
-    private Connection connection;
     private final ConnectionParam connectionParam;
-
-    private boolean connectSuccess;
+    private Connection connection;
+    private boolean onConnect;
     private String errorMessage;
 
     /**
@@ -79,6 +78,11 @@ public class SqlConnector {
         logger.debug("[SqlControl] start");
 
         this.connectionParam = connectionParam;
+
+        logger.debug("[SqlConnector] end");
+    }
+
+    public boolean openConnect() {
         String url = "jdbc:mysql://" +
                 connectionParam.getHost() + ":" +
                 connectionParam.getPort() + "/" +
@@ -93,15 +97,27 @@ public class SqlConnector {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(
                     url, connectionParam.getUser(), connectionParam.getPassword());
-            connectSuccess = true;
+            onConnect = true;
         } catch (Exception e) {
             logger.error("database connect fail: " + e.getMessage());
             errorMessage = e.getMessage();
-            connectSuccess = false;
+            onConnect = false;
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+    public void closeConnect() {
+        try {
+            if (connection != null) {
+                connection.close();
+                connection = null;
+            }
+        } catch (Exception e) {
+            logger.error("closeConnect fail: " + e.getMessage());
             e.printStackTrace();
         }
-
-        logger.debug("[SqlConnector] end");
     }
 
 
@@ -317,6 +333,10 @@ public class SqlConnector {
         return columns;
     }
 
+    public ConnectionParam getConnectionParam() {
+        return connectionParam;
+    }
+
     public String getErrorMessage() {
         return errorMessage;
     }
@@ -341,22 +361,11 @@ public class SqlConnector {
         return connectionParam.getPassword();
     }
 
-    public boolean isConnectSuccess() {
-        return connectSuccess;
+    public boolean isOnConnect() {
+        return onConnect;
     }
 
     Connection getConnection() {
         return connection;
-    }
-
-    public void finialize() {
-        try {
-            if (connection != null) {
-                connection.close();
-            }
-        } catch (Exception e) {
-            logger.error("finialize fail: " + e.getMessage());
-            e.printStackTrace();
-        }
     }
 }
