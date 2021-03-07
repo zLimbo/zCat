@@ -77,6 +77,7 @@ public class MainWindow extends VBox {
         ConnectionParam connectionParam = sqlConnector.getConnectionParam();
         String connectionName = connectionParam.getDatabase() + " [" +
                 connectionParam.getHost() + ":" + connectionParam.getPort() + "]";
+        sqlConnectorMap.put(connectionName, sqlConnector);
         // 若已存在，则直接返回
         if (sqlConnectorMap.containsKey(connectionName)) {
             for (TreeItem<String> treeItem: treeItemRoot.getChildren()) {
@@ -88,7 +89,6 @@ public class MainWindow extends VBox {
         TreeItem<String> connectionParamTreeItem = new TreeItem<>(connectionName,
                 new ImageView(new Image(getClass().getResourceAsStream("/image/database.png"))));
         treeItemRoot.getChildren().add(connectionParamTreeItem);
-        sqlConnectorMap.put(connectionName, sqlConnector);
         ConnectionLog.addConnectionParam(connectionParam);
         return connectionParamTreeItem;
     }
