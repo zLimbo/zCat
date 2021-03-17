@@ -1,10 +1,14 @@
 package com.zlimbo.zcat.connect;
 
+import com.zlimbo.zcat.chain.Parse;
+import com.zlimbo.zcat.config.ZCatConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -266,6 +270,88 @@ public class SqlConnector {
         return new SqlQueryResult(columns, records, spendTime, errorMessage);
     }
 
+
+    public SqlQueryResult sqlQueryForState(String sql) {
+        return sqlQueryForState(sql, true);
+    }
+
+    /**
+     * 状态查询
+     * @param sql
+     * @param isFirst
+     * @return
+     */
+    public SqlQueryResult sqlQueryForState(String sql, boolean isFirst) {
+        logger.debug("[sqlQueryForState] start");
+        logger.debug("sql:" + sql);
+
+        long start = System.currentTimeMillis();
+
+        String errorMessage = null;
+        List<String> columns = new ArrayList<>();
+        List<List<String>> records = new ArrayList<>();
+        PreparedStatement preparedStatement = null;
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            logger.debug(preparedStatement.toString());
+            long start2 = System.currentTimeMillis();
+            ResultSet resultSet = preparedStatement.executeQuery();
+            long end2 = System.currentTimeMillis();
+            logger.debug("jdbc query spend: {}s", (double) (end2 - start2) / 1000);
+            if (resultSet.next()) {
+                String data = resultSet.getString(1);
+                if (isFirst) {
+                    String secondSql = (sql.endsWith(";") ? sql.substring(0, sql.lastIndexOf(";")) : sql)
+                            + " where hash = \'" + data  + "\';";
+                    return sqlQueryForState(secondSql, false);
+                }
+//                String data = "0x0000000000000000000000000000000000000000000000000000000000000002";
+//                String data = "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000178259e951c00000000000000000000000000000000000000000000000000000178259eac7700000000000000000000000000000000000000000000000000000178259ecf8c";
+
+                Parse parse = new Parse();
+                String[] result = new String[0];
+                data = data.substring(0, data.length() - 1);
+                System.out.println("data length: " + data.length());
+                if (data.length() == ZCatConfig.STATE_COUNT_LENGTH) {
+                    columns.add("COUNT");
+                    result = parse.getCount(data);
+                } else if (data.length() == ZCatConfig.STATE_THREE_LATEST_DATA_LENGTH){
+                    columns.add("THE DATES OF LAST THREE DEALS");
+                    result = parse.getTheDatesOfLastThreeDeals(data);
+                } else {
+                    errorMessage = new String("the data(" + data + ") can't parse!");
+                }
+                for (String element: result) {
+                    List<String> record = Collections.singletonList(element);
+                    records.add(record);
+                }
+                logger.debug("records: " + records);
+            }
+            resultSet.close();
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+            errorMessage = e.getMessage();
+            //Handle errors for Class.forName
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (preparedStatement != null) {
+                    preparedStatement.close();
+                }
+            } catch (SQLException se) {
+                logger.error(se.getMessage());
+                logger.error(se.getSQLState());
+                se.printStackTrace();
+            }
+        }
+
+        long end = System.currentTimeMillis();
+        long spendTime = end - start;
+
+        logger.debug("[sqlQuery] end");
+        return new SqlQueryResult(columns, records, spendTime, errorMessage);
+    }
 
     /**
      * sql语句：insert、update、alter等相关update操作

@@ -1,2 +1,0 @@
-2021-01-28 09:32:10 |ERROR |JavaFX Application Thread |SqlController.java:217 |com.zlimbo.zcat.connect.SqlConnector |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'int id)' at line 1
-2021-01-28 09:37:19 |ERROR |JavaFX Application Thread |SqlController.java:326 |com.zlimbo.zcat.connect.SqlConnector |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'fad' at line 1

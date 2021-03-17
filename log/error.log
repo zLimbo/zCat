@@ -1,5 +1,4 @@
-2021-02-07 11:01:51 |ERROR |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-07 11:01:54 |ERROR |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-07 11:01:56 |ERROR |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-07 11:01:57 |ERROR |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |null
-2021-02-07 11:01:59 |ERROR |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |null
+2021-03-14 16:09:07 |ERROR |JavaFX Application Thread |SqlConnector.java:330 |com.zlimbo.zcat.connect.SqlConnector |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'USING STATE' at line 1
+2021-03-14 16:53:28 |ERROR |JavaFX Application Thread |SqlConnector.java:106 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

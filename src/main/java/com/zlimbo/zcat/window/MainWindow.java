@@ -421,6 +421,10 @@ public class MainWindow extends VBox {
                 showDatabaseTableTree();
             }
             returnFlag = 2;
+        } else if (sqlUpCase.contains("USING STATE")) { // 暂时未考虑一个空格以外的情况
+            logger.debug("USING STATE");
+            sqlQueryResult = currentSqlConnector.sqlQueryForState(oneLineSql);
+            returnFlag = 3;
         } else {
             logger.debug("SELECT");
             sqlQueryResult = currentSqlConnector.sqlQuery(oneLineSql);

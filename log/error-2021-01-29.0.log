@@ -1,5 +1,0 @@
-2021-01-29 21:44:08 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: password is wrong
-2021-01-29 22:29:53 |ERROR |JavaFX Application Thread |SqlController.java:153 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2021-01-29 22:29:53 |ERROR |JavaFX Application Thread |SqlController.java:181 |com.zlimbo.zcat.connect.SqlConnector |null
