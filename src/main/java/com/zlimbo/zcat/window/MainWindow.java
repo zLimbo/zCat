@@ -1,5 +1,6 @@
 package com.zlimbo.zcat.window;
 
+import com.zlimbo.zcat.config.ZCatConfig;
 import com.zlimbo.zcat.connect.ConnectionLog;
 import com.zlimbo.zcat.connect.ConnectionParam;
 import com.zlimbo.zcat.connect.SqlConnector;
@@ -30,6 +31,8 @@ public class MainWindow extends VBox {
 
     private int queryTabId = 1;
 
+    private Map<String, String> languageMap = null;
+
     /**
      * 存储显示的 Tab, 方便使用 TabName 查找对应的 Tab
      */
@@ -49,6 +52,8 @@ public class MainWindow extends VBox {
 
     public MainWindow() {
         setStyle("-fx-font: 18  arial; -fx-font-family: 'Microsoft YaHei UI';");
+        languageMap = ZCatConfig.LANGUAGE_ENGLISH_MAP;
+//        languageMap = ZCatConfig.LANGUAGE_CHINESE_MAP;
         MenuBar menuBar = buildMenuBar();
         ToolBar toolBar = buildToolBar();
         SplitPane splitPane = buildSplitPane();
@@ -102,10 +107,10 @@ public class MainWindow extends VBox {
     private MenuBar buildMenuBar() {
         MenuBar menuBar = new MenuBar();
         menuBar.setUseSystemMenuBar(true);
-        Menu fileMenu = new Menu("文件");
-        Menu editMenu = new Menu("编辑");
-        Menu optionMenu = new Menu("设置");
-        Menu helpMenu = new Menu("帮助");
+        Menu fileMenu = new Menu(languageMap.get("File"));
+        Menu editMenu = new Menu(languageMap.get("Edit"));
+        Menu optionMenu = new Menu(languageMap.get("Option"));
+        Menu helpMenu = new Menu(languageMap.get("Help"));
 
         ToggleGroup toggleGroup = new ToggleGroup();
 
@@ -122,11 +127,11 @@ public class MainWindow extends VBox {
 
     private ToolBar buildToolBar() {
         ToolBar toolBar = new ToolBar();
-        Button connectDataBaseButton = new Button("连接数据库",
+        Button connectDataBaseButton = new Button(languageMap.get("Connect Database"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/connection.png"))));
-        Button connectCitaButton = new Button("连接CITA",
+        Button connectCitaButton = new Button("Connect CITA",
                 new ImageView(new Image(getClass().getResourceAsStream("/image/cita.png"))));
-        newQueryButton = new Button("新建查询",
+        newQueryButton = new Button("New Query",
                 new ImageView(new Image(getClass().getResourceAsStream("/image/query.png"))));
 
         toolBar.getItems().addAll(
@@ -136,7 +141,7 @@ public class MainWindow extends VBox {
         );
 
         connectDataBaseButton.setOnAction(
-                event -> newConnection("MySQL 新连接", "localhost", "3306", "", ""));
+                event -> newConnection(languageMap.get("MySQL New Connect"), "localhost", "3306", "", ""));
         connectCitaButton.setOnAction(event -> connectionCita());
         newQueryButton.setOnAction(event -> newQuery());
 
@@ -184,12 +189,12 @@ public class MainWindow extends VBox {
                         } else {
                             ConnectionParam connectionParam = sqlConnector.getConnectionParam();
                             Alert alert = new Alert(Alert.AlertType.ERROR);
-                            alert.setTitle("连接错误");
-                            alert.setHeaderText("不正确的连接!");
+                            alert.setTitle(languageMap.get("Connect Error"));
+                            alert.setHeaderText(languageMap.get("Incorrect connection!"));
                             alert.showAndWait();
 
                             newConnection(
-                                    "请重新输入连接参数",
+                                    languageMap.get("Please re-enter connection parameters"),
                                     connectionParam.getHost(),
                                     connectionParam.getPort(),
                                     connectionParam.getDatabase(),
@@ -216,7 +221,7 @@ public class MainWindow extends VBox {
     private void tabAddContextMenu(String tabName, Tab tab) {
         logger.debug("[tabAddContextMenu] start [tabName = " + tabName + "]");
         ContextMenu contextMenu = new ContextMenu();
-        MenuItem closeMenuItem = new MenuItem("关闭");
+        MenuItem closeMenuItem = new MenuItem(languageMap.get("Close"));
         closeMenuItem.setOnAction(event -> closeTab(tabName, tab));
         contextMenu.getItems().add(closeMenuItem);
         tab.setContextMenu(contextMenu);
@@ -265,11 +270,11 @@ public class MainWindow extends VBox {
         List<TextField> textFields = new ArrayList<>();
 
         Dialog<Pair<String, String>> dialog = new Dialog<>();
-        dialog.setTitle("添加记录");
+        dialog.setTitle(languageMap.get("Add Record"));
         dialog.setHeaderText(null);
 
-        ButtonType submitButtonType = new ButtonType("提交", ButtonBar.ButtonData.OK_DONE);
-        ButtonType cancelButtonType = new ButtonType("取消", ButtonBar.ButtonData.CANCEL_CLOSE);
+        ButtonType submitButtonType = new ButtonType(languageMap.get("Submit"), ButtonBar.ButtonData.OK_DONE);
+        ButtonType cancelButtonType = new ButtonType(languageMap.get("Cancel"), ButtonBar.ButtonData.CANCEL_CLOSE);
         dialog.getDialogPane().getButtonTypes().addAll(submitButtonType, cancelButtonType);
         Button submitButton = (Button) dialog.getDialogPane().lookupButton(submitButtonType);
         submitButton.setDisable(true);
@@ -343,8 +348,8 @@ public class MainWindow extends VBox {
         pagination.setPageCount(records.size());
 
         if (!records.isEmpty()) {
-            TableColumn<List<StringProperty>, String> keyColumn = new TableColumn<>("属性");
-            TableColumn<List<StringProperty>, String> valueColumn = new TableColumn<>("值");
+            TableColumn<List<StringProperty>, String> keyColumn = new TableColumn<>(languageMap.get("Attribute"));
+            TableColumn<List<StringProperty>, String> valueColumn = new TableColumn<>(languageMap.get("Value"));
             keyColumn.setCellValueFactory(data -> data.getValue().get(0));
             valueColumn.setCellValueFactory(data -> data.getValue().get(1));
             sigleTableView.getColumns().addAll(keyColumn, valueColumn);
@@ -395,7 +400,7 @@ public class MainWindow extends VBox {
         String sqlUpCase = sql.toUpperCase().trim();
         if (sqlUpCase.isEmpty()) {
             sqlQueryResult = new SqlConnector.SqlQueryResult();
-            sqlQueryResult.setErrorMessage("SQL语句不能为空！");
+            sqlQueryResult.setErrorMessage(languageMap.get("SQL statement cannot be empty!"));
         } else if (sqlUpCase.startsWith("CREATE")) {
             logger.debug("CREATE");
             sqlQueryResult = currentSqlConnector.sqlCreateTable(oneLineSql);
@@ -464,13 +469,15 @@ public class MainWindow extends VBox {
 
             if (messageTextArea != null) {
                 messageTextArea.setStyle("-fx-text-fill:#00ff00;");
-                messageTextArea.setText(sql.trim() + "\n> OK" + "\n> 时间: " + (spendTime / 1000.0) + "s");
+                messageTextArea.setText(sql.trim() + "\n> OK" + "\n> " +
+                        languageMap.get("Time") + ": " + (spendTime / 1000.0) + "s");
             }
         } else {
             returnFlag = 0;
             if (messageTextArea != null) {
                 messageTextArea.setStyle("-fx-text-fill:#ff0000;");
-                messageTextArea.setText(sql.trim() + "\n> Error: " + errorMessage + "\n> 时间: " + (spendTime / 1000.0) + "s");
+                messageTextArea.setText(sql.trim() + "\n> Error: " + errorMessage + "\n> "
+                        + languageMap.get("Time") + ": " + (spendTime / 1000.0) + "s");
             }
         }
         logger.debug("[executeSqlAndShowTableView] end");
@@ -485,7 +492,7 @@ public class MainWindow extends VBox {
     public void newQuery() {
         logger.debug("[newQuery] start");
 
-        String queryTabName = "查询[" + (queryTabId++) + "]";
+        String queryTabName = languageMap.get("Query") + "[" + (queryTabId++) + "]";
         Tab queryTab = new Tab(queryTabName);
         queryTab.setGraphic(
                 new ImageView(new Image(getClass().getResourceAsStream("/image/query2.png"))));
@@ -497,11 +504,11 @@ public class MainWindow extends VBox {
 
         ToolBar toolBar = new ToolBar();
         borderPane.setTop(toolBar);
-        Button closeButton = new Button("关闭",
+        Button closeButton = new Button(languageMap.get("Close"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/close.png"))));
 //        Button saveButton = new Button("Save",
 //                new ImageView(new Image(getClass().getResourceAsStream("/image/save.png"))));
-        Button runButton = new Button("运行",
+        Button runButton = new Button(languageMap.get("Run"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/run.png"))));
         //toolBar.getItems().addAll(closeButton, saveButton, runButton);
         toolBar.getItems().addAll(closeButton, runButton);
@@ -562,9 +569,9 @@ public class MainWindow extends VBox {
             tableTab.setOnClosed(event1 -> closeTab(tableName, tableTab));
             BorderPane borderPane = new BorderPane();
             ToolBar toolBar = new ToolBar();
-            Button closeButton = new Button("关闭",
+            Button closeButton = new Button(languageMap.get("Close"),
                     new ImageView(new Image(getClass().getResourceAsStream("/image/close.png"))));
-            Button addButton = new Button("添加",
+            Button addButton = new Button(languageMap.get("Add"),
                     new ImageView(new Image(getClass().getResourceAsStream("/image/add.png"))));
             toolBar.getItems().addAll(closeButton, addButton);
             borderPane.setTop(toolBar);
@@ -639,8 +646,8 @@ public class MainWindow extends VBox {
         dialog.setTitle(title);
         dialog.setHeaderText(null);
 
-        ButtonType connectButtonType = new ButtonType("连接", ButtonBar.ButtonData.OK_DONE);
-        ButtonType cancelButtonType = new ButtonType("取消", ButtonBar.ButtonData.CANCEL_CLOSE);
+        ButtonType connectButtonType = new ButtonType(languageMap.get("Connect"), ButtonBar.ButtonData.OK_DONE);
+        ButtonType cancelButtonType = new ButtonType(languageMap.get("Cancel"), ButtonBar.ButtonData.CANCEL_CLOSE);
         dialog.getDialogPane().getButtonTypes().addAll(connectButtonType, cancelButtonType);
         Button connectButton = (Button) dialog.getDialogPane().lookupButton(connectButtonType);
         connectButton.setDisable(true);
@@ -714,8 +721,8 @@ public class MainWindow extends VBox {
                 } else {
                     //logger.debug("database connect fail");
                     Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setTitle("连接错误");
-                    alert.setHeaderText("不正确的连接!");
+                    alert.setTitle(languageMap.get("Connect Error"));
+                    alert.setHeaderText(languageMap.get("Incorrect connection!"));
                     alert.showAndWait();
                 }
             }
@@ -760,7 +767,7 @@ public class MainWindow extends VBox {
         BorderPane borderPane = new BorderPane();
 
         ToolBar toolBar = new ToolBar();
-        Button closeButton = new Button("关闭",
+        Button closeButton = new Button(languageMap.get("Close"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/close.png"))));
         toolBar.getItems().addAll(closeButton);
         borderPane.setTop(toolBar);
@@ -802,7 +809,7 @@ public class MainWindow extends VBox {
         logger.debug("[connectionCita] start");
         Dialog<Pair<String, String>> dialog = new Dialog<>();
         //dialog.setWidth(200);
-        dialog.setTitle("CITA 新连接");
+        dialog.setTitle(languageMap.get("CITA New Connect"));
         dialog.setHeaderText(null);
 
         ButtonType connectButtonType = new ButtonType("Connect", ButtonBar.ButtonData.OK_DONE);
