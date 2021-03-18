@@ -11,6 +11,8 @@ public class ZCatConfig {
 
     public static final int STATE_COUNT_LENGTH = 66;
     public static final int STATE_THREE_LATEST_DATA_LENGTH = 322;
+    public static final int MIX_DATA_LENGTH = 386;
+
 
 //    public static final JSONObject languageJson = null;
 //
@@ -74,8 +76,8 @@ public class ZCatConfig {
             put("Help", "帮助");
             put("Connect Database", "连接数据库");
             put("Connect CITA", "连接CITA");
-            put("New Query", "New Query");
-            put("MySQL New Connect", "MySQL New Connect");
+            put("New Query", "新建查询");
+            put("MySQL New Connect", "MySQL 新连接");
             put("Connect Error", "连接错误");
             put("Incorrect connection!", "不正确的连接!");
             put("Please re-enter connection parameters", "请重新输入连接参数");

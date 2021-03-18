@@ -80,13 +80,31 @@ public class Parse {
         return ans;
     }
 
+    public String[][] getMixData(String data) {
+        String countData = data.substring(0, 66);
+        String threeDateData = "0x" + data.substring(66);
+        String[] countResult = getCount(countData);
+        String[] threeDateResult = getTheDatesOfLastThreeDeals(threeDateData);
+        return new String[][]{countResult, threeDateResult};
+    }
+
+
     public static void main(String[] args) {
         Parse parse = new Parse();
         String countData = "0x0000000000000000000000000000000000000000000000000000000000000002";
         String threeDateData = "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000178259e951c00000000000000000000000000000000000000000000000000000178259eac7700000000000000000000000000000000000000000000000000000178259ecf8c";
+        String mixData = "0x000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000001784419ed44000000000000000000000000000000000000000000000000000001784419f91800000000000000000000000000000000000000000000000000000178441ad974";
+
 
         parse.getCount(countData);
         parse.getTheDatesOfLastThreeDeals(threeDateData);
+        String[][] result = parse.getMixData(mixData);
+
+        System.out.println("count: " + result[0][0]);
+        System.out.println("date: ");
+        for (String date: result[1]) {
+            System.out.println(date);
+        }
     };
 
 

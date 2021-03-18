@@ -52,8 +52,8 @@ public class MainWindow extends VBox {
 
     public MainWindow() {
         setStyle("-fx-font: 18  arial; -fx-font-family: 'Microsoft YaHei UI';");
-        languageMap = ZCatConfig.LANGUAGE_ENGLISH_MAP;
-//        languageMap = ZCatConfig.LANGUAGE_CHINESE_MAP;
+//        languageMap = ZCatConfig.LANGUAGE_ENGLISH_MAP;
+        languageMap = ZCatConfig.LANGUAGE_CHINESE_MAP;
         MenuBar menuBar = buildMenuBar();
         ToolBar toolBar = buildToolBar();
         SplitPane splitPane = buildSplitPane();
@@ -129,9 +129,12 @@ public class MainWindow extends VBox {
         ToolBar toolBar = new ToolBar();
         Button connectDataBaseButton = new Button(languageMap.get("Connect Database"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/connection.png"))));
-        Button connectCitaButton = new Button("Connect CITA",
+//        Button connectDataBaseButton = new Button(languageMap.get("Connect Database"),
+//                new ImageView(new Image(getClass().getResourceAsStream("/image/connection.png"))));
+        Button connectCitaButton = new Button(languageMap.get("Connect CITA"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/cita.png"))));
-        newQueryButton = new Button("New Query",
+
+        newQueryButton = new Button(languageMap.get("New Query"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/query.png"))));
 
         toolBar.getItems().addAll(
@@ -619,6 +622,9 @@ public class MainWindow extends VBox {
         if (currentSqlConnector == null) {
             return;
         }
+
+        currentTreeItem.getChildren().clear();
+        bottomBar.getItems().clear();
 
         List<String> tables = currentSqlConnector.sqlShowTables();
         for (String table : tables) {

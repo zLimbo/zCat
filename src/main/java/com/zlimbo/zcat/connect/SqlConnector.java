@@ -292,6 +292,7 @@ public class SqlConnector {
         List<List<String>> records = new ArrayList<>();
         PreparedStatement preparedStatement = null;
         try {
+//            sql = "SELECT 1;";
             preparedStatement = connection.prepareStatement(sql);
             logger.debug(preparedStatement.toString());
             long start2 = System.currentTimeMillis();
@@ -307,23 +308,42 @@ public class SqlConnector {
                 }
 //                String data = "0x0000000000000000000000000000000000000000000000000000000000000002";
 //                String data = "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000178259e951c00000000000000000000000000000000000000000000000000000178259eac7700000000000000000000000000000000000000000000000000000178259ecf8c";
+//                String data = "0x000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000001784419ed44000000000000000000000000000000000000000000000000000001784419f91800000000000000000000000000000000000000000000000000000178441ad974";
 
                 Parse parse = new Parse();
-                String[] result = new String[0];
+//                String[] result = new String[0];
                 data = data.substring(0, data.length() - 1);
                 System.out.println("data length: " + data.length());
                 if (data.length() == ZCatConfig.STATE_COUNT_LENGTH) {
-                    columns.add("COUNT");
-                    result = parse.getCount(data);
+                    columns.add("TX_COUNT");
+                    String[] result = parse.getCount(data);
+                    for (String element: result) {
+                        List<String> record = Collections.singletonList(element);
+                        records.add(record);
+                    }
                 } else if (data.length() == ZCatConfig.STATE_THREE_LATEST_DATA_LENGTH){
-                    columns.add("THE DATES OF LAST THREE DEALS");
-                    result = parse.getTheDatesOfLastThreeDeals(data);
-                } else {
-                    errorMessage = new String("the data(" + data + ") can't parse!");
-                }
-                for (String element: result) {
-                    List<String> record = Collections.singletonList(element);
-                    records.add(record);
+                    columns.add("THE_DATES_OF_LAST_THREE_TX");
+                    String[] result = parse.getTheDatesOfLastThreeDeals(data);
+                    for (String element: result) {
+                        List<String> record = Collections.singletonList(element);
+                        records.add(record);
+                    }
+                } else if (data.length() == ZCatConfig.MIX_DATA_LENGTH) {
+                    columns.add("TX_COUNT");
+                    columns.add("THE_DATES_OF_LAST_THREE_TX");
+                    String[][] result = parse.getMixData(data);
+                    for (int i = 0; i < 3; ++i) {
+                        List<String> record = new ArrayList<>();
+                        if (i == 0) {
+                            record.add(result[0][0]);
+                        } else {
+                            record.add("-");
+                        }
+                        record.add(result[1][i]);
+                        records.add(record);
+                    }
+                } else{
+                    errorMessage = "the data(" + data + ") can't parse!";
                 }
                 logger.debug("records: " + records);
             }
