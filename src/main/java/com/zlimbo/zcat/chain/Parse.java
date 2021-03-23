@@ -10,6 +10,7 @@ import org.web3j.abi.datatypes.Type;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -107,5 +108,30 @@ public class Parse {
         }
     };
 
+
+    public static long hexString2Long(String hexString) {
+        long num = 0L;
+        for (char c: hexString.toCharArray()) {
+            if ('0' <= c && c <= '9') {
+                num = num * 16 + c - '0';
+            } else {
+                num = num * 16 + 10 + c - 'a';
+            }
+        }
+        return num;
+    }
+
+    public static void test(String[] args) {
+        String mixData = "0x000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000001784419ed44000000000000000000000000000000000000000000000000000001784419f91800000000000000000000000000000000000000000000000000000178441ad974";
+
+        for (int i = 0; i < 3; ++i) {
+            String hexString = mixData.substring(2 + 64 * (3 + i));
+            long timestamp = hexString2Long(hexString);
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String dateString = df.format(new Date(timestamp));
+            System.out.println("timestamp: " + timestamp);
+            System.out.println("date: " + dateString);
+        }
+    }
 
 }

@@ -1,0 +1,1 @@
+2021-03-20 16:12:42 |ERROR |JavaFX Application Thread |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM invoice' at line 1

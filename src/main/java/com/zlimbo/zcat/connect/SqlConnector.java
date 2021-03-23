@@ -293,17 +293,20 @@ public class SqlConnector {
         PreparedStatement preparedStatement = null;
         try {
 //            sql = "SELECT 1;";
-            preparedStatement = connection.prepareStatement(sql);
-            logger.debug(preparedStatement.toString());
+            Statement statement = connection.createStatement();
+//            ResultSet resultSet = statement.executeQuery(sql);
+//            preparedStatement = connection.prepareStatement(sql);
+//            logger.debug(preparedStatement.toString());
             long start2 = System.currentTimeMillis();
-            ResultSet resultSet = preparedStatement.executeQuery();
+//            ResultSet resultSet = preparedStatement.executeQuery();
+            ResultSet resultSet = statement.executeQuery(sql);
             long end2 = System.currentTimeMillis();
             logger.debug("jdbc query spend: {}s", (double) (end2 - start2) / 1000);
             if (resultSet.next()) {
                 String data = resultSet.getString(1);
                 if (isFirst) {
                     String secondSql = (sql.endsWith(";") ? sql.substring(0, sql.lastIndexOf(";")) : sql)
-                            + " where hash = \'" + data  + "\';";
+                            + " where hash = \"" + data  + "\";";
                     return sqlQueryForState(secondSql, false);
                 }
 //                String data = "0x0000000000000000000000000000000000000000000000000000000000000002";
@@ -339,7 +342,11 @@ public class SqlConnector {
                         } else {
                             record.add("-");
                         }
-                        record.add(result[1][i]);
+                        if ("1970-01-01 08:00:00".equals(result[1][i])) {
+                            record.add("-");
+                        } else {
+                            record.add(result[1][i]);
+                        }
                         records.add(record);
                     }
                 } else{

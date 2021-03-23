@@ -1,0 +1,2 @@
+2021-03-18 15:15:09 |ERROR |JavaFX Application Thread |SqlConnector.java:106 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Access denied for user 'ff'@'localhost' (using password: YES)
+2021-03-18 16:09:51 |ERROR |JavaFX Application Thread |SqlConnector.java:182 |com.zlimbo.zcat.connect.SqlConnector |Table 'x' already exists

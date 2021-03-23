@@ -33,6 +33,8 @@ public class MainWindow extends VBox {
 
     private Map<String, String> languageMap = null;
 
+    private int size = 18;
+
     /**
      * 存储显示的 Tab, 方便使用 TabName 查找对应的 Tab
      */
@@ -51,7 +53,7 @@ public class MainWindow extends VBox {
     private final ToolBar bottomBar;
 
     public MainWindow() {
-        setStyle("-fx-font: 18  arial; -fx-font-family: 'Microsoft YaHei UI';");
+        setStyle("-fx-font: " + size + " arial; -fx-font-family: 'Microsoft YaHei UI';");
 //        languageMap = ZCatConfig.LANGUAGE_ENGLISH_MAP;
         languageMap = ZCatConfig.LANGUAGE_CHINESE_MAP;
         MenuBar menuBar = buildMenuBar();
@@ -114,7 +116,6 @@ public class MainWindow extends VBox {
 
         ToggleGroup toggleGroup = new ToggleGroup();
 
-
         menuBar.getMenus().addAll(
                 fileMenu,
                 editMenu,
@@ -129,8 +130,6 @@ public class MainWindow extends VBox {
         ToolBar toolBar = new ToolBar();
         Button connectDataBaseButton = new Button(languageMap.get("Connect Database"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/connection.png"))));
-//        Button connectDataBaseButton = new Button(languageMap.get("Connect Database"),
-//                new ImageView(new Image(getClass().getResourceAsStream("/image/connection.png"))));
         Button connectCitaButton = new Button(languageMap.get("Connect CITA"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/cita.png"))));
 

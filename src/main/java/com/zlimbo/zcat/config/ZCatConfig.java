@@ -46,9 +46,11 @@ public class ZCatConfig {
             put("Option", "Option");
             put("Help", "Help");
             put("Connect Database", "Connect Database");
+//            put("Connect Database", "Connect CITA");
             put("Connect CITA", "Connect CITA");
             put("New Query", "New Query");
             put("MySQL New Connect", "MySQL New Connect");
+//            put("MySQL New Connect", "CITA New Connect");
             put("Connect Error", "Connect Error");
             put("Incorrect connection!", "Incorrect connection!");
             put("Please re-enter connection parameters", "Please input parameter again");
