@@ -1,0 +1,137 @@
+2021-03-25 19:48:03 |DEBUG |main |ConnectionLog.java:70 |com.zlimbo.zcat.connect.ConnectionLog |load connectionParams...
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |SqlConnector.java:82 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |SqlConnector.java:86 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |SqlConnector.java:82 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |SqlConnector.java:86 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |SqlConnector.java:82 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |SqlConnector.java:86 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |SqlConnector.java:82 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |SqlConnector.java:86 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
+2021-03-25 19:48:03 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-03-25 19:48:05 |DEBUG |main |ConnectionLog.java:39 |com.zlimbo.zcat.connect.ConnectionLog |save connectionParams...
+2021-03-25 19:49:16 |DEBUG |main |ConnectionLog.java:70 |com.zlimbo.zcat.connect.ConnectionLog |load connectionParams...
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |SqlConnector.java:82 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |SqlConnector.java:86 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |SqlConnector.java:82 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |SqlConnector.java:86 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |SqlConnector.java:82 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |SqlConnector.java:86 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |SqlConnector.java:82 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
+2021-03-25 19:49:16 |DEBUG |JavaFX Application Thread |SqlConnector.java:86 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
+2021-03-25 19:49:17 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end
+2021-03-25 19:49:19 |DEBUG |JavaFX Application Thread |MainWindow.java:174 |com.zlimbo.zcat.window.MainWindow |[handle] start
+
+2021-03-25 19:49:19 |DEBUG |JavaFX Application Thread |MainWindow.java:211 |com.zlimbo.zcat.window.MainWindow |[handle] end
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |MainWindow.java:174 |com.zlimbo.zcat.window.MainWindow |[handle] start
+
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |MainWindow.java:211 |com.zlimbo.zcat.window.MainWindow |[handle] end
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |MainWindow.java:174 |com.zlimbo.zcat.window.MainWindow |[handle] start
+
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |MainWindow.java:179 |com.zlimbo.zcat.window.MainWindow |item name: ouyeel [192.168.6.110:3100]
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:99 |com.zlimbo.zcat.connect.SqlConnector |database url: jdbc:mysql://192.168.6.110:3100/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |MainWindow.java:622 |com.zlimbo.zcat.window.MainWindow |[showDatabaseTableTree] start
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:134 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] start
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice1
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice111
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice2
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice3
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice4
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice5
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice6
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice8
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice9
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj10
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj11
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj12
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj13
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj15
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj16
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj17
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj18
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj19
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj2
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj20
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj21
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj22
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj23
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj24
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj25
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj26
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj27
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj28
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj3
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj30
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj31
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj32
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj33
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj34
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj4
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj5
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_dsj9
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_new
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_thb
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_thb2
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoice_thb3
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoicedsj
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:142 |com.zlimbo.zcat.connect.SqlConnector |table: invoiceinvoice3
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |SqlConnector.java:160 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] end
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |MainWindow.java:647 |com.zlimbo.zcat.window.MainWindow |[showDatabaseTableTree] end
+2021-03-25 19:49:20 |DEBUG |JavaFX Application Thread |MainWindow.java:211 |com.zlimbo.zcat.window.MainWindow |[handle] end
+2021-03-25 19:49:22 |DEBUG |JavaFX Application Thread |MainWindow.java:495 |com.zlimbo.zcat.window.MainWindow |[newQuery] start
+2021-03-25 19:49:22 |DEBUG |JavaFX Application Thread |MainWindow.java:241 |com.zlimbo.zcat.window.MainWindow |[addTab] start [tabName = 查询[1]]
+2021-03-25 19:49:22 |DEBUG |JavaFX Application Thread |MainWindow.java:245 |com.zlimbo.zcat.window.MainWindow |[addTab] end
+2021-03-25 19:49:22 |DEBUG |JavaFX Application Thread |MainWindow.java:224 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] start [tabName = 查询[1]]
+2021-03-25 19:49:22 |DEBUG |JavaFX Application Thread |MainWindow.java:230 |com.zlimbo.zcat.window.MainWindow |[tabAddContextMenu] end
+2021-03-25 19:49:22 |DEBUG |JavaFX Application Thread |MainWindow.java:550 |com.zlimbo.zcat.window.MainWindow |[newQuery] end
+2021-03-25 19:49:36 |DEBUG |JavaFX Application Thread |MainWindow.java:396 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-03-25 19:49:36 |DEBUG |JavaFX Application Thread |MainWindow.java:397 |com.zlimbo.zcat.window.MainWindow |sql: select time_tx from invoice9 using state;
+2021-03-25 19:49:36 |DEBUG |JavaFX Application Thread |MainWindow.java:432 |com.zlimbo.zcat.window.MainWindow |USING STATE
+2021-03-25 19:49:36 |DEBUG |JavaFX Application Thread |SqlConnector.java:282 |com.zlimbo.zcat.connect.SqlConnector |[sqlQueryForState] start
+2021-03-25 19:49:36 |DEBUG |JavaFX Application Thread |SqlConnector.java:283 |com.zlimbo.zcat.connect.SqlConnector |sql:select time_tx from invoice9 using state;
+2021-03-25 19:49:36 |DEBUG |JavaFX Application Thread |SqlConnector.java:301 |com.zlimbo.zcat.connect.SqlConnector |jdbc query spend: 0.031s
+2021-03-25 19:49:36 |DEBUG |JavaFX Application Thread |SqlConnector.java:307 |com.zlimbo.zcat.connect.SqlConnector |sql no quotation mark: select time_tx from invoice9 using state where hash = 0x582e52705a2d7aff4650b5bfc95bdd16a6f15a395cb64c3e329c5ce8cedf147e 
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |SqlConnector.java:282 |com.zlimbo.zcat.connect.SqlConnector |[sqlQueryForState] start
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |SqlConnector.java:283 |com.zlimbo.zcat.connect.SqlConnector |sql:select time_tx from invoice9 using state where hash = 0x582e52705a2d7aff4650b5bfc95bdd16a6f15a395cb64c3e329c5ce8cedf147e 
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |SqlConnector.java:301 |com.zlimbo.zcat.connect.SqlConnector |jdbc query spend: 0.025s
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |SqlConnector.java:355 |com.zlimbo.zcat.connect.SqlConnector |records: [[2021-03-22 18:46:00], [2021-03-22 18:46:27], [2021-03-22 18:46:30]]
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |SqlConnector.java:379 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] end
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |MainWindow.java:345 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |MainWindow.java:383 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |MainWindow.java:485 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-03-25 19:49:43 |DEBUG |JavaFX Application Thread |MainWindow.java:539 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-03-25 19:49:59 |DEBUG |JavaFX Application Thread |MainWindow.java:396 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-03-25 19:49:59 |DEBUG |JavaFX Application Thread |MainWindow.java:397 |com.zlimbo.zcat.window.MainWindow |sql: select count_tx from invoice9 using state;
+2021-03-25 19:49:59 |DEBUG |JavaFX Application Thread |MainWindow.java:432 |com.zlimbo.zcat.window.MainWindow |USING STATE
+2021-03-25 19:49:59 |DEBUG |JavaFX Application Thread |SqlConnector.java:282 |com.zlimbo.zcat.connect.SqlConnector |[sqlQueryForState] start
+2021-03-25 19:49:59 |DEBUG |JavaFX Application Thread |SqlConnector.java:283 |com.zlimbo.zcat.connect.SqlConnector |sql:select count_tx from invoice9 using state;
+2021-03-25 19:49:59 |DEBUG |JavaFX Application Thread |SqlConnector.java:301 |com.zlimbo.zcat.connect.SqlConnector |jdbc query spend: 0.043s
+2021-03-25 19:49:59 |DEBUG |JavaFX Application Thread |SqlConnector.java:307 |com.zlimbo.zcat.connect.SqlConnector |sql no quotation mark: select count_tx from invoice9 using state where hash = 0x4920ce4d2b3bf694c255d0dccbde2002832fff08575afe3528ce2d8b944e750a 
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |SqlConnector.java:282 |com.zlimbo.zcat.connect.SqlConnector |[sqlQueryForState] start
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |SqlConnector.java:283 |com.zlimbo.zcat.connect.SqlConnector |sql:select count_tx from invoice9 using state where hash = 0x4920ce4d2b3bf694c255d0dccbde2002832fff08575afe3528ce2d8b944e750a 
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |SqlConnector.java:301 |com.zlimbo.zcat.connect.SqlConnector |jdbc query spend: 0.022s
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |SqlConnector.java:355 |com.zlimbo.zcat.connect.SqlConnector |records: [[3]]
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |SqlConnector.java:379 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] end
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |MainWindow.java:345 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |MainWindow.java:383 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |MainWindow.java:485 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-03-25 19:50:06 |DEBUG |JavaFX Application Thread |MainWindow.java:539 |com.zlimbo.zcat.window.MainWindow |flag: 3
+2021-03-25 19:50:15 |DEBUG |JavaFX Application Thread |MainWindow.java:396 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] start
+2021-03-25 19:50:15 |DEBUG |JavaFX Application Thread |MainWindow.java:397 |com.zlimbo.zcat.window.MainWindow |sql: select * from invoice9 using state;
+2021-03-25 19:50:15 |DEBUG |JavaFX Application Thread |MainWindow.java:432 |com.zlimbo.zcat.window.MainWindow |USING STATE
+2021-03-25 19:50:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:282 |com.zlimbo.zcat.connect.SqlConnector |[sqlQueryForState] start
+2021-03-25 19:50:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:283 |com.zlimbo.zcat.connect.SqlConnector |sql:select * from invoice9 using state;
+2021-03-25 19:50:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:301 |com.zlimbo.zcat.connect.SqlConnector |jdbc query spend: 0.058s
+2021-03-25 19:50:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:307 |com.zlimbo.zcat.connect.SqlConnector |sql no quotation mark: select * from invoice9 using state where hash = 0xe5cd81e42944074571c9c658843210c6cb27ab6df41afdb85bcfcbf27b10104f 
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |SqlConnector.java:282 |com.zlimbo.zcat.connect.SqlConnector |[sqlQueryForState] start
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |SqlConnector.java:283 |com.zlimbo.zcat.connect.SqlConnector |sql:select * from invoice9 using state where hash = 0xe5cd81e42944074571c9c658843210c6cb27ab6df41afdb85bcfcbf27b10104f 
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |SqlConnector.java:301 |com.zlimbo.zcat.connect.SqlConnector |jdbc query spend: 0.025s
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |SqlConnector.java:355 |com.zlimbo.zcat.connect.SqlConnector |records: [[3, 2021-03-22 18:46:00], [3, 2021-03-22 18:46:27], [3, 2021-03-22 18:46:30]]
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |SqlConnector.java:379 |com.zlimbo.zcat.connect.SqlConnector |[sqlQuery] end
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |MainWindow.java:345 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] start
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |MainWindow.java:383 |com.zlimbo.zcat.window.MainWindow |[showQuerySingle] end
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |MainWindow.java:485 |com.zlimbo.zcat.window.MainWindow |[executeSqlAndShowTableView] end
+2021-03-25 19:50:22 |DEBUG |JavaFX Application Thread |MainWindow.java:539 |com.zlimbo.zcat.window.MainWindow |flag: 3

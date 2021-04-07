@@ -17,7 +17,7 @@ public class ConnectionLog {
 
     static int magicNum = 42;
 
-    static private final String SAVE_PATH = ".zcat_connectparam";
+    static private final String SAVE_PATH = ".zcat_data";
     /**
      * 历史数据库连接信息
      */

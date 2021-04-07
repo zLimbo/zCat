@@ -430,7 +430,7 @@ public class MainWindow extends VBox {
             returnFlag = 2;
         } else if (sqlUpCase.contains("USING STATE")) { // 暂时未考虑一个空格以外的情况
             logger.debug("USING STATE");
-            sqlQueryResult = currentSqlConnector.sqlQueryForState(oneLineSql);
+            sqlQueryResult = currentSqlConnector.sqlQueryForState(oneLineSql, true);
             returnFlag = 3;
         } else {
             logger.debug("SELECT");
@@ -513,7 +513,10 @@ public class MainWindow extends VBox {
         Button runButton = new Button(languageMap.get("Run"),
                 new ImageView(new Image(getClass().getResourceAsStream("/image/run.png"))));
         //toolBar.getItems().addAll(closeButton, saveButton, runButton);
+
         toolBar.getItems().addAll(closeButton, runButton);
+
+//        toolBarAddTest(toolBar, runButton);
 
         SplitPane splitPane = new SplitPane();
         borderPane.setCenter(splitPane);
@@ -862,5 +865,30 @@ public class MainWindow extends VBox {
         dialog.showAndWait();
 
         logger.debug("[connectDatabase] end");
+    }
+
+
+    private void toolBarAddTest(ToolBar toolBar, Button runButton) {
+        TextField testTextField = new TextField();
+        testTextField.setPromptText("运行次数");
+        Button testButton = new Button("运行测试");
+        toolBar.getItems().addAll(testTextField, testButton);
+
+        testButton.setOnAction(event -> {
+            int frequency = 0;
+            try {
+                frequency = Integer.parseInt(testTextField.getText());
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+                return;
+            }
+            long start = System.currentTimeMillis();
+            for (int i = 0; i < frequency; ++i) {
+                runButton.fire();
+            }
+            long end = System.currentTimeMillis();
+            double spendTime = (end - start) / 1000d;
+            System.out.println("循环了 " + frequency + " 次， 总耗时为 " + spendTime + " s");
+        });
     }
 }

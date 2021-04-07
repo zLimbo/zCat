@@ -271,9 +271,6 @@ public class SqlConnector {
     }
 
 
-    public SqlQueryResult sqlQueryForState(String sql) {
-        return sqlQueryForState(sql, true);
-    }
 
     /**
      * 状态查询
@@ -306,7 +303,9 @@ public class SqlConnector {
                 String data = resultSet.getString(1);
                 if (isFirst) {
                     String secondSql = (sql.endsWith(";") ? sql.substring(0, sql.lastIndexOf(";")) : sql)
-                            + " where hash = \"" + data  + "\";";
+                            + " where hash = " + data;
+                    logger.debug("sql no quotation mark: " + secondSql);
+                    Thread.sleep(7000);
                     return sqlQueryForState(secondSql, false);
                 }
 //                String data = "0x0000000000000000000000000000000000000000000000000000000000000002";
@@ -337,11 +336,12 @@ public class SqlConnector {
                     String[][] result = parse.getMixData(data);
                     for (int i = 0; i < 3; ++i) {
                         List<String> record = new ArrayList<>();
-                        if (i == 0) {
-                            record.add(result[0][0]);
-                        } else {
-                            record.add("-");
-                        }
+                        record.add(result[0][0]);
+//                        if (i == 0) {
+//                            record.add(result[0][0]);
+//                        } else {
+//                            record.add("-");
+//                        }
                         if ("1970-01-01 08:00:00".equals(result[1][i])) {
                             record.add("-");
                         } else {
