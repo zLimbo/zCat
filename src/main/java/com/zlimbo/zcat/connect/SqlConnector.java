@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -444,6 +443,13 @@ public class SqlConnector {
         }
         logger.debug("[getColumns] end");
         return columns;
+    }
+
+
+    public int selectCount(String tableName) {
+        String sql = "SELECT COUNT(*) FROM " + tableName;
+        SqlQueryResult result = sqlQuery(sql);
+        return Integer.parseInt(result.getRecords().get(0).get(0));
     }
 
     public ConnectionParam getConnectionParam() {

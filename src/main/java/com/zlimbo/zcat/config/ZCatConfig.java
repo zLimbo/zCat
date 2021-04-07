@@ -12,6 +12,7 @@ public class ZCatConfig {
     public static final int STATE_COUNT_LENGTH = 66;
     public static final int STATE_THREE_LATEST_DATA_LENGTH = 322;
     public static final int MIX_DATA_LENGTH = 386;
+    public static final int DEFAULT_PAGE_NUM = 500;
 
 
 //    public static final JSONObject languageJson = null;

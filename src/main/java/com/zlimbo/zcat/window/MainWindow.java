@@ -35,10 +35,8 @@ public class MainWindow extends VBox {
 
     private int size = 18;
 
-    /**
-     * 存储显示的 Tab, 方便使用 TabName 查找对应的 Tab
-     */
-    private Map<String, Tab> tabMap = new HashMap<>();
+
+    private Map<String, Table> tableMap = new HashMap<>();
 
     private final Map<String, ChainConnect> chainControlMap = new HashMap<>();
 
@@ -51,6 +49,7 @@ public class MainWindow extends VBox {
     private Button newQueryButton = null;
     private TabPane showTabPane = null;
     private final ToolBar bottomBar;
+    private Label msgLabel = new Label();
 
     public MainWindow() {
         setStyle("-fx-font: " + size + " arial; -fx-font-family: 'Microsoft YaHei UI';");
@@ -231,6 +230,12 @@ public class MainWindow extends VBox {
     }
 
 
+    private void switchTab(String tabName) {
+        Table table = tableMap.get(tabName);
+        showTabPane.getSelectionModel().select(table.getTab());
+        msgLabel.setText(table.getMsg());
+    }
+
     /**
      * 添加一个 Tab 的相应操作
      *
@@ -240,8 +245,12 @@ public class MainWindow extends VBox {
     private void addTab(String tabName, Tab tab) {
         logger.debug("[addTab] start [tabName = " + tabName + "]");
         showTabPane.getTabs().add(tab);
-        showTabPane.getSelectionModel().select(tab);
-        tabMap.put(tabName, tab);
+        Table table = new Table(tabName, tab);
+        tableMap.put(tabName, table);
+        switchTab(tabName);
+        tab.setOnSelectionChanged(event -> {
+            msgLabel.setText(table.getMsg());
+        });
         logger.debug("[addTab] end");
     }
 
@@ -255,7 +264,7 @@ public class MainWindow extends VBox {
     private void closeTab(String tabName, Tab tab) {
         logger.debug("[closeTab] start [tabName = " + tabName + "]");
         showTabPane.getTabs().remove(tab);
-        tabMap.remove(tabName);
+        tableMap.remove(tabName);
         logger.debug("[closeTab] end");
     }
 
@@ -344,8 +353,8 @@ public class MainWindow extends VBox {
     private void showPagination(TableView tableView, Pagination pagination, List<String> columns, List<List<String>> records) {
         logger.debug("[showQuerySingle] start");
 
-        TableView sigleTableView = new TableView();
-        sigleTableView.setPlaceholder(
+        TableView singleTableView = new TableView();
+        singleTableView.setPlaceholder(
                 new ImageView(new Image(getClass().getResourceAsStream("/image/tableEmpty.png"))));
         pagination.setPageCount(records.size());
 
@@ -354,7 +363,7 @@ public class MainWindow extends VBox {
             TableColumn<List<StringProperty>, String> valueColumn = new TableColumn<>(languageMap.get("Value"));
             keyColumn.setCellValueFactory(data -> data.getValue().get(0));
             valueColumn.setCellValueFactory(data -> data.getValue().get(1));
-            sigleTableView.getColumns().addAll(keyColumn, valueColumn);
+            singleTableView.getColumns().addAll(keyColumn, valueColumn);
 
             ObservableList<List<StringProperty>> data = FXCollections.observableArrayList();
             List<StringProperty> valuePropertyList = new ArrayList<>();
@@ -366,17 +375,19 @@ public class MainWindow extends VBox {
                 row.add(1, valueProperty);
                 data.add(row);
             }
-            sigleTableView.setItems(data);
+            singleTableView.setItems(data);
 
             pagination.setPageFactory(pageIndex -> {
                 for (int i = 0; i < columns.size(); ++i) {
                     valuePropertyList.get(i).setValue(records.get(pageIndex).get(i));
                 }
-                return sigleTableView;
+                return singleTableView;
             });
 
             tableView.getSelectionModel().selectedIndexProperty().addListener(
-                    (observable, oldValue, newValue) -> pagination.setCurrentPageIndex(newValue.intValue())
+                    (observable, oldValue, newValue) -> {
+                        pagination.setCurrentPageIndex(newValue.intValue());
+                    }
             );
         }
 
@@ -516,7 +527,7 @@ public class MainWindow extends VBox {
 
         toolBar.getItems().addAll(closeButton, runButton);
 
-//        toolBarAddTest(toolBar, runButton);
+        toolBarAddTest(toolBar, runButton);
 
         SplitPane splitPane = new SplitPane();
         borderPane.setCenter(splitPane);
@@ -558,18 +569,18 @@ public class MainWindow extends VBox {
      */
     public void showTable(String tableName) {
         logger.debug("[showTable] start");
-
         Tab tableTab;
         SplitPane tableSplitPane;
-        if (tabMap.containsKey(tableName)) {
-            tableTab = tabMap.get(tableName);
+        String tabName = tableName;
+        if (tableMap.containsKey(tabName)) {
+            tableTab = tableMap.get(tabName).getTab();
             tableSplitPane = (SplitPane) ((BorderPane) tableTab.getContent()).getCenter();
         } else {
             tableTab = new Tab(tableName);
             tableTab.setGraphic(
                     new ImageView(new Image(getClass().getResourceAsStream("/image/table.png")))
             );
-            addTab(tableName, tableTab);
+            addTab(tabName, tableTab);
             tabAddContextMenu(tableName, tableTab);
             tableTab.setOnClosed(event1 -> closeTab(tableName, tableTab));
             BorderPane borderPane = new BorderPane();
@@ -584,35 +595,105 @@ public class MainWindow extends VBox {
             borderPane.setCenter(tableSplitPane);
             tableTab.setContent(borderPane);
 
-//            int numRecordPerPage = 1000;
-//            int currentPageNo = 1;
-//
-//            ToolBar bottomToolBar = new ToolBar();
-//            Button leftmostButton = new Button("<<");
-//            Button leftButton = new Button("<");
-//            Button rightmostButton = new Button(">>");
-//            Button rightButton = new Button(">");
-//            TextField pageNumTextField = new TextField();
-//            pageNumTextField.setPrefColumnCount(1);
-//            pageNumTextField.setText(String.valueOf(currentPageNo));
-//            bottomToolBar.getItems().addAll(leftmostButton, leftButton, pageNumTextField, rightButton, rightmostButton);
-//
-//            borderPane.setBottom(bottomToolBar);
-
             closeButton.setOnAction(event -> {
                 closeTab(tableName, tableTab);
             });
             addButton.setOnAction(event -> addRecord(tableName));
         }
 
-//        String sql = "SELECT * FROM " + tableName + " LIMIT ";
-        String sql = "SELECT * FROM " + tableName;
-        executeSqlAndShowTableView(sql, tableSplitPane, null);
+        // 分页
+//        splitPage(tableName);
 
-        showTabPane.getSelectionModel().select(tableTab);
+        Table table = tableMap.get(tabName);
+        int pageRecordNum = table.getPageRecordNum();
+        int pageIndex = table.getPageIndex();
+        int tableCount = currentSqlConnector.selectCount(tableName);
+        int pageCount = (tableCount + pageRecordNum - 1) / pageRecordNum;
+        if (pageCount == 0) {
+            pageCount = 1;
+        }
+        Pagination pagination = new Pagination();
+        pagination.setPageCount(pageCount);
+
+        pagination.setPageFactory(pageIndex1 -> {
+            table.setPageIndex(pageIndex1);
+            String sql = "SELECT * FROM " + tableName + " LIMIT " + pageIndex1 * pageRecordNum + ", " + pageRecordNum;
+            logger.debug("page: " + pageIndex1 + ", sql: " + sql);
+            SqlConnector.SqlQueryResult sqlQueryResult = currentSqlConnector.sqlQuery(sql);
+            List<String> columns = sqlQueryResult.getColumns();
+            List<List<String>> records = sqlQueryResult.getRecords();
+
+            TableView tableView = new TableView();
+            tableView.setPlaceholder(
+                    new ImageView(new Image(getClass().getResourceAsStream("/image/tableEmpty.png"))));
+            tableView.setTableMenuButtonVisible(true);
+            for (int i = 0; i < columns.size(); ++i) {
+                TableColumn<List<StringProperty>, String> tableColumn = new TableColumn<>(columns.get(i));
+                int finalI = i;
+                tableColumn.setCellValueFactory(data -> data.getValue().get(finalI));
+                tableView.getColumns().add(tableColumn);
+            }
+            ObservableList<List<StringProperty>> data = FXCollections.observableArrayList();
+            for (List<String> record : records) {
+                List<StringProperty> row = new ArrayList<>();
+                for (int i = 0; i < record.size(); ++i) {
+                    row.add(i, new SimpleStringProperty(record.get(i)));
+                }
+                data.add(row);
+            }
+            tableView.setItems(data);
+
+            String msg = "\t\t" + sql;
+            table.setMsg(msg);
+            msgLabel.setText(msg);
+            tableView.getSelectionModel().selectedIndexProperty().addListener(
+                    (observable, oldValue, newValue) -> {
+                        String msg1 = "\t\t" + sql + "\t\t第" + newValue.intValue() +
+                                "条记录（共" + records.size() + "条）于第" + (pageIndex1 + 1) + "页";
+                        msgLabel.setText(msg1);
+                        table.setMsg(msg1);
+                    }
+            );
+            return tableView;
+        });
+
+//        String sql = "SELECT * FROM " + tableName + " LIMIT ";
+//        String sql = "SELECT * FROM " + tableName;
+//        executeSqlAndShowTableView(sql, tableSplitPane, null);
+
+
+        pagination.setCurrentPageIndex(pageIndex);
+        tableSplitPane.getItems().clear();
+        tableSplitPane.getItems().addAll(pagination);
+        switchTab(tabName);
+//        showTabPane.getSelectionModel().select(tableTab);
 
         logger.debug("[showTable] end");
     }
+
+
+//    private void splitPage(String tableName) {
+//
+//        int count = currentSqlConnector.selectCount(tableName);
+//        System.out.println("count: " + count);
+//        Table table = tableMap.get(tableName);
+//        int pageRecordNum = table.getPageRecordNum();
+//        int currentPageId = table.getCurrentPageId();
+//
+//        ToolBar bottomToolBar = new ToolBar();
+//        Button leftmostButton = new Button("|<");
+//        Button leftButton = new Button("<");
+//        Button rightmostButton = new Button(">|");
+//        Button rightButton = new Button(">");
+//        TextField pageIdTextField = new TextField();
+//        int length = String.valueOf((count + pageRecordNum - 1) / pageRecordNum).length();
+//        pageIdTextField.setPrefColumnCount(length);
+//        pageIdTextField.setText(String.valueOf(currentPageId));
+//        bottomToolBar.getItems().addAll(leftmostButton, leftButton, pageIdTextField, rightButton, rightmostButton);
+//
+//        BorderPane borderPane = (BorderPane) table.getTab().getContent();
+//        borderPane.setBottom(bottomToolBar);
+//    }
 
 
     /**
@@ -642,6 +723,7 @@ public class MainWindow extends VBox {
                 currentSqlConnector.getPort() + ":" +
                 currentSqlConnector.getDatabase() + "]");
         bottomBar.getItems().add(dbInfoLabel);
+        bottomBar.getItems().add(msgLabel);
 
         newQueryButton.setDisable(false);
         logger.debug("[showDatabaseTableTree] end");
@@ -749,15 +831,17 @@ public class MainWindow extends VBox {
         currentSqlConnector.closeConnect();
         currentTreeItem.getChildren().clear();
         showTabPane.getTabs().clear();
-        tabMap.clear();
+        tableMap.clear();
         queryTabId = 1;
         newQueryButton.setDisable(false);
     }
 
     public void showCita(String citaUrl) {
         logger.debug("[showCita] start");
-        if (tabMap.containsKey(citaUrl)) {
-            showTabPane.getSelectionModel().select(tabMap.get(citaUrl));
+        String tabName = citaUrl;
+        if (tableMap.containsKey(tabName)) {
+            switchTab(tabName);
+//            showTabPane.getSelectionModel().select(tableMap.get(citaUrl).getTab());
             return;
         }
 
