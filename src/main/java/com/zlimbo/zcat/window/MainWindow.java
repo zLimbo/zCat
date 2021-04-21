@@ -527,7 +527,7 @@ public class MainWindow extends VBox {
 
         toolBar.getItems().addAll(closeButton, runButton);
 
-        toolBarAddTest(toolBar, runButton);
+//        toolBarAddTest(toolBar, runButton);
 
         SplitPane splitPane = new SplitPane();
         borderPane.setCenter(splitPane);
