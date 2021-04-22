@@ -527,7 +527,7 @@ public class MainWindow extends VBox {
 
         toolBar.getItems().addAll(closeButton, runButton);
 
-//        toolBarAddTest(toolBar, runButton);
+        toolBarAddTest(toolBar, runButton, queryTab);
 
         SplitPane splitPane = new SplitPane();
         borderPane.setCenter(splitPane);
@@ -915,7 +915,7 @@ public class MainWindow extends VBox {
         gridPane.setVgap(10);
         gridPane.setPadding(new Insets(30, 60, 10, 20));
 
-        Label citaUrlLabel = new Label("CITA URL: ");
+        Label citaUrlLabel = new Label(languageMap.get("CITA URL: "));
         TextField citaUrlTextField = new TextField();
         citaUrlTextField.setPrefWidth(300);
         citaUrlTextField.textProperty().addListener(observable -> {
@@ -952,7 +952,7 @@ public class MainWindow extends VBox {
     }
 
 
-    private void toolBarAddTest(ToolBar toolBar, Button runButton) {
+    private void toolBarAddTest(ToolBar toolBar, Button runButton, Tab queryTab) {
         TextField testTextField = new TextField();
         testTextField.setPromptText("运行次数");
         Button testButton = new Button("运行测试");
@@ -966,12 +966,19 @@ public class MainWindow extends VBox {
                 e.printStackTrace();
                 return;
             }
-            long start = System.currentTimeMillis();
+
+            double spendTime = 0d;
             for (int i = 0; i < frequency; ++i) {
+                ( (SplitPane)( (BorderPane)queryTab.getContent()).getCenter() ).getItems().clear();
+//                System.gc();
+                long start = System.currentTimeMillis();
                 runButton.fire();
+                long end = System.currentTimeMillis();
+                System.out.println("当前测试轮数： " + i  + ", 耗时: " + (end - start) / 1000d + "s");
+                spendTime += end - start;
             }
-            long end = System.currentTimeMillis();
-            double spendTime = (end - start) / 1000d;
+
+            spendTime /= 1000d;
             System.out.println("循环了 " + frequency + " 次， 总耗时为 " + spendTime + " s");
         });
     }

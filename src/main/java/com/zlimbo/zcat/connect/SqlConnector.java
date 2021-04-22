@@ -300,6 +300,7 @@ public class SqlConnector {
             logger.debug("jdbc query spend: {}s", (double) (end2 - start2) / 1000);
             if (resultSet.next()) {
                 String data = resultSet.getString(1);
+                data = removeEndZero(data);
                 if (isFirst) {
                     String secondSql = (sql.endsWith(";") ? sql.substring(0, sql.lastIndexOf(";")) : sql)
                             + " where hash = " + data;
@@ -313,7 +314,7 @@ public class SqlConnector {
 
                 Parse parse = new Parse();
 //                String[] result = new String[0];
-                data = data.substring(0, data.length() - 1);
+                data = removeEndZero(data);
                 System.out.println("data length: " + data.length());
                 if (data.length() == ZCatConfig.STATE_COUNT_LENGTH) {
                     columns.add("TX_COUNT");
@@ -326,7 +327,7 @@ public class SqlConnector {
                     columns.add("THE_DATES_OF_LAST_THREE_TX");
                     String[] result = parse.getTheDatesOfLastThreeDeals(data);
                     for (String element: result) {
-                        List<String> record = Collections.singletonList(element);
+                        List<String> record = Collections.singletonList(handleTime(element));
                         records.add(record);
                     }
                 } else if (data.length() == ZCatConfig.MIX_DATA_LENGTH) {
@@ -341,11 +342,8 @@ public class SqlConnector {
 //                        } else {
 //                            record.add("-");
 //                        }
-                        if ("1970-01-01 08:00:00".equals(result[1][i])) {
-                            record.add("-");
-                        } else {
-                            record.add(result[1][i]);
-                        }
+                        logger.debug("result[][]: [{}]", result[1][i]);
+                        record.add(handleTime(result[1][i]));
                         records.add(record);
                     }
                 } else{
@@ -486,5 +484,18 @@ public class SqlConnector {
 
     Connection getConnection() {
         return connection;
+    }
+
+    private String removeEndZero(String s) {
+        // 去除末尾终止0
+        if (s.charAt(s.length() - 1) == 0) {
+            s = s.substring(0, s.length() - 1);
+        }
+        logger.debug("s length: " + s.length());
+        return s;
+    }
+
+    private String handleTime(String time) {
+        return "1970-01-01 08:00:00".equals(time) ? "-" : time;
     }
 }

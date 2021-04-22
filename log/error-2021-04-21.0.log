@@ -1,0 +1,3 @@
+2021-04-21 23:31:30 |ERROR |JavaFX Application Thread |SqlConnector.java:105 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet successfully received from the server was 8,087,318 milliseconds ago.  The last packet sent successfully to the server was 8,087,314 milliseconds ago.

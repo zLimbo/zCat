@@ -68,6 +68,7 @@ public class ZCatConfig {
             put("Add", "Add");
             put("Connect", "Connect");
             put("CITA New Connect", "CITA New Connect");
+            put("CITA URL: ", "CITA URL: ");
         }
     };
 
@@ -78,9 +79,12 @@ public class ZCatConfig {
             put("Option", "设置");
             put("Help", "帮助");
             put("Connect Database", "连接数据库");
+            put("Connect Database", "连接SQL中间件");
             put("Connect CITA", "连接CITA");
+            put("Connect CITA", "连接区块链");
             put("New Query", "新建查询");
             put("MySQL New Connect", "MySQL 新连接");
+            put("MySQL New Connect", "SQL中间件 新连接");
             put("Connect Error", "连接错误");
             put("Incorrect connection!", "不正确的连接!");
             put("Please re-enter connection parameters", "请重新输入连接参数");
@@ -98,6 +102,9 @@ public class ZCatConfig {
             put("Add", "Add");
             put("Connect", "连接");
             put("CITA New Connect", "CITA 新连接");
+            put("CITA New Connect", "区块链 新连接");
+            put("CITA URL: ", "CITA URL: ");
+            put("CITA URL: ", "区块链 URL: ");
 
         }
     };
