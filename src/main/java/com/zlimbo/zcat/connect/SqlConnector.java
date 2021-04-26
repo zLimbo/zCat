@@ -105,7 +105,7 @@ public class SqlConnector {
             logger.error("database connect fail: " + e.getMessage());
             errorMessage = e.getMessage();
             onConnect = false;
-            e.printStackTrace();
+//            e.printStackTrace();
             return false;
         }
         return true;

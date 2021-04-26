@@ -1,10 +1,463 @@
-2021-04-22 09:53:38 |ERROR |JavaFX Application Thread |SqlConnector.java:248 |com.zlimbo.zcat.connect.SqlConnector |Communications link failure
+2021-04-26 20:11:35 |ERROR |main |SqlConnector.java:248 |com.zlimbo.zcat.connect.SqlConnector |Can not issue data manipulation statements with executeQuery().
+2021-04-26 20:11:38 |ERROR |main |SqlConnector.java:248 |com.zlimbo.zcat.connect.SqlConnector |Can not issue data manipulation statements with executeQuery().
+2021-04-26 20:12:39 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 20:12:42 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 20:12:45 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 20:55:30 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:33 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:36 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:39 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:42 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:46 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:49 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:52 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:55 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:55:58 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:01 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:04 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:07 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:10 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:13 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:16 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:19 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:22 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:25 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:28 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:31 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:34 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:37 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:40 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:43 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:46 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:50 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:54 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:56:58 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:01 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:04 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:07 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:10 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:13 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:18 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:23 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:26 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:29 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:32 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:36 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:40 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:43 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:47 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:50 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:53 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:56 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:57:59 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:02 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:05 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:08 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:11 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:14 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:17 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:20 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:23 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:26 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:29 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |dataInfo is not correspond with table schema, please check it
+2021-04-26 20:58:39 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:58:42 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:58:45 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:58:48 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:58:51 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:58:54 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:58:57 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:59:00 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:59:03 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:59:06 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:59:09 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:59:12 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:59:15 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 20:59:18 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |pubInfo is not correspond with table schema, please check it
+2021-04-26 21:14:13 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:14:16 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:14:19 |ERROR |main |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:18:38 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:18:41 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:18:44 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:18:47 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:18:50 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:18:53 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:18:56 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 21:21:35 |ERROR |main |SqlConnector.java:105 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
 
-The last packet successfully received from the server was 6,678,883 milliseconds ago.  The last packet sent successfully to the server was 6,678,907 milliseconds ago.
-2021-04-22 09:53:40 |ERROR |JavaFX Application Thread |SqlConnector.java:248 |com.zlimbo.zcat.connect.SqlConnector |No operations allowed after connection closed.
-2021-04-22 09:53:40 |ERROR |JavaFX Application Thread |SqlConnector.java:248 |com.zlimbo.zcat.connect.SqlConnector |No operations allowed after connection closed.
-2021-04-22 09:53:41 |ERROR |JavaFX Application Thread |SqlConnector.java:248 |com.zlimbo.zcat.connect.SqlConnector |No operations allowed after connection closed.
-2021-04-22 09:53:41 |ERROR |JavaFX Application Thread |SqlConnector.java:248 |com.zlimbo.zcat.connect.SqlConnector |No operations allowed after connection closed.
-2021-04-22 09:53:44 |ERROR |JavaFX Application Thread |SqlConnector.java:248 |com.zlimbo.zcat.connect.SqlConnector |No operations allowed after connection closed.
-2021-04-22 17:19:34 |ERROR |JavaFX Application Thread |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |Please complete field name
-2021-04-22 17:19:44 |ERROR |JavaFX Application Thread |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |Please complete field name
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:58 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:42:59 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:00 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:01 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 22:43:02 |ERROR |Thread-1 |SqlConnector.java:397 |com.zlimbo.zcat.connect.SqlConnector |table is not exist
+2021-04-26 23:02:34 |ERROR |Thread-0 |SqlConnector.java:105 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-04-26 23:02:40 |ERROR |Thread-0 |SqlConnector.java:105 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-04-26 23:02:46 |ERROR |Thread-0 |SqlConnector.java:105 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-04-26 23:02:51 |ERROR |Thread-0 |SqlConnector.java:105 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-04-26 23:05:00 |ERROR |Thread-0 |SqlConnector.java:105 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

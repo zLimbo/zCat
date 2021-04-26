@@ -21,6 +21,8 @@ import javafx.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -527,7 +529,7 @@ public class MainWindow extends VBox {
 
         toolBar.getItems().addAll(closeButton, runButton);
 
-        toolBarAddTest(toolBar, runButton, queryTab);
+//        toolBarAddTest(toolBar, runButton, queryTab);
 
         SplitPane splitPane = new SplitPane();
         borderPane.setCenter(splitPane);
@@ -714,6 +716,8 @@ public class MainWindow extends VBox {
             TreeItem<String> tableItem = new TreeItem<>(table,
                     new ImageView(new Image(getClass().getResourceAsStream("/image/table.png"))));
             currentTreeItem.getChildren().add(tableItem);
+//            // TODO 待删除
+//            break;
         }
         currentTreeItem.setExpanded(true);
 
@@ -802,6 +806,7 @@ public class MainWindow extends VBox {
                         userTextField.getText(),
                         passwordField.getText());
                 SqlConnector sqlConnector = new SqlConnector(connectionParam);
+
                 if (sqlConnector.openConnect()) {
                     closeCurrentConnection();
                     TreeItem<String> treeItem = addSqlConnectorAndTreeItem(sqlConnector);

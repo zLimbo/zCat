@@ -12,7 +12,7 @@
 2021-04-08 09:19:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:98 |com.zlimbo.zcat.connect.SqlConnector |database url: jdbc:mysql://localhost:3306/ouyeel?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT&allowPublicKeyRetrieval=true
 2021-04-08 09:19:15 |DEBUG |JavaFX Application Thread |MainWindow.java:703 |com.zlimbo.zcat.window.MainWindow |[showDatabaseTableTree] start
 2021-04-08 09:19:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:133 |com.zlimbo.zcat.connect.SqlConnector |[sqlShowTables] start
-2021-04-08 09:19:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:141 |com.zlimbo.zcat.connect.SqlConnector |table: invoice
+2021-04-08 09:19:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:141 |com.zlimbo.zcat.connect.SqlConnector |table: invoiceInfo
 2021-04-08 09:19:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:141 |com.zlimbo.zcat.connect.SqlConnector |table: person
 2021-04-08 09:19:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:141 |com.zlimbo.zcat.connect.SqlConnector |table: privatekey
 2021-04-08 09:19:15 |DEBUG |JavaFX Application Thread |SqlConnector.java:141 |com.zlimbo.zcat.connect.SqlConnector |table: resinfo
