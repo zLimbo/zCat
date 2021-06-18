@@ -40,7 +40,6 @@ public class InsertAndSelectForState {
         long preTime = System.currentTimeMillis();
 
         while (true) {
-            System.out.println("i = " + i);
             String systemId = String.format("%012d", Math.abs(random.nextInt()));
             String requestSn = UUID.randomUUID().toString();
             String invokeTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(System.currentTimeMillis());
@@ -67,7 +66,10 @@ public class InsertAndSelectForState {
 
             long curTime = System.currentTimeMillis();
             if (curTime - preTime >= 3000) {
+                preTime = curTime;
+                System.out.println();
                 for (String query: stateQuerys) {
+                    System.out.println(">>> sql: " + query);
                     SqlConnector.SqlQueryResult result1 = sqlConnector.sqlQueryForState(query);
                     if (result1.getErrorMessage() == null) {
                         System.out.println(result1.getRecords());

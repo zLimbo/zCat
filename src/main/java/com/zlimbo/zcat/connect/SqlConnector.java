@@ -297,7 +297,7 @@ public class SqlConnector {
                 String data = resultSet.getString(1);
                 data = removeEndZero(data);
                 data = removeEndZero(data);
-                System.out.println("data length: " + data.length());
+//                System.out.println("data length: " + data.length());
                 if (data.length() == ZCatConfig.STATE_COUNT_LEN) {
                     columns.add("TX_COUNT");
                     String[] result = CatParser.parseCount(data);
