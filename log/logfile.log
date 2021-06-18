@@ -1,0 +1,17 @@
+2021-06-18 15:45:34 |ERROR |Thread-6 |SqlConnector.java:106 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-06-18 15:45:34 |ERROR |Thread-4 |SubstituteLogger.java:265 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-06-18 15:45:34 |ERROR |Thread-5 |SubstituteLogger.java:265 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-06-18 15:45:34 |ERROR |Thread-7 |SubstituteLogger.java:265 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-06-18 16:41:31 |ERROR |JavaFX Application Thread |SqlConnector.java:182 |com.zlimbo.zcat.connect.SqlConnector |contract and table have existed!
+2021-06-18 16:57:36 |ERROR |JavaFX Application Thread |SqlConnector.java:249 |com.zlimbo.zcat.connect.SqlConnector |Communications link failure
+
+The last packet successfully received from the server was 550,177 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+2021-06-18 16:57:53 |ERROR |JavaFX Application Thread |SqlConnector.java:374 |com.zlimbo.zcat.connect.SqlConnector |No operations allowed after connection closed.
