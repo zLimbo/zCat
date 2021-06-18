@@ -1,1 +1,0 @@
-2021-04-25 11:04:03 |ERROR |JavaFX Application Thread |SqlConnector.java:105 |com.zlimbo.zcat.connect.SqlConnector |database connect fail: Access denied for user 'root'@'localhost' (using password: YES)

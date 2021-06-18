@@ -2,6 +2,7 @@ package com.zlimbo.zcat.connect;
 
 import com.zlimbo.zcat.chain.Parse;
 import com.zlimbo.zcat.config.ZCatConfig;
+import com.zlimbo.zcat.stateparse.CatParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -274,10 +275,9 @@ public class SqlConnector {
     /**
      * 状态查询
      * @param sql
-     * @param isFirst
      * @return
      */
-    public SqlQueryResult sqlQueryForState(String sql, boolean isFirst) {
+    public SqlQueryResult sqlQueryForState(String sql) {
         logger.debug("[sqlQueryForState] start");
         logger.debug("sql:" + sql);
 
@@ -288,60 +288,37 @@ public class SqlConnector {
         List<List<String>> records = new ArrayList<>();
         PreparedStatement preparedStatement = null;
         try {
-//            sql = "SELECT 1;";
             Statement statement = connection.createStatement();
-//            ResultSet resultSet = statement.executeQuery(sql);
-//            preparedStatement = connection.prepareStatement(sql);
-//            logger.debug(preparedStatement.toString());
             long start2 = System.currentTimeMillis();
-//            ResultSet resultSet = preparedStatement.executeQuery();
             ResultSet resultSet = statement.executeQuery(sql);
             long end2 = System.currentTimeMillis();
             logger.debug("jdbc query spend: {}s", (double) (end2 - start2) / 1000);
             if (resultSet.next()) {
                 String data = resultSet.getString(1);
                 data = removeEndZero(data);
-                if (isFirst) {
-                    String secondSql = (sql.endsWith(";") ? sql.substring(0, sql.lastIndexOf(";")) : sql)
-                            + " where hash = " + data;
-                    logger.debug("sql no quotation mark: " + secondSql);
-                    Thread.sleep(7000);
-                    return sqlQueryForState(secondSql, false);
-                }
-//                String data = "0x0000000000000000000000000000000000000000000000000000000000000002";
-//                String data = "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000178259e951c00000000000000000000000000000000000000000000000000000178259eac7700000000000000000000000000000000000000000000000000000178259ecf8c";
-//                String data = "0x000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000001784419ed44000000000000000000000000000000000000000000000000000001784419f91800000000000000000000000000000000000000000000000000000178441ad974";
-
-                Parse parse = new Parse();
-//                String[] result = new String[0];
                 data = removeEndZero(data);
                 System.out.println("data length: " + data.length());
-                if (data.length() == ZCatConfig.STATE_COUNT_LENGTH) {
+                if (data.length() == ZCatConfig.STATE_COUNT_LEN) {
                     columns.add("TX_COUNT");
-                    String[] result = parse.getCount(data);
+                    String[] result = CatParser.parseCount(data);
                     for (String element: result) {
                         List<String> record = Collections.singletonList(element);
                         records.add(record);
                     }
-                } else if (data.length() == ZCatConfig.STATE_THREE_LATEST_DATA_LENGTH){
-                    columns.add("THE_DATES_OF_LAST_THREE_TX");
-                    String[] result = parse.getTheDatesOfLastThreeDeals(data);
+                } else if (data.length() == ZCatConfig.STATE_TIME_LEN){
+                    columns.add("TX_TIME");
+                    String[] result = CatParser.parseTime(data);
                     for (String element: result) {
                         List<String> record = Collections.singletonList(handleTime(element));
                         records.add(record);
                     }
-                } else if (data.length() == ZCatConfig.MIX_DATA_LENGTH) {
+                } else if (data.length() == ZCatConfig.STATE_MIX_LEN) {
                     columns.add("TX_COUNT");
-                    columns.add("THE_DATES_OF_LAST_THREE_TX");
-                    String[][] result = parse.getMixData(data);
+                    columns.add("TX_TIME");
+                    String[][] result = CatParser.parseMix(data);
                     for (int i = 0; i < 3; ++i) {
                         List<String> record = new ArrayList<>();
                         record.add(result[0][0]);
-//                        if (i == 0) {
-//                            record.add(result[0][0]);
-//                        } else {
-//                            record.add("-");
-//                        }
                         logger.debug("result[][]: [{}]", result[1][i]);
                         record.add(handleTime(result[1][i]));
                         records.add(record);

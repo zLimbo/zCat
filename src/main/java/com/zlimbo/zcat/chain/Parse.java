@@ -1,17 +1,11 @@
 package com.zlimbo.zcat.chain;
 
-import org.web3j.abi.FunctionReturnDecoder;
-import org.web3j.abi.TypeReference;
-import org.web3j.abi.datatypes.Event;
-import org.web3j.abi.datatypes.Int;
-import org.web3j.abi.datatypes.StaticArray;
-import org.web3j.abi.datatypes.Type;
+import com.zlimbo.zcat.config.ZCatConfig;
 
+import java.math.BigInteger;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @author jiangnanmax
@@ -38,55 +32,47 @@ public class Parse {
     /**
      * 解析十六进制字符串，获得其中的交易统计数量
      *
-     * @param data 十六进制字符串
+     * @param countMessage 十六进制字符串
      * @return 交易数量
      */
-    public String[] getCount(String data) {
-        Event evet = new Event("Count", Arrays.<TypeReference<?>>asList(new TypeReference<Int>() {}));
-        List<Type> result = FunctionReturnDecoder.decode(data, evet.getParameters());
-
-        return new String[] { result.get(0).getValue().toString() };
+    public String[] parseCount(String countMessage) {
+        String message = countMessage.substring(2);
+        return new String[] { new BigInteger(message, 16).toString() };
     }
 
     /**
      * 解析十六进制字符串，获得其中最后三笔交易的日期
      *
-     * @param data 十六进制字符串
+     * @param timeMessage 十六进制字符串
      * @return 最后三笔交易的日期数组
      */
-    public String [] getTheDatesOfLastThreeDeals(String data) {
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    public String [] parseTime(String timeMessage) {
 
-        Event evet = new Event("TheDatesOfLastThreeDeals",
-                Arrays.<TypeReference<?>>asList(new TypeReference<Int>() {},
-                        new TypeReference<Int>() {},
-                        new TypeReference.StaticArrayTypeReference<StaticArray<Int>>(3) {}));
-        List<Type> result = FunctionReturnDecoder.decode(data, evet.getParameters());
+        String message = timeMessage.substring(2);
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
+        String[] result = new String[3];
+        for (int i = 0; i < 3; ++i) {
+            String hexStr = message.substring(ZCatConfig.STATE_SINGLE_LEN * i, ZCatConfig.STATE_SINGLE_LEN * (i + 1));
+            BigInteger bigInteger = new BigInteger(hexStr, 16);
+            long timestamp = bigInteger.longValue();
+            if (timestamp != 0) {
+                String date = dateFormat.format(timestamp);
+                result[i] = date;
+            } else {
+                result[i] = "-";
+            }
+        }
 
-//        System.out.println(result.size());
-//        System.out.println(result.get(0).getValue());
-//        System.out.println(result.get(1).getValue());
-
-        StaticArray<Int> tmp = (StaticArray<Int>) result.get(2);
-//        System.out.println(df.format(tmp.getValue().get(0).getValue()));
-//        System.out.println(df.format(tmp.getValue().get(1).getValue()));
-//        System.out.println(df.format(tmp.getValue().get(2).getValue()));
-
-        String [] ans = new String[] {
-                df.format(tmp.getValue().get(0).getValue()),
-                df.format(tmp.getValue().get(1).getValue()),
-                df.format(tmp.getValue().get(2).getValue()) };
-
-        return ans;
+        return result;
     }
 
-    public String[][] getMixData(String data) {
-        String countData = data.substring(0, 66);
-        String threeDateData = "0x" + data.substring(66);
-        String[] countResult = getCount(countData);
-        String[] threeDateResult = getTheDatesOfLastThreeDeals(threeDateData);
-        return new String[][]{countResult, threeDateResult};
+    public String[][] parseMix(String mixMessage) {
+        String countMessage = mixMessage.substring(0, 66);
+        String timeMessage = "0x" + mixMessage.substring(66);
+        String[] countResult = parseCount(countMessage);
+        String[] timeResult = parseTime(timeMessage);
+        return new String[][]{countResult, timeResult};
     }
 
 
@@ -97,9 +83,9 @@ public class Parse {
         String mixData = "0x000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000001784419ed44000000000000000000000000000000000000000000000000000001784419f91800000000000000000000000000000000000000000000000000000178441ad974";
 
 
-        parse.getCount(countData);
-        parse.getTheDatesOfLastThreeDeals(threeDateData);
-        String[][] result = parse.getMixData(mixData);
+        parse.parseCount(countData);
+        parse.parseTime(threeDateData);
+        String[][] result = parse.parseMix(mixData);
 
         System.out.println("count: " + result[0][0]);
         System.out.println("date: ");
@@ -111,17 +97,7 @@ public class Parse {
     };
 
 
-    public static long hexString2Long(String hexString) {
-        long num = 0L;
-        for (char c: hexString.toCharArray()) {
-            if ('0' <= c && c <= '9') {
-                num = num * 16 + c - '0';
-            } else {
-                num = num * 16 + 10 + c - 'a';
-            }
-        }
-        return num;
-    }
+
 
     public static void test() {
         String mixData = "0x000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000001784419ed44000000000000000000000000000000000000000000000000000001784419f91800000000000000000000000000000000000000000000000000000178441ad974";
@@ -134,6 +110,19 @@ public class Parse {
             System.out.println("timestamp: " + timestamp);
             System.out.println("date: " + dateString);
         }
+    }
+
+
+    public static long hexString2Long(String hexString) {
+        long num = 0L;
+        for (char c: hexString.toCharArray()) {
+            if ('0' <= c && c <= '9') {
+                num = num * 16 + c - '0';
+            } else {
+                num = num * 16 + 10 + c - 'a';
+            }
+        }
+        return num;
     }
 
 }

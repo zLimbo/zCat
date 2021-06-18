@@ -181,11 +181,12 @@ public class MainWindow extends VBox {
 
                     if (sqlConnectorMap.containsKey(name)) {
                         SqlConnector sqlConnector = sqlConnectorMap.get(name);
-                        if (sqlConnector == currentSqlConnector) {
-                            return;
-                        }
+                        closeCurrentConnection();
+//                        if (sqlConnector == currentSqlConnector) {
+//                            return;
+//                        }
                         if (sqlConnector.openConnect()) {
-                            closeCurrentConnection();
+//                            closeCurrentConnection();
                             currentSqlConnector = sqlConnector;
                             currentTreeItem = treeItem;
                             showDatabaseTableTree();
@@ -443,7 +444,7 @@ public class MainWindow extends VBox {
             returnFlag = 2;
         } else if (sqlUpCase.contains("USING STATE")) { // 暂时未考虑一个空格以外的情况
             logger.debug("USING STATE");
-            sqlQueryResult = currentSqlConnector.sqlQueryForState(oneLineSql, true);
+            sqlQueryResult = currentSqlConnector.sqlQueryForState(oneLineSql);
             returnFlag = 3;
         } else {
             logger.debug("SELECT");
@@ -529,7 +530,9 @@ public class MainWindow extends VBox {
 
         toolBar.getItems().addAll(closeButton, runButton);
 
-//        toolBarAddTest(toolBar, runButton, queryTab);
+        if (ZCatConfig.FOR_TEST) {
+            toolBarAddTest(toolBar, runButton, queryTab);
+        }
 
         SplitPane splitPane = new SplitPane();
         borderPane.setCenter(splitPane);

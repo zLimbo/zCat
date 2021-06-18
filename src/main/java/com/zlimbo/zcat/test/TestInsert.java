@@ -7,6 +7,8 @@ import com.zlimbo.zcat.connect.SqlConnector;
 import com.zlimbo.zcat.util.CommonUtils;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.UUID;
 
@@ -25,20 +27,20 @@ public class TestInsert {
         sqlConnector = new SqlConnector(connectionParam);
 
         if (!sqlConnector.openConnect()) {
-            System.out.println("connect failed!");
+            System.out.println(sqlConnector.getHost() + ":" + sqlConnector.getPort() + " connect failed!");
             System.exit(-1);
         } else {
-            System.out.println("connect success!");
+            System.out.println(sqlConnector.getHost() + ":" + sqlConnector.getPort() + "connect success!");
         }
     }
 
     public void testInsert(String tableName, InfoGenerator dataInfoGt, InfoGenerator pubInfoGt) {
 
-        int count = 0;
+        int n = 1000;
 
-        while (true) {
+        for (int i = 1; i <= n; ++i) {
 //            try {
-//                Thread.sleep(500);
+//                Thread.sleep(3000);
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }
@@ -47,7 +49,8 @@ public class TestInsert {
             String requestSn = UUID.randomUUID().toString();
             String invokeTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(System.currentTimeMillis());
             String businessId = String.format("%012d", Math.abs(random.nextInt()));
-            String callbackUrl = "https://127.0.0.1/callback";
+//            String callbackUrl = "https://127.0.0.1/callback";
+            String callbackUrl = "gas1000";
             String keyId = String.format("%06d", Math.abs(random.nextInt() % (int)1e7));
             String accountId = String.format("%06d", Math.abs(random.nextInt() % (int)1e7));
             String sm4Key = "0123456789abcdef0123456789abcdef";
@@ -62,8 +65,11 @@ public class TestInsert {
                             "VALUES('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
                     systemId, requestSn, invokeTime, businessId, callbackUrl, keyId, accountId, dataInfo, sm4Key, sm4Iv, priKey, pubKey, pubInfo);
 
-            System.out.println("table: " + tableName + ", count: " + ++count);
-            System.out.println("sql: " + sql);
+//            System.out.println("table: " + tableName + ", count: " + ++count);
+//            System.out.println("sql: " + sql);
+            if (i % 200 == 0) {
+                System.out.println(sqlConnector.getPort() + " " + Thread.currentThread().getId() + " " + i);
+            }
             SqlConnector.SqlQueryResult result = sqlConnector.sqlUpdate(sql);
             if (result.getErrorMessage() != null) {
                 System.out.println("insert error");
@@ -75,33 +81,88 @@ public class TestInsert {
         TestInsert testInsert = new TestInsert(connectionParam);
 
         InvoiceInfo invoiceInfo = new InvoiceInfo();
+        testInsert.testInsert("invoice", invoiceInfo::genDataInfoForInvoice, invoiceInfo::genPubInfoForInvoice);
 
-        int theadNum = 2;
-        for (int i = 0; i < theadNum; ++i) {
-            new Thread(() -> {
-                System.out.println("testInsert");
-                testInsert.testInsert("invoice", invoiceInfo::genDataInfoForInvoice, invoiceInfo::genPubInfoForInvoice);
-            }).start();
-        }
+//        int theadNum = 2;
+//        List<Thread> list = new ArrayList<>();
+//        for (int i = 0; i < theadNum; ++i) {
+//            Thread thread = new Thread(() -> {
+//                System.out.println("testInsert");
+//                testInsert.testInsert("invoice", invoiceInfo::genDataInfoForInvoice, invoiceInfo::genPubInfoForInvoice);
+//            });
+//            thread.start();
+//            list.add(thread);
+//        }
+//        for (Thread thread: list) {
+//            try {
+//                thread.join();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 
 
-    static public void main(String[] args) {
+    static public void main(String[] args) throws InterruptedException {
+
+        long start = System.currentTimeMillis();
+        List<Thread> list = new ArrayList<>();
+        for (int port = 3100; port <= 3103; ++port) {
+            int finalPort = port;
+            Thread thread = new Thread(() -> {
+                System.out.println("port: " + finalPort);
+                test(new ConnectionParam(
+                        "192.168.6.111",
+                        String.valueOf(finalPort),
+                        "ouyeel_cita",
+                        "root",
+                        "admin"));
+            });
+            thread.start();
+            list.add(thread);
+        }
+        for (int port = 3100; port <= 3103; ++port) {
+            int finalPort = port;
+            Thread thread = new Thread(() -> {
+                System.out.println("port: " + finalPort);
+                test(new ConnectionParam(
+                        "192.168.6.114",
+                        String.valueOf(finalPort),
+                        "ouyeel_cita",
+                        "root",
+                        "admin"));
+            });
+            thread.start();
+            list.add(thread);
+        }
+        for (Thread thread: list) {
+            thread.join();
+        }
+        double spendTime = (System.currentTimeMillis()- start) / 1000.0;
+        System.out.println("total time: " + spendTime + "s, tps: " + (1000 * 6 / spendTime));
 
         // 佟兴
-        new Thread(() -> {
-            test(new ConnectionParam(
-                    "192.168.6.114", "3100", "dasfaa", "root", "admin"));
-        }).start();
+//        new Thread(() -> {
+//            test(new ConnectionParam(
+//                    "192.168.6.114", "3100", "dasfaa", "root", "admin"));
+//        }).start();
+//
+//
+//        // 海波
+//        new Thread(() -> {
+//            test(new ConnectionParam(
+//                    "192.168.6.107", "3100", "ouyeel_cita", "root", "admin"));
+//        }).start();
 
-
-        // 海波
-        new Thread(() -> {
-            test(new ConnectionParam(
-                    "192.168.6.107", "3100", "ouyeel_cita", "root", "admin"));
-        }).start();
+//        new Thread(() -> {
+//            test(new ConnectionParam(
+//                    "192.168.192.133", "3100", "ouyeel_cita", "root", "admin"));
+//        }).start();
+//        TestInsert testInsert = new TestInsert(new ConnectionParam(
+//                "192.168.6.111", "3100", "ouyeel_cita", "root", "admin"));
+//        InvoiceInfo invoiceInfo = new InvoiceInfo();
+//        testInsert.testInsert("invoice_s", invoiceInfo::genDataInfoForInvoice, invoiceInfo::genPubInfoForInvoice);
     }
-
 
     public String genDataInfoForDeliveryActual() {
         String deliveryActualId = String.format("%07d", Math.abs(random.nextInt() % (int)1e7));

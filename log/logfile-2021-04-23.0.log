@@ -1,5 +1,0 @@
-2021-04-23 09:53:25 |DEBUG |main |ConnectionLog.java:70 |com.zlimbo.zcat.connect.ConnectionLog |load connectionParams...
-2021-04-23 09:53:25 |DEBUG |JavaFX Application Thread |Main.java:29 |com.zlimbo.zcat.Main |[start] start
-2021-04-23 09:53:25 |DEBUG |JavaFX Application Thread |SqlConnector.java:81 |com.zlimbo.zcat.connect.SqlConnector |[SqlControl] start
-2021-04-23 09:53:25 |DEBUG |JavaFX Application Thread |SqlConnector.java:85 |com.zlimbo.zcat.connect.SqlConnector |[SqlConnector] end
-2021-04-23 09:53:25 |DEBUG |JavaFX Application Thread |Main.java:45 |com.zlimbo.zcat.Main |[start] end

@@ -1,18 +1,37 @@
 package com.zlimbo.zcat.config;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 
-import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ZCatConfig {
 
-    public static final int STATE_COUNT_LENGTH = 66;
-    public static final int STATE_THREE_LATEST_DATA_LENGTH = 322;
-    public static final int MIX_DATA_LENGTH = 386;
+    public static final boolean FOR_TEST = false;
     public static final int DEFAULT_PAGE_NUM = 500;
+
+    /**
+     * 状态查询
+     */
+    final public static String STATE = "STATE";
+    final public static String STATE_HASH = "STATE_HASH";
+    final public static String COUNT = "COUNT";
+
+    final public static String LOWERCASE_STATE = "state";
+    final public static String QUERY_STATE_COUNT = "count_tx";
+    final public static String QUERY_STATE_TIME = "time_tx";
+    final public static String QUERY_STATE_MIX = "*";
+
+    final public static int STATE_SINGLE_LEN = 64;
+    final public static int STATE_COUNT_LEN = 2 + STATE_SINGLE_LEN;
+    final public static int STATE_TIME_LEN = 2 + STATE_SINGLE_LEN * 3;
+    final public static int STATE_MIX_LEN = 2 + STATE_SINGLE_LEN * 4;
+
+//    public static final int STATE_COUNT_LENGTH = 66;
+//    public static final int STATE_THREE_LATEST_DATA_LENGTH = 322;
+//    public static final int MIX_DATA_LENGTH = 386;
+
+
+    public static final int QUERY_STATE_WAIT_TIME = 7000;
 
 
 //    public static final JSONObject languageJson = null;

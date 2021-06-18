@@ -11,7 +11,7 @@ public class InvoiceInfo {
 
     Random random = new Random();
 
-    public String genDataInfoForInvoice() {
+    public JSONObject genDataInfo() {
         String invoiceNo = octString(10);
         String[] consumer = COMPANY_TAXESNO[random.nextInt(COMPANY_TAXESNO.length)];
         String consumerName = consumer[0], consumerTaxesNo = consumer[1];
@@ -21,12 +21,51 @@ public class InvoiceInfo {
         String invoiceDate = new SimpleDateFormat("yyyy-MM-dd" ).format(new Date());
         String invoiceType = INVOICE_KIND[random.nextInt(INVOICE_KIND.length)];
         String taxesPoint = (10 + random.nextInt(10)) + "%";
-        int taxesRaw = 100 + random.nextInt(1000);
         int priceRaw = 10000 + random.nextInt(100000);
+        int taxesRaw = 100 + random.nextInt(1000);
         String taxes = "" + taxesRaw;
         String price = "" + priceRaw;
         String pricePlusTaxes = "" + (taxesRaw + priceRaw);
         String invoiceNumber = "" + (1 + random.nextInt(3));
+        String statementSheet = "" + (1 + random.nextInt(3));
+        String statementWeight = (1 + random.nextInt(10)) + "kg";
+        String timestamps = "" + System.currentTimeMillis();
+
+        JSONObject json = new JSONObject();
+        json.put("invoiceNo", invoiceNo);
+        json.put("consumerName", consumerName);
+        json.put("consumerTaxesNo", consumerTaxesNo);
+        json.put("sellerName", sellerName);
+        json.put("sellerTaxesNo", sellerTaxesNo);
+        json.put("invoiceDate", invoiceDate);
+        json.put("invoiceType", invoiceType);
+        json.put("price", price);
+        json.put("pricePlusTaxes", pricePlusTaxes);
+        json.put("invoiceNumber", invoiceNumber);
+        json.put("statementSheet", statementSheet);
+        json.put("statementWeight", statementWeight);
+        json.put("timestamps", timestamps);
+        json.put("taxesPoint", taxesPoint);
+        json.put("taxes", taxes);
+
+        return json;
+    }
+
+    public String genDataInfoForInvoice() {
+//        String invoiceNo = octString(10);
+        String[] consumer = COMPANY_TAXESNO[random.nextInt(COMPANY_TAXESNO.length)];
+//        String consumerName = consumer[0], consumerTaxesNo = consumer[1];
+        String[] seller = COMPANY_TAXESNO[random.nextInt(COMPANY_TAXESNO.length)];
+        String sellerName = seller[0], sellerTaxesNo = seller[1];
+
+//        String invoiceDate = new SimpleDateFormat("yyyy-MM-dd" ).format(new Date());
+//        String invoiceType = INVOICE_KIND[random.nextInt(INVOICE_KIND.length)];
+//        String taxesPoint = (10 + random.nextInt(10)) + "%";
+//        int priceRaw = 10000 + random.nextInt(100000);
+//        String taxes = "" + taxesRaw;
+//        String price = "" + priceRaw;
+//        String pricePlusTaxes = "" + (taxesRaw + priceRaw);
+//        String invoiceNumber = "" + (1 + random.nextInt(3));
         String statementSheet = "" + (1 + random.nextInt(3));
         String statementWeight = (1 + random.nextInt(10)) + "kg";
         String timestamps = "" + System.currentTimeMillis();
@@ -39,8 +78,6 @@ public class InvoiceInfo {
         json.put("sellerTaxesNo", sellerTaxesNo);
 //        json.put("invoiceDate", invoiceDate);
 //        json.put("invoiceType", invoiceType);
-        json.put("taxesPoint", taxesPoint);
-        json.put("taxes", taxes);
 //        json.put("price", price);
 //        json.put("pricePlusTaxes", pricePlusTaxes);
 //        json.put("invoiceNumber", invoiceNumber);
@@ -58,20 +95,21 @@ public class InvoiceInfo {
         String[] consumer = COMPANY_TAXESNO[random.nextInt(COMPANY_TAXESNO.length)];
         String consumerName = consumer[0], consumerTaxesNo = consumer[1];
         String[] seller = COMPANY_TAXESNO[random.nextInt(COMPANY_TAXESNO.length)];
-        String sellerName = seller[0], sellerTaxesNo = seller[1];
+//        String sellerName = seller[0], sellerTaxesNo = seller[1];
 
         String invoiceDate = new SimpleDateFormat("yyyy-MM-dd" ).format(new Date());
         String invoiceType = INVOICE_KIND[random.nextInt(INVOICE_KIND.length)];
-        String taxesPoint = (10 + random.nextInt(10)) + "%";
+//        String taxesPoint = (10 + random.nextInt(10)) + "%";
         int taxesRaw = 100 + random.nextInt(1000);
         int priceRaw = 10000 + random.nextInt(100000);
+        String taxesPoint = (10 + random.nextInt(10)) + "%";
         String taxes = "" + taxesRaw;
         String price = "" + priceRaw;
         String pricePlusTaxes = "" + (taxesRaw + priceRaw);
         String invoiceNumber = "" + (1 + random.nextInt(3));
-        String statementSheet = "" + (1 + random.nextInt(3));
-        String statementWeight = (1 + random.nextInt(10)) + "kg";
-        String timestamps = "" + System.currentTimeMillis();
+//        String statementSheet = "" + (1 + random.nextInt(3));
+//        String statementWeight = (1 + random.nextInt(10)) + "kg";
+//        String timestamps = "" + System.currentTimeMillis();
 
         JSONObject json = new JSONObject();
         json.put("invoiceNo", invoiceNo);
@@ -80,6 +118,8 @@ public class InvoiceInfo {
         json.put("invoiceDate", invoiceDate);
         json.put("invoiceType", invoiceType);
         json.put("price", price);
+        json.put("taxesPoint", taxesPoint);
+        json.put("taxes", taxes);
         json.put("pricePlusTaxes", pricePlusTaxes);
         json.put("invoiceNumber", invoiceNumber);
 
