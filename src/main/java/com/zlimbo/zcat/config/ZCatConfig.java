@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ZCatConfig {
 
-    public static final boolean FOR_TEST = true;
+    public static final boolean FOR_TEST = false;
     public static final int DEFAULT_PAGE_NUM = 500;
 
     /**

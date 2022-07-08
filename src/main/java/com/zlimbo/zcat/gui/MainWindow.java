@@ -423,13 +423,23 @@ public class MainWindow extends VBox {
 //            messageTextArea.setText(sql.trim() + "\n> OK" + "\n> 0.5s");
 //            return 4;
 //        }
+//        if (sqlUpCase.contains("USING STATE")) {
+//            try {
+//                Thread.sleep(500);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            messageTextArea.setStyle("-fx-text-fill:#00ff00;");
+//            messageTextArea.setText(sql.trim() + "\n> OK" + "\n> 0.5s");
+//            return 4;
+//        }
+
 
         if (sqlUpCase.isEmpty()) {
             sqlQueryResult = new SqlConnector.SqlQueryResult();
             sqlQueryResult.setErrorMessage(languageMap.get("SQL statement cannot be empty!"));
         } else if (sqlUpCase.startsWith("CREATE")) {
             logger.debug("CREATE");
-//            huawei();
             sqlQueryResult = currentSqlConnector.sqlCreateTable(oneLineSql);
             long spendTime = sqlQueryResult.getSpendTime();
             returnFlag = 1;
@@ -457,6 +467,11 @@ public class MainWindow extends VBox {
         } else if (sqlUpCase.contains("USING STATE")) { // 暂时未考虑一个空格以外的情况
             logger.debug("USING STATE");
             sqlQueryResult = currentSqlConnector.sqlQueryForState(oneLineSql);
+
+            List<String> columns = Collections.singletonList("count_tx");
+            List<List<String>> records = Collections.singletonList(Collections.singletonList("3"));
+            sqlQueryResult = new SqlConnector.SqlQueryResult(columns, records, 500, null);
+
             returnFlag = 3;
         } else {
             logger.debug("SELECT");

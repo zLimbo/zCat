@@ -103,6 +103,7 @@ public class SqlConnector {
                 "&serverTimezone=GMT" +
                 "&allowPublicKeyRetrieval=true";
         logger.debug("database url: " + url);
+        System.out.println("database url: " + url);
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(

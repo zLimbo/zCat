@@ -105,41 +105,48 @@ public class TestInsert {
 
     static public void main(String[] args) throws InterruptedException {
 
-        long start = System.currentTimeMillis();
-        List<Thread> list = new ArrayList<>();
-        for (int port = 3100; port <= 3103; ++port) {
-            int finalPort = port;
-            Thread thread = new Thread(() -> {
-                System.out.println("port: " + finalPort);
-                test(new ConnectionParam(
-                        "192.168.6.111",
-                        String.valueOf(finalPort),
-                        "ouyeel_cita",
-                        "root",
-                        "admin"));
-            });
-            thread.start();
-            list.add(thread);
-        }
-        for (int port = 3100; port <= 3103; ++port) {
-            int finalPort = port;
-            Thread thread = new Thread(() -> {
-                System.out.println("port: " + finalPort);
-                test(new ConnectionParam(
-                        "192.168.6.114",
-                        String.valueOf(finalPort),
-                        "ouyeel_cita",
-                        "root",
-                        "admin"));
-            });
-            thread.start();
-            list.add(thread);
-        }
-        for (Thread thread: list) {
-            thread.join();
-        }
-        double spendTime = (System.currentTimeMillis()- start) / 1000.0;
-        System.out.println("total time: " + spendTime + "s, tps: " + (1000 * 6 / spendTime));
+        test(new ConnectionParam(
+                "192.168.6.104",
+                "3100",
+                "ouyeel",
+                "root",
+                "admin"));
+
+//        long start = System.currentTimeMillis();
+//        List<Thread> list = new ArrayList<>();
+//        for (int port = 3100; port <= 3103; ++port) {
+//            int finalPort = port;
+//            Thread thread = new Thread(() -> {
+//                System.out.println("port: " + finalPort);
+//                test(new ConnectionParam(
+//                        "192.168.6.111",
+//                        String.valueOf(finalPort),
+//                        "ouyeel_cita",
+//                        "root",
+//                        "admin"));
+//            });
+//            thread.start();
+//            list.add(thread);
+//        }
+//        for (int port = 3100; port <= 3103; ++port) {
+//            int finalPort = port;
+//            Thread thread = new Thread(() -> {
+//                System.out.println("port: " + finalPort);
+//                test(new ConnectionParam(
+//                        "192.168.6.114",
+//                        String.valueOf(finalPort),
+//                        "ouyeel_cita",
+//                        "root",
+//                        "admin"));
+//            });
+//            thread.start();
+//            list.add(thread);
+//        }
+//        for (Thread thread: list) {
+//            thread.join();
+//        }
+//        double spendTime = (System.currentTimeMillis()- start) / 1000.0;
+//        System.out.println("total time: " + spendTime + "s, tps: " + (1000 * 6 / spendTime));
 
         // 佟兴
 //        new Thread(() -> {
