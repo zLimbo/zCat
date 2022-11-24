@@ -1,6 +1,8 @@
 package com.zlimbo.zcat;
 
 import com.zlimbo.zcat.connect.ConnectionLog;
+import com.zlimbo.zcat.connect.ConnectionParam;
+import com.zlimbo.zcat.connect.SqlConnector;
 import com.zlimbo.zcat.gui.MainWindow;
 import javafx.application.Application;
 import javafx.scene.Parent;
@@ -9,6 +11,8 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.sql.SQLException;
 
 public class Main extends Application {
 

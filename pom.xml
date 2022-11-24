@@ -18,6 +18,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <grpc.version>1.6.1</grpc.version>
         <protobuf.version>3.3.0</protobuf.version>
+
+        <eplat.mysql.version>8.0.22</eplat.mysql.version>
     </properties>
 
     <dependencies>
@@ -25,7 +27,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.40</version>
+            <version>8.0.29</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.citahub.cita/core -->
@@ -41,14 +43,6 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.8.2</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.30</version>
             <scope>test</scope>
         </dependency>
 
@@ -86,6 +80,20 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

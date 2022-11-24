@@ -18,7 +18,6 @@ public class SqlConnector {
      */
     final Logger logger = LoggerFactory.getLogger(getClass());
 
-
     /**
      * sql查询结果类
      */
@@ -105,7 +104,6 @@ public class SqlConnector {
         logger.debug("database url: " + url);
         System.out.println("database url: " + url);
         try {
-            Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(
                     url, connectionParam.getUser(), connectionParam.getPassword());
             onConnect = true;
@@ -117,6 +115,13 @@ public class SqlConnector {
             return false;
         }
         return true;
+    }
+
+    static public void main(String[] args)  {
+        ConnectionParam param = new ConnectionParam("219.228.148.45", "3100", "ouyeel", "root", "");
+        SqlConnector conn = new SqlConnector(param);
+        conn.openConnect();
+        System.out.println("done.");
     }
 
     public void closeConnect() {
